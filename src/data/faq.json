@@ -1,0 +1,47 @@
+[
+    {
+        "id": "q1",
+        "question": "La mia città non è nell'elenco, ma vorrei lavorare con voi. Cosa posso fare?",
+        "answer": "Se la tua città non è nell'elenco significa che non abbiamo ancora il nostro team di riders attivo. Ti invitiamo a rimanere informato perché è probabile che arriveremo presto nella tua città."
+    },
+    {
+        "id": "q2",
+        "question": "I riders Just Eat vengono pagati all'ora?",
+        "answer": "Si, con il nostro contratto avrai un fisso orario garantito di 8,75€. In più offriamo un bonus per ogni consegna effettuata che si aggiunge al tuo guadagno."
+    },
+    {
+        "id": "q3",
+        "question": "Che tipo di veicolo e attrezzatura devo avere per poter lavorare con Just Eat?",
+        "answer": "I veicoli ammessi per lavorare con noi sono: scooter, e-bike, bicicletta. L’attrezzatura sarà fornita da Just Eat e ti verrà spedita all’indirizzo di domicilio da te indicato. In più stiamo lavorando per aprire nuovi Hub in diverse città, ti invitiamo a rimanere informato."
+    },
+    {
+        "id": "q4",
+        "question": "Quali documenti bisogna avere per iniziare a lavorare con Just Eat?",
+        "answer": "I documenti richiesti sono: documento d’identità, permesso di soggiorno (cittadini non europei), patente di guida e assicurazione del veicolo (per chi usa lo scooter)."
+    },
+    {
+        "id": "q5",
+        "question": "Ho altre domande, come posso contattarvi?",
+        "answer": "Ci puoi mandare una email all’indirizzo joincouriers-it@takeaway.com oppure chiamarci al numero 0230453422."
+    },
+    {
+        "id": "q6",
+        "question": "Quali sono i vantaggi di essere un Rider Just eat?",
+        "answer": "Paga oraria, possibilità di ricevere bonus, ferie pagate, assicurazione vita, TFR. L'opportunità di creare nuove amicizie e far parte della grande famiglia Just Eat."
+    },
+    {
+        "id": "q7",
+        "question": "La visita medica e il corso di sicurezza sono a carico di Just Eat?",
+        "answer": "Si, sono a carico di Just Eat. La presenza alla visita medica e il completamento del corso di sicurezza sono un requisito fondamentale per poter iniziare a lavorare e percepire lo stipendio."
+    },
+    {
+        "id": "q8",
+        "question": "Come funzionano i contratti con Just Eat?",
+        "answer": "L'assunzione come rider per Just Eat prevede un regolare contratto come dipendente diretto."
+    },
+    {
+        "id": "q9",
+        "question": "Come diventare un rider Just Eat?",
+        "answer": "Diventare un rider Just Eat è facile! Basta completare l'applicazione sopra, e attendere che uno dei nostri reclutatori ti contatti."
+    }
+]

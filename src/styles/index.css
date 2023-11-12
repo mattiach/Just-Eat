@@ -1,0 +1,43 @@
+/* Font */
+@font-face {
+    font-family: JETSansDigital;
+    src: url('https://d30v2pzvrfyzpo.cloudfront.net/fonts/JETSansDigital-Regular-optimised.woff2') format("woff2"),
+        url('https://d30v2pzvrfyzpo.cloudfront.net/fonts/JETSansDigital-Regular-optimised.woff') format("woff");
+    font-weight: 400;
+    font-display: swap;
+}
+
+body {
+    font-family: JETSansDigital !important;
+    overflow-x: hidden;
+}
+
+.slider-container {
+    max-width: 100vw;
+    width: 100%;
+}
+
+.slick-slide,
+.slice-active,
+.slice-cloned {
+    width: 150px;
+}
+
+.jumbotron-justeat-orders,
+.jumbotron-justeat {
+    height: 350px;
+}
+
+@media (max-width: 600px) {
+
+    .jumbotron-justeat,
+    .jumbotron-justeat-orders {
+        height: 300px;
+    }
+}
+
+@media (min-width: 992px) {
+    .jumbotron-justeat {
+        height: 650px;
+    }
+}
