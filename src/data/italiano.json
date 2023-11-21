@@ -1,0 +1,941 @@
+[
+  {
+    "id": "887335176512811",
+    "category": "Italiano",
+    "name": "Trapizzino - Testaccio",
+    "address": {
+      "street": "Via Giovanni Branca, 88",
+      "postalCode": "00153",
+      "city": "Roma"
+    },
+    "image": "Trapizzino - Testaccio.webp",
+    "rating": 4.40,
+    "shipping": {
+      "freeShipping": false,
+      "shippingCost": 2,
+      "minOrder": 8
+    },
+    "menu": {
+      "category1": {
+        "categoryTitle": "Tramezzini",
+        "dishes": [
+          {
+            "name": "Trapizzino POLLO CACCIATORA",
+            "price": 5.00
+          },
+          {
+            "name": "Trapizzino POLPETTE SUGO",
+            "price": 5.00
+          },
+          {
+            "name": "Trapizzino PARMIGIANA MELANZANE",
+            "price": 5.00
+          },
+          {
+            "name": "Trapizzino DOPPIA PANNA ALICI",
+            "price": 5.00
+          },
+          {
+            "name": "Trapizzino LINGUA SALSA VERDE",
+            "price": 5.00
+          },
+          {
+            "name": "Trapizzino Trippa alla Romana",
+            "price": 5.00
+          }
+        ]
+      },
+      "category2": {
+        "categoryTitle": "Supplì",
+        "dishes": [
+          {
+            "name": "Supplì Classico",
+            "price": 2.00
+          },
+          {
+            "name": "Supplì Cacio e Pepe",
+            "price": 2.50
+          },
+          {
+            "name": "Suppli' Castelmagno Nocciole",
+            "price": 2.50
+          },
+          {
+            "name": "Supplì Classico LARGE",
+            "price": 3.90
+          }
+        ]
+      },
+      "category3": {
+        "categoryTitle": "Crocchette",
+        "dishes": [
+          {
+            "name": "Lino Tortellino",
+            "price": 3.00
+          }
+        ]
+      },
+      "category4": {
+        "categoryTitle": "Bevande e Alcolici",
+        "dishes": [
+          {
+            "name": "Acqua Naturale",
+            "price": 1.00
+          },
+          {
+            "name": "Acqua Frizzante",
+            "price": 1.00
+          },
+          {
+            "name": "Coca Cola Lattina 33cl",
+            "price": 2.50
+          },
+          {
+            "name": "Coca Cola Zero Lattina 33",
+            "price": 2.50
+          },
+          {
+            "name": "Fanta Lattina 33 cl",
+            "price": 2.50
+          },
+          {
+            "name": "Baladin Nazionale 33 cl",
+            "price": 4.50
+          },
+          {
+            "name": "Birra del Borgo Lisa 33 cl",
+            "price": 4.50
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "8765432198765",
+    "category": "Italiano",
+    "name": "Schiacciata & Vino",
+    "address": {
+      "street": "Via del Corso 123",
+      "postalCode": "00186",
+      "city": "Roma"
+    },
+    "image": "Schiacciata e Vino.webp",
+    "rating": 4.50,
+    "shipping": {
+      "freeShipping": false,
+      "shippingCost": 2,
+      "minOrder": 10
+    },
+    "menu": {
+      "category1": {
+        "categoryTitle": "Le Storiche",
+        "dishes": [
+          {
+            "name": "Schiacciata Classica",
+            "price": 7.00
+          },
+          {
+            "name": "Schiacciata Caprese",
+            "price": 8.00
+          }
+        ]
+      },
+      "category2": {
+        "categoryTitle": "Le Vegetariane",
+        "dishes": [
+          {
+            "name": "Schiacciata Vegana",
+            "price": 7.50
+          },
+          {
+            "name": "Schiacciata Verdure Grigliate",
+            "price": 8.00
+          }
+        ]
+      },
+      "category3": {
+        "categoryTitle": "Limited Edition",
+        "dishes": [
+          {
+            "name": "Schiacciata del Mese",
+            "price": 9.00
+          }
+        ]
+      },
+      "category4": {
+        "categoryTitle": "Bevande",
+        "dishes": [
+          {
+            "name": "Acqua Naturale",
+            "price": 1.50
+          },
+          {
+            "name": "Acqua Frizzante",
+            "price": 1.50
+          },
+          {
+            "name": "Coca-Cola",
+            "price": 2.50
+          },
+          {
+            "name": "Thè freddo",
+            "price": 2.50
+          }
+        ]
+      },
+      "category5": {
+        "categoryTitle": "Birre",
+        "dishes": [
+          {
+            "name": "Birra Artigianale Locale 33cl",
+            "price": 4.00
+          },
+          {
+            "name": "Birra Artigianale Locale 66cl",
+            "price": 5.50
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "5432167890123",
+    "category": "Italiano",
+    "name": "Pizzeria San Biaso",
+    "address": {
+      "street": "Via Cola di Rienzo 123",
+      "postalCode": "00192",
+      "city": "Roma"
+    },
+    "image": "San Biaso.webp",
+    "rating": 4.60,
+    "shipping": {
+      "freeShipping": false,
+      "shippingCost": 1,
+      "minOrder": 10
+    },
+    "menu": {
+      "category1": {
+        "categoryTitle": "Fritti e Supplì",
+        "dishes": [
+          {
+            "name": "Supplì al Telefono",
+            "price": 3.00
+          },
+          {
+            "name": "Fiori di Zucca",
+            "price": 4.00
+          }
+        ]
+      },
+      "category2": {
+        "categoryTitle": "Pizze - Trancio",
+        "dishes": [
+          {
+            "name": "Margherita",
+            "price": 3.00
+          },
+          {
+            "name": "Diavola",
+            "price": 4.50
+          },
+          {
+            "name": "Quattro Stagioni",
+            "price": 5.00
+          },
+          {
+            "name": "Capricciosa",
+            "price": 5.00
+          },
+          {
+            "name": "Funghi",
+            "price": 4.00
+          },
+          {
+            "name": "Prosciutto e Funghi",
+            "price": 5.00
+          }
+        ]
+      },
+      "category3": {
+        "categoryTitle": "Pizze - Teglia",
+        "dishes": [
+          {
+            "name": "Margherita",
+            "price": 8.00
+          },
+          {
+            "name": "Diavola",
+            "price": 9.50
+          },
+          {
+            "name": "Quattro Stagioni",
+            "price": 11.00
+          },
+          {
+            "name": "Capricciosa",
+            "price": 10.00
+          },
+          {
+            "name": "Funghi",
+            "price": 11.00
+          },
+          {
+            "name": "Prosciutto e Funghi",
+            "price": 11.00
+          }
+        ]
+      },
+      "category4": {
+        "categoryTitle": "Bevande",
+        "dishes": [
+          {
+            "name": "Acqua Naturale",
+            "price": 1.50
+          },
+          {
+            "name": "Acqua Frizzante",
+            "price": 1.50
+          },
+          {
+            "name": "Bevande 33cl",
+            "price": 2.50
+          }
+        ]
+      },
+      "category5": {
+        "categoryTitle": "Birre",
+        "dishes": [
+          {
+            "name": "Birra Artigianale Locale",
+            "price": 5.00
+          },
+          {
+            "name": "Birra Lager",
+            "price": 4.50
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "9087654321234",
+    "category": "Italiano",
+    "name": "Gusto Panini",
+    "address": {
+      "street": "Piazza Navona 67",
+      "postalCode": "00186",
+      "city": "Roma"
+    },
+    "image": "Gusto Panini.webp",
+    "rating": 4.50,
+    "shipping": {
+      "freeShipping": false,
+      "shippingCost": 2,
+      "minOrder": 10
+    },
+    "menu": {
+      "category1": {
+        "categoryTitle": "Panini - Prosciutto Crudo",
+        "dishes": [
+          {
+            "name": "Classico Parma",
+            "price": 8.00
+          },
+          {
+            "name": "Parma e Mozzarella",
+            "price": 9.00
+          },
+          {
+            "name": "Parma Deluxe",
+            "price": 10.00
+          },
+          {
+            "name": "Parma e Pecorino",
+            "price": 9.50
+          }
+        ]
+      },
+      "category2": {
+        "categoryTitle": "Panini - Bresaola",
+        "dishes": [
+          {
+            "name": "Bresaola e Rucola",
+            "price": 9.00
+          },
+          {
+            "name": "Bresaola Deluxe",
+            "price": 10.50
+          },
+          {
+            "name": "Bresaola e Parmigiano",
+            "price": 9.50
+          },
+          {
+            "name": "Bresaola e Stracchino",
+            "price": 8.50
+          }
+        ]
+      },
+      "category3": {
+        "categoryTitle": "Panini - Carni Bianche",
+        "dishes": [
+          {
+            "name": "Tacchino e Maionese",
+            "price": 9.00
+          },
+          {
+            "name": "Pollo e Bacon",
+            "price": 9.50
+          },
+          {
+            "name": "Tacchino e Curry",
+            "price": 10.50
+          },
+          {
+            "name": "Pollo alla Griglia",
+            "price": 9.00
+          }
+        ]
+      },
+      "category4": {
+        "categoryTitle": "Panini - Vegetariani",
+        "dishes": [
+          {
+            "name": "Vegano Gourmet",
+            "price": 8.00
+          },
+          {
+            "name": "Mozzarella e Pomodoro",
+            "price": 7.50
+          },
+          {
+            "name": "Pesto e Zucchine",
+            "price": 8.00
+          },
+          {
+            "name": "Parmigiano e Melanzane",
+            "price": 9.00
+          }
+        ]
+      },
+      "category5": {
+        "categoryTitle": "Bevande e Birre",
+        "dishes": [
+          {
+            "name": "Coca-Cola",
+            "price": 3.00
+          },
+          {
+            "name": "Acqua Naturale",
+            "price": 2.20
+          },
+          {
+            "name": "Birra Artigianale",
+            "price": 5.50
+          },
+          {
+            "name": "Birra Lager",
+            "price": 4.50
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "1122334450667",
+    "category": "Italiano",
+    "name": "Green Delight Corner",
+    "address": {
+      "street": "Vicolo dei Savelli, 50, Roma, 00186",
+      "postalCode": "00186",
+      "city": "Roma"
+    },
+    "image": "Green Delight Corner.webp",
+    "rating": 4.60,
+    "shipping": {
+      "freeShipping": false,
+      "shippingCost": 1,
+      "minOrder": 10
+    },
+    "menu": {
+      "category1": {
+        "categoryTitle": "Panini Vegani",
+        "dishes": [
+          {
+            "name": "Sandwich Buddy Vegano",
+            "price": 6.50
+          },
+          {
+            "name": "Sandwich Tofu Vegano",
+            "price": 6.50
+          },
+          {
+            "name": "Sandwich Tonno Vegano",
+            "price": 6.50
+          },
+          {
+            "name": "Sandwich Hummus Vegano",
+            "price": 6.50
+          }
+        ]
+      },
+      "category2": {
+        "categoryTitle": "Antipasti Vegani",
+        "dishes": [
+          {
+            "name": "Tagliere di Formaggi e Salumi Vegani",
+            "price": 20.00
+          },
+          {
+            "name": "Fritto Misto Buddy Vegano",
+            "price": 14.00
+          },
+          {
+            "name": "Hummus di Barbabietola",
+            "price": 8.00
+          },
+          {
+            "name": "Bruschetta Avocado e Pomodoro",
+            "price": 7.00
+          }
+        ]
+      },
+      "category3": {
+        "categoryTitle": "Pasta Vegana",
+        "dishes": [
+          {
+            "name": "Spaghetti al Tartufo Vegano",
+            "price": 18.00
+          },
+          {
+            "name": "Carbonara Vegana",
+            "price": 14.00
+          },
+          {
+            "name": "Amatriciana Vegana",
+            "price": 14.00
+          },
+          {
+            "name": "Cacio e Pepe Vegano",
+            "price": 13.00
+          }
+        ]
+      },
+      "category4": {
+        "categoryTitle": "Pinse Vegane",
+        "dishes": [
+          {
+            "name": "Pinsa Patate e Tartufo Vegano",
+            "price": 18.00
+          },
+          {
+            "name": "Pinsa Tartufata Vegana",
+            "price": 18.00
+          },
+          {
+            "name": "Pinsa Amatriciana Vegana",
+            "price": 13.00
+          },
+          {
+            "name": "Pinsa Margherita Vegana",
+            "price": 10.00
+          }
+        ]
+      },
+      "category5": {
+        "categoryTitle": "Drinks",
+        "dishes": [
+          {
+            "name": "Coca-Cola Classic/Zero",
+            "price": 2.50
+          },
+          {
+            "name": "Acqua Naturale",
+            "price": 1.50
+          },
+          {
+            "name": "Succo di Arancia",
+            "price": 3.00
+          },
+          {
+            "name": "Espresso",
+            "price": 1.20
+          },
+          {
+            "name": "Tè Freddo al Limone",
+            "price": 2.00
+          },
+          {
+            "name": "Birra Artigianale Locale",
+            "price": 4.00
+          },
+          {
+            "name": "Spritz Aperol",
+            "price": 5.00
+          },
+          {
+            "name": "Acqua Frizzante",
+            "price": 1.50
+          },
+          {
+            "name": "Smoothie ai Frutti di Bosco",
+            "price": 3.50
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "1122354869332499999",
+    "category": "Italiano",
+    "name": "La Panetteria Ristorante",
+    "address": {
+      "street": "Piazza San Giovanni, 32",
+      "postalCode": "00186",
+      "city": "Roma"
+    },
+    "image": "La Panetteria Ristorante.webp",
+    "rating": 4.80,
+    "shipping": {
+      "freeShipping": false,
+      "shippingCost": 2,
+      "minOrder": 14.0
+    },
+    "menu": {
+      "category1": {
+        "categoryTitle": "Insalate",
+        "dishes": [
+          {
+            "name": "Caesar Salad",
+            "price": 6.50
+          },
+          {
+            "name": "Capricciosa",
+            "price": 6.50
+          },
+          {
+            "name": "Insalata Special",
+            "price": 7.50
+          },
+          {
+            "name": "Mediterranea",
+            "price": 6.50
+          }
+        ]
+      },
+      "category2": {
+        "categoryTitle": "Primi",
+        "dishes": [
+          {
+            "name": "Spaghetti alla Carbonara",
+            "price": 10.00
+          },
+          {
+            "name": "Rigatoni all'Amatriciana",
+            "price": 10.00
+          },
+          {
+            "name": "Lasagna alla bolognese",
+            "price": 10.50
+          },
+          {
+            "name": "Lasagna Bianca",
+            "price": 11.50
+          },
+          {
+            "name": "Ravioli al Pomodoro",
+            "price": 11.00
+          }
+        ]
+      },
+      "category3": {
+        "categoryTitle": "Pasta Vegana",
+        "dishes": [
+          {
+            "name": "Spaghetti al Tartufo Vegano",
+            "price": 17.00
+          },
+          {
+            "name": "Carbonara Vegana",
+            "price": 14.00
+          },
+          {
+            "name": "Amatriciana Vegana",
+            "price": 14.00
+          },
+          {
+            "name": "Cacio e Pepe Vegano",
+            "price": 13.00
+          }
+        ]
+      },
+      "category4": {
+        "categoryTitle": "Pinse Vegane",
+        "dishes": [
+          {
+            "name": "Pinsa Patate e Tartufo Vegano",
+            "price": 18.00
+          },
+          {
+            "name": "Pinsa Tartufata Vegana",
+            "price": 18.00
+          },
+          {
+            "name": "Pinsa Amatriciana Vegana",
+            "price": 13.00
+          },
+          {
+            "name": "Pinsa Margherita Vegana",
+            "price": 10.00
+          }
+        ]
+      },
+      "category5": {
+        "categoryTitle": "Drinks",
+        "dishes": [
+          {
+            "name": "Aranciata 33cl",
+            "price": 3.50
+          },
+          {
+            "name": "Acqua frizzante Ferrarelle 1,5lt",
+            "price": 3.50
+          },
+          {
+            "name": "Coca Cola Zero 33cl",
+            "price": 3.50
+          },
+          {
+            "name": "Acqua naturale Levissima 1,5lt",
+            "price": 3.50
+          },
+          {
+            "name": "Coca Cola 33cl",
+            "price": 3.50
+          },
+          {
+            "name": "Sprite 33cl",
+            "price": 3.50
+          },
+          {
+            "name": "Rossa birra Moretti 33cl",
+            "price": 5.00
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "9988776650443777",
+    "category": "Italiano",
+    "name": "S.A.N.O. Delights",
+    "address": {
+      "street": "Via del Corso, 117",
+      "postalCode": "00186",
+      "city": "Roma"
+    },
+    "image": "SANO_Delights.webp",
+    "rating": 4.30,
+    "shipping": {
+      "freeShipping": false,
+      "shippingCost": 2,
+      "minOrder": 12
+    },
+    "menu": {
+      "category1": {
+        "categoryTitle": "Insalate",
+        "dishes": [
+          {
+            "name": "Insalata Special",
+            "price": 5.00
+          },
+          {
+            "name": "Fantasia di Verdure",
+            "price": 7.00
+          },
+          {
+            "name": "Finocchi e Pomodori",
+            "price": 3.50
+          },
+          {
+            "name": "Insalata di Mare",
+            "price": 6.50
+          }
+        ]
+      },
+      "category2": {
+        "categoryTitle": "Healthy Burritos",
+        "dishes": [
+          {
+            "name": "Muscle Burrito",
+            "price": 11.50
+          },
+          {
+            "name": "Mind Burrito",
+            "price": 11.50
+          },
+          {
+            "name": "Green Burrito",
+            "price": 11.50
+          },
+          {
+            "name": "Special Burrito",
+            "price": 14.50
+          }
+        ]
+      },
+      "category3": {
+        "categoryTitle": "Healthy Food, Healthy Life",
+        "dishes": [
+          {
+            "name": "Wrap di Tonno - 480 kcal",
+            "price": 14.70
+          },
+          {
+            "name": "Poke Philadelphia edition - 540 kcal",
+            "price": 12.90
+          },
+          {
+            "name": "Bresaola Bowl - 457 kcal",
+            "price": 12.90
+          }
+        ]
+      },
+      "category4": {
+        "categoryTitle": "More Protein, More Energy",
+        "dishes": [
+          {
+            "name": "Bocconcini di pollo con prosciutto e piselli - 357 kcal",
+            "price": 15.90
+          },
+          {
+            "name": "Protein Bowl - 456 kcal",
+            "price": 14.90
+          }
+        ]
+      },
+      "category5": {
+        "categoryTitle": "Le Bevande di S.A.N.O",
+        "dishes": [
+          {
+            "name": "Acqua Lilia Naturale Bottiglia 500ml",
+            "price": 1.90
+          },
+          {
+            "name": "Coca-Cola Zero Vetro 330ml",
+            "price": 3.00
+          },
+          {
+            "name": "Smoothie Tropicale",
+            "price": 4.50
+          },
+          {
+            "name": "Smoothie ai Frutti di Bosco",
+            "price": 4.50
+          },
+          {
+            "name": "Smoothie Verde Detox",
+            "price": 4.50
+          },
+          {
+            "name": "Smoothie Banana e Fragola",
+            "price": 4.50
+          },
+          {
+            "name": "Smoothie Mango e Yogurt",
+            "price": 4.50
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "5566778899453543001",
+    "category": "Italiano",
+    "name": "Altrogiro Gourmet",
+    "address": {
+      "street": "Via Palmarola, 20, Roma, 00165",
+      "postalCode": "00165",
+      "city": "Roma"
+    },
+    "image": "Altrogiro Gourmet.webp",
+    "rating": 4.70,
+    "shipping": {
+      "freeShipping": false,
+      "shippingCost": 3,
+      "minOrder": 8
+    },
+    "menu": {
+      "category1": {
+        "categoryTitle": "Amati da altri clienti",
+        "dishes": [
+          {
+            "name": "Frittura di calamari con salsa agrodolce a parte",
+            "price": 18.00
+          },
+          {
+            "name": "Tonnarelli alla carbonara con tartufo nero",
+            "price": 22.00
+          },
+          {
+            "name": "Tartare di manzo al Tartufo",
+            "price": 18.00
+          }
+        ]
+      },
+      "category2": {
+        "categoryTitle": "Sfizi e Vizi",
+        "dishes": [
+          {
+            "name": "Carciofo alla giudia con cremoso cacio e pepe",
+            "price": 13.00
+          },
+          {
+            "name": "6 polpette di manzo con fonduta al taleggio",
+            "price": 13.00
+          }
+        ]
+      },
+      "category3": {
+        "categoryTitle": "Primi",
+        "dishes": [
+          {
+            "name": "Rigatoni di Gragnano alla carbonara",
+            "price": 15.00
+          },
+          {
+            "name": "Speghettone di gragnano con spigola e datterini gialli",
+            "price": 20.00
+          }
+        ]
+      },
+      "category4": {
+        "categoryTitle": "Le carni",
+        "dishes": [
+          {
+            "name": "Orecchia d'elefante con salsa bbq home made e patatine a stick",
+            "price": 35.00
+          },
+          {
+            "name": "Costata di manzo 500 gr circa alla griglia con patate forno",
+            "price": 35.00
+          }
+        ]
+      },
+      "category5": {
+        "categoryTitle": "Il pesce",
+        "dishes": [
+          {
+            "name": "Filetto di spigola gratinata con patata all'agro",
+            "price": 24.00
+          },
+          {
+            "name": "Frittura di calamari con salsa agrodolce a parte",
+            "price": 18.00
+          }
+        ]
+      }
+    }
+  }
+]

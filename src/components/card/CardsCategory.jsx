@@ -11,9 +11,9 @@ const CardsCategory = ({ imgSRC, title, setSelectedCuisine }) => {
                 src={imgSRC}
                 alt={title}
                 title={title}
-                width={150}
-                height={150}
-                className="cursor-pointer hover:opacity-90 px-1" 
+                width={130}
+                height={130}
+                className="cursor-pointer hover:opacity-90 px-1"
                 onClick={selectCuisineFunction}
             />
             <p className={cardClasses} title={title}>

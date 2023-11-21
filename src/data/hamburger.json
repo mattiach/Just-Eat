@@ -468,7 +468,7 @@
             "postalCode": "00186",
             "city": "Roma"
         },
-        "image": "Il Re del Burger.jpg",
+        "image": "Il Re del Burger.webp",
         "rating": 4.70,
         "shipping": {
             "freeShipping": false,
@@ -572,7 +572,7 @@
             "postalCode": "00186",
             "city": "Roma"
         },
-        "image": "Burger Creativo.jpg",
+        "image": "Burger Creativo.webp",
         "rating": 4.60,
         "shipping": {
             "freeShipping": true,
@@ -676,7 +676,7 @@
             "postalCode": "00186",
             "city": "Roma"
         },
-        "image": "Panini Gourmet.jpg",
+        "image": "Panini Gourmet.webp",
         "rating": 4.60,
         "shipping": {
             "freeShipping": false,
@@ -780,7 +780,7 @@
             "postalCode": "00184",
             "city": "Roma"
         },
-        "image": "Spicy Delight.jpg",
+        "image": "Spicy Delight.webp",
         "rating": 4.75,
         "shipping": {
             "freeShipping": true,
@@ -859,7 +859,7 @@
             "postalCode": "00187",
             "city": "Roma"
         },
-        "image": "Monster Burger.jpg",
+        "image": "Monster Burger.webp",
         "rating": 4.85,
         "shipping": {
             "freeShipping": false,
@@ -940,7 +940,7 @@
             "postalCode": "00184",
             "city": "Roma"
         },
-        "image": "Irish Burger Tavern.jpg",
+        "image": "Irish Burger Tavern.webp",
         "rating": 4.65,
         "shipping": {
             "freeShipping": false,
@@ -1021,13 +1021,13 @@
     {
         "id": "98765432109",
         "category": "Hamburger",
-        "name": "McDonald's",
+        "name": "Mc Donald's",
         "address": {
             "street": "Via del Tritone 100",
             "postalCode": "00187",
             "city": "Roma"
         },
-        "image": "McDonalds.jpg",
+        "image": "McDonalds.webp",
         "rating": 4.40,
         "shipping": {
             "freeShipping": true,
@@ -1135,7 +1135,7 @@
             "postalCode": "00185",
             "city": "Roma"
         },
-        "image": "Bogs.jpg",
+        "image": "Bogs.webp",
         "rating": 4.55,
         "shipping": {
             "freeShipping": false,
@@ -1239,7 +1239,7 @@
             "postalCode": "00100",
             "city": "Roma"
         },
-        "image": "Le Streghe.jpg",
+        "image": "Le Streghe.webp",
         "rating": 4.9,
         "shipping": {
             "freeShipping": false,

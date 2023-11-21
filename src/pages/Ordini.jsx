@@ -9,6 +9,7 @@ import { cuisineImages } from '../data/cuisineImages';
 import pizza from '../data/pizza.json';
 import sushi from '../data/sushi.json';
 import hamburger from '../data/hamburger.json';
+import italiano from '../data/italiano.json';
 
 // components
 import Navbar from '../components/navbar/Navbar';
@@ -35,7 +36,7 @@ const Ordini = () => {
         // giapponese,
         // sushi,
         hamburger,
-        // italiano
+        italiano
     };
 
     let localiFiltrati = [];
