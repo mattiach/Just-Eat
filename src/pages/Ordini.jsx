@@ -10,6 +10,9 @@ import pizza from '../data/pizza.json';
 import sushi from '../data/sushi.json';
 import hamburger from '../data/hamburger.json';
 import italiano from '../data/italiano.json';
+import giapponese from '../data/giapponese.json';
+import fritti from '../data/fritti.json';
+import cinese from '../data/cinese.json';
 
 // components
 import Navbar from '../components/navbar/Navbar';
@@ -30,11 +33,11 @@ const Ordini = () => {
     const inputRef = useRef(null);
 
     const cuisineDataMap = {
-        // cinese,
+        cinese,
         pizza,
         sushi,
-        // giapponese,
-        // sushi,
+        giapponese,
+        fritti,
         hamburger,
         italiano
     };

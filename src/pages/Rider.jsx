@@ -14,11 +14,17 @@ import Accordion from "../components/accordion/Accordion";
 import Footer from "../components/footer/Footer";
 
 const Rider = () => {
+
+    const imageRider1 = "assets/img/riders.webp";
+    const imageRider2 = "assets/img/riders2.webp";
+
+    const bgSRC = Math.random() < .5 ? imageRider1 : imageRider2;
+
     return (
         <>
             <div className="bg-gray-100">
                 <Navbar />
-                <HeaderOpaque img={'assets/img/riders.webp'}>
+                <HeaderOpaque img={bgSRC}>
                     <div className="text-white">
                         <h2 className="mb-6 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight">
                             Lavora come rider
