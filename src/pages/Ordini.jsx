@@ -80,10 +80,12 @@ const Ordini = () => {
                     {
                         isCarouselMediaQuery ?
                             <>
-                                <CuisineCarousel
-                                    setSelectedCuisine={setSelectedCuisine}
-                                    images={cuisineImages}
-                                />
+                                <div className="container w-max-[987px] mx-auto px-2.5">
+                                    <CuisineCarousel
+                                        setSelectedCuisine={setSelectedCuisine}
+                                        images={cuisineImages}
+                                    />
+                                </div>
                             </>
                             :
                             <>

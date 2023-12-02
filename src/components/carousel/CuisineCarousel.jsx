@@ -27,7 +27,7 @@ const CuisineCarousel = ({ setSelectedCuisine, images }) => {
     // Funzione che calcola le impostazioni in base alla media query trovata
     const responsiveSettings = getResponsiveSettings(settings);
 
-    const [sliderKEY, setSliderKEY] = useState('d9f5d550-827e-69b5-f2ee-d4457ceaeefc')
+    const [sliderKEY, setSliderKEY] = useState('cuisine-carousel__d9f5d550-827e-69b5-f2ee-d4457ceaeefc')
 
     useEffect(() => {
         // Genera un nuovo UUID ogni volta che la larghezza della finestra cambia
