@@ -1,19 +1,28 @@
-import { Link } from "react-router-dom"
+// routing
+import { useNavigate } from 'react-router-dom';
 
 const RestaurantCard = ({ ristorante, searchText }) => {
+
+    const navigate = useNavigate();
+
+    // funzione per andare alla pagina specifica del ristorante
+    const navigateToRestaurantPageFunction = () => {
+        navigate(`/ristorante/${ristorante.id}`);
+    }
 
     return (
         <>
             <div className={`card-restaurant-container my-[5px] ${searchText.length === 0 ? 'fade-in' : 'animate-none'}`}>
                 <div className="cursor-pointer relative inline-block overflow-hidden">
-                    <Link to={`/ristorante/${ristorante.id}`}>
-                        <img
-                            src={`assets/img/ristoranti/${ristorante.category}/${ristorante.image}`}
-                            alt={`${ristorante.name}`}
-                            title={`${ristorante.name}`}
-                            className="aspect-video w-[275px] sm:w-[240px] rounded-sm hover:opacity-90 border-primary border-2 zoomImgEffect transform transition-all duration-500"
-                        />
-                    </Link>
+                    {/* <Link to={`/ristorante/${ristorante.id}`}> */}
+                    <img
+                        src={`assets/img/ristoranti/${(ristorante.category)}/${ristorante.image}`}
+                        alt={`${ristorante.name}`}
+                        title={`${ristorante.name}`}
+                        className="aspect-video w-[275px] sm:w-[240px] rounded-sm hover:opacity-90 border-primary border-2 zoomImgEffect transform transition-all duration-500"
+                        onClick={() => navigateToRestaurantPageFunction()}
+                    />
+                    {/* </Link> */}
                     <span
                         className="absolute inset-0 border-primary border-2 pointer-events-none transition-all duration-300"
                         aria-hidden="true"
@@ -21,7 +30,9 @@ const RestaurantCard = ({ ristorante, searchText }) => {
                 </div>
                 <div className="mt-1 text-ellipsis cursor-text">
                     <div>
-                        <h2 className="text-base tracking-tight" title={`${ristorante.title}`}>
+                        <h2 className="text-base tracking-tight cursor-pointer"
+                            onClick={() => navigateToRestaurantPageFunction()}
+                        >
                             {ristorante.name}
                         </h2>
                     </div>

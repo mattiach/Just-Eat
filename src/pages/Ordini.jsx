@@ -1,18 +1,9 @@
 import { useState, useEffect, useRef } from 'react';
 import { TbSearch } from 'react-icons/tb';
-
-// media queries
 import { useMediaQuery } from 'react-responsive';
 
-// data
-import { cuisineImages } from '../data/cuisineImages';
-import pizza from '../data/pizza.json';
-import sushi from '../data/sushi.json';
-import hamburger from '../data/hamburger.json';
-import italiano from '../data/italiano.json';
-import giapponese from '../data/giapponese.json';
-import fritti from '../data/fritti.json';
-import cinese from '../data/cinese.json';
+// redux
+import { useSelector } from "react-redux";
 
 // components
 import Navbar from '../components/navbar/Navbar';
@@ -32,15 +23,8 @@ const Ordini = () => {
 
     const inputRef = useRef(null);
 
-    const cuisineDataMap = {
-        cinese,
-        pizza,
-        sushi,
-        giapponese,
-        fritti,
-        hamburger,
-        italiano
-    };
+    const cuisineDataMap = useSelector((state) => state.ristoranti);
+    const cuisineImages = useSelector((state) => state.cuisine);
 
     let localiFiltrati = [];
     localiFiltrati = cuisineDataMap[selectedCuisine] || [];
@@ -140,4 +124,5 @@ const Ordini = () => {
         </>
     )
 }
+
 export default Ordini
