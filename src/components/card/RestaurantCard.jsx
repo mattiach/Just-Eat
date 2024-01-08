@@ -1,15 +1,19 @@
+import { Link } from "react-router-dom"
+
 const RestaurantCard = ({ ristorante, searchText }) => {
 
     return (
         <>
             <div className={`card-restaurant-container my-[5px] ${searchText.length === 0 ? 'fade-in' : 'animate-none'}`}>
                 <div className="cursor-pointer relative inline-block overflow-hidden">
-                    <img
-                        src={`assets/img/ristoranti/${ristorante.category}/${ristorante.image}`}
-                        alt={`${ristorante.name}`}
-                        title={`${ristorante.name}`}
-                        className="aspect-video w-[275px] sm:w-[240px] rounded-sm hover:opacity-90 border-primary border-2 zoomImgEffect transform transition-all duration-500"
-                    />
+                    <Link to={`/ristorante/${ristorante.id}`}>
+                        <img
+                            src={`assets/img/ristoranti/${ristorante.category}/${ristorante.image}`}
+                            alt={`${ristorante.name}`}
+                            title={`${ristorante.name}`}
+                            className="aspect-video w-[275px] sm:w-[240px] rounded-sm hover:opacity-90 border-primary border-2 zoomImgEffect transform transition-all duration-500"
+                        />
+                    </Link>
                     <span
                         className="absolute inset-0 border-primary border-2 pointer-events-none transition-all duration-300"
                         aria-hidden="true"
