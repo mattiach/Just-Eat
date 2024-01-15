@@ -24,7 +24,7 @@ const Footer = () => {
                         <div className="flex justify-center w-full md:w-auto">
                             <div className="w-52">
                                 <FooterTitleSection>{firstArray[0]}</FooterTitleSection>
-                                <ul className="text-gray-500">
+                                <ul className="text-gray-800">
                                     {firstArray.slice(1).map((link, index) => (
                                         <FooterLink {...link} key={index}>{link}</FooterLink>
                                     ))}
@@ -34,7 +34,7 @@ const Footer = () => {
                         <div className="flex justify-center w-full md:w-auto">
                             <div className="w-52">
                                 <FooterTitleSection>{secondArray[0]}</FooterTitleSection>
-                                <ul className="text-gray-500">
+                                <ul className="text-gray-800">
                                     {secondArray.slice(1).map((link, index) => (
                                         <FooterLink {...link} key={index}>{link}</FooterLink>
                                     ))}
@@ -46,7 +46,7 @@ const Footer = () => {
                                 <FooterTitleSection>
                                     {thirdArray[0]}
                                 </FooterTitleSection>
-                                <ul className="text-gray-500">
+                                <ul className="text-gray-800">
                                     {thirdArray.slice(1).map((link, index) => (
                                         <FooterLink {...link} key={index}>{link}</FooterLink>
                                     ))}
@@ -55,7 +55,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="px-16 py-6 bg-gray-100 text-center">
-                        <span className="text-sm text-gray-500 sm:text-center">
+                        <span className="text-sm text-gray-900 sm:text-center">
                             &copy; {currentYear}
                             <span className="pl-1 pr-2">
                                 JustEat&trade;.

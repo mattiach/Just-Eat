@@ -4,8 +4,15 @@ import { createSlice } from '@reduxjs/toolkit';
 export const selectSelectedRestaurant = (idSelected) => (state) => {
   const ristoranti = state.ristoranti;
   const allRistoranti = Object.values(ristoranti).flat();
-  return allRistoranti.find((ristorante) => ristorante.id === idSelected) || null;
-  // .. utilizzare questo nei componenti ==> const selectedRestaurant = useSelector(selectSelectedRestaurant(id));
+
+  const selectedRistorante = allRistoranti.find((ristorante) => ristorante.id === idSelected);
+
+  if (selectedRistorante) {
+    return selectedRistorante;
+  } else {
+    window.location.href = '/ordini';
+    return null;
+  }
 };
 
 const selectedRestaurantIDSlice = createSlice({
@@ -16,7 +23,6 @@ const selectedRestaurantIDSlice = createSlice({
       return action.payload;
     },
   },
-
 });
 
 export default selectedRestaurantIDSlice.reducer;

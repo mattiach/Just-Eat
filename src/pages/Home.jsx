@@ -34,7 +34,7 @@ const Home = () => {
                 </div>
                 <div className="text-center pt-14 md:pt-20 lg:pt-24">
                     <Paragraph>
-                        Scarica l'app di Just Eat e ordina dove vuoi,
+                        Scarica l&apos;app di Just Eat e ordina dove vuoi,
                         <span className='inline-block sm:block pl-1 sm:pl-0'>
                             qualunque cosa desideri
                         </span>

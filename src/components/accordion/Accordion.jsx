@@ -7,6 +7,7 @@ const Accordion = ({ id, question, answer }) => {
 
     useEffect(() => {
         setIsAnimated(isAnimated + 1)
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [isAccordionOpen])
 
     return (
