@@ -26,7 +26,8 @@ const Rider = () => {
     const [applicationUserInfo, setApplicationUserInfo] = useState({
         name: '',
         lastname: '',
-        email: ''
+        email: '',
+        curriculum: null
     })
 
     // funzione di apertura del modale
@@ -40,10 +41,23 @@ const Rider = () => {
         }));
     };
 
+    // funzione per gestire il file del curriculum
+    const handleFileChange = (file) => {
+        setApplicationUserInfo((prevUserInfo) => ({
+            ...prevUserInfo,
+            curriculum: file,
+        }));
+    };
+
     // funzione per inviare i dati dell'utente come application
     const sendApplicationFunction = () => {
-        console.log(applicationUserInfo);
-    }
+        // .. verifica se tutti i campi sono compilati
+        if (applicationUserInfo.name && applicationUserInfo.lastname && applicationUserInfo.email && applicationUserInfo.curriculum) {
+            console.log("Candidatura inviata, grazie!", applicationUserInfo);
+        } else {
+            console.error("Compila tutti i campi prima di inviare l'application.");
+        }
+    };
 
     return (
         <>
@@ -61,6 +75,7 @@ const Rider = () => {
                             <Suspense fallback={null}>
                                 <ApplicationForm
                                     handleChangeUserInfo={handleChangeUserInfo}
+                                    handleFileChange={handleFileChange}
                                     sendApplicationFunction={sendApplicationFunction}
                                 />
                             </Suspense>

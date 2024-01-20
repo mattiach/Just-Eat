@@ -2,7 +2,7 @@
 import InputForm from "../input/InputForm"
 import Button from "../button/Button"
 
-const ApplicationForm = ({ handleChangeUserInfo, sendApplicationFunction }) => {
+const ApplicationForm = ({ handleChangeUserInfo, handleFileChange, sendApplicationFunction }) => {
   return (
     <>
       <div className="p-5 max-w-96 mx-auto">
@@ -13,20 +13,25 @@ const ApplicationForm = ({ handleChangeUserInfo, sendApplicationFunction }) => {
           label={"Nome"}
           placeholder={"Scrivi il tuo nome"}
           className={"my-1"}
-          onChange={event => handleChangeUserInfo("name", event.target.value)}
+          onChange={(event) => handleChangeUserInfo("name", event.target.value)}
         />
         <InputForm
           label={"Cognome"}
           placeholder={"Scrivi il tuo cognome"}
           className={"my-1"}
-          onChange={event => handleChangeUserInfo("lastname", event.target.value)}
+          onChange={(event) => handleChangeUserInfo("lastname", event.target.value)}
         />
         <InputForm
           label={"Email"}
           placeholder={"Scrivi la tua e-mail"}
           type={"email"}
           className={"my-1"}
-          onChange={event => handleChangeUserInfo("email", event.target.value)}
+          onChange={(event) => handleChangeUserInfo("email", event.target.value)}
+        />
+        <input
+          className="block w-full mt-4 px-4 py-2 text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50"
+          type="file"
+          onChange={(event) => handleFileChange(event.target.files[0])}
         />
         <Button
           onClick={() => sendApplicationFunction()}
@@ -38,4 +43,5 @@ const ApplicationForm = ({ handleChangeUserInfo, sendApplicationFunction }) => {
     </>
   )
 }
-export default ApplicationForm
+
+export default ApplicationForm;
