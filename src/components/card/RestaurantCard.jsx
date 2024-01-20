@@ -1,7 +1,7 @@
 // routing
 import { useNavigate } from 'react-router-dom';
 
-const RestaurantCard = ({ ristorante, searchText }) => {
+const RestaurantCard = ({ ristorante }) => {
 
     const navigate = useNavigate();
 
@@ -12,7 +12,7 @@ const RestaurantCard = ({ ristorante, searchText }) => {
 
     return (
         <>
-            <div className={`card-restaurant-container my-[5px] ${searchText.length === 0 ? 'fade-in' : 'animate-none'}`}>
+            <div className="card-restaurant-container my-[5px]">
                 <div className="cursor-pointer relative inline-block overflow-hidden">
                     <img
                         src={`assets/img/ristoranti/${(ristorante.category)}/${ristorante.image}`}

@@ -124,6 +124,129 @@
     }
   },
   {
+    "id": "55667788990",
+    "category": "Fritti",
+    "name": "KFC",
+    "address": {
+      "street": "Via Tiburtina 100",
+      "postalCode": "00157",
+      "city": "Roma"
+    },
+    "image": "KFC.webp",
+    "rating": 4.5,
+    "shipping": {
+      "freeShipping": false,
+      "shippingCost": 2.50,
+      "minOrder": 20
+    },
+    "menu": {
+      "category1": {
+        "categoryTitle": "Pollo Fritto",
+        "dishes": [
+          {
+            "name": "Original Recipe Chicken",
+            "price": 8.50,
+            "description": "Pollo fritto con la ricetta originale del colonnello"
+          },
+          {
+            "name": "Extra Crispy Chicken",
+            "price": 9.00,
+            "description": "Pollo extra croccante"
+          },
+          {
+            "name": "Kentucky Grilled Chicken",
+            "price": 8.00,
+            "description": "Pollo grigliato alla Kentucky"
+          },
+          {
+            "name": "Hot Wings",
+            "price": 7.00,
+            "description": "Ali di pollo piccanti"
+          }
+        ]
+      },
+      "category2": {
+        "categoryTitle": "Sandwich e Wrap",
+        "dishes": [
+          {
+            "name": "Crispy Colonel Sandwich",
+            "price": 6.50,
+            "description": "Sandwich con pollo croccante e salse"
+          },
+          {
+            "name": "Chicken Little",
+            "price": 5.00,
+            "description": "Mini sandwich con pollo"
+          },
+          {
+            "name": "Kentucky Flatbread Sandwich",
+            "price": 6.00,
+            "description": "Sandwich su flatbread con pollo e insalata"
+          }
+        ]
+      },
+      "category3": {
+        "categoryTitle": "Contorni",
+        "dishes": [
+          {
+            "name": "Cole Slaw",
+            "price": 2.50
+          },
+          {
+            "name": "Mac and Cheese",
+            "price": 3.00
+          },
+          {
+            "name": "Mashed Potatoes with Gravy",
+            "price": 2.50
+          },
+          {
+            "name": "Biscuits",
+            "price": 1.50
+          }
+        ]
+      },
+      "category4": {
+        "categoryTitle": "Bevande",
+        "dishes": [
+          {
+            "name": "Lemonade",
+            "price": 2.00
+          },
+          {
+            "name": "Sweet Tea",
+            "price": 1.50
+          },
+          {
+            "name": "Pepsi",
+            "price": 2.00
+          },
+          {
+            "name": "Mountain Dew",
+            "price": 2.00
+          }
+        ]
+      },
+      "category5": {
+        "categoryTitle": "Dolci",
+        "dishes": [
+          {
+            "name": "Chocolate Chip Cake",
+            "price": 3.50
+          },
+          {
+            "name": "Cookies",
+            "price": 2.00
+          },
+          {
+            "name": "Apple Pie",
+            "price": 2.50
+          }
+        ]
+      }
+    }
+  },
+  {
     "id": "44667788990",
     "category": "Fritti",
     "name": "Crispy Corner",
@@ -994,129 +1117,6 @@
           {
             "name": "Brownie",
             "price": 3.00
-          }
-        ]
-      }
-    }
-  },
-  {
-    "id": "55667788990",
-    "category": "Fritti",
-    "name": "KFC",
-    "address": {
-      "street": "Via Tiburtina 100",
-      "postalCode": "00157",
-      "city": "Roma"
-    },
-    "image": "KFC.webp",
-    "rating": 4.5,
-    "shipping": {
-      "freeShipping": false,
-      "shippingCost": 2.50,
-      "minOrder": 20
-    },
-    "menu": {
-      "category1": {
-        "categoryTitle": "Pollo Fritto",
-        "dishes": [
-          {
-            "name": "Original Recipe Chicken",
-            "price": 8.50,
-            "description": "Pollo fritto con la ricetta originale del colonnello"
-          },
-          {
-            "name": "Extra Crispy Chicken",
-            "price": 9.00,
-            "description": "Pollo extra croccante"
-          },
-          {
-            "name": "Kentucky Grilled Chicken",
-            "price": 8.00,
-            "description": "Pollo grigliato alla Kentucky"
-          },
-          {
-            "name": "Hot Wings",
-            "price": 7.00,
-            "description": "Ali di pollo piccanti"
-          }
-        ]
-      },
-      "category2": {
-        "categoryTitle": "Sandwich e Wrap",
-        "dishes": [
-          {
-            "name": "Crispy Colonel Sandwich",
-            "price": 6.50,
-            "description": "Sandwich con pollo croccante e salse"
-          },
-          {
-            "name": "Chicken Little",
-            "price": 5.00,
-            "description": "Mini sandwich con pollo"
-          },
-          {
-            "name": "Kentucky Flatbread Sandwich",
-            "price": 6.00,
-            "description": "Sandwich su flatbread con pollo e insalata"
-          }
-        ]
-      },
-      "category3": {
-        "categoryTitle": "Contorni",
-        "dishes": [
-          {
-            "name": "Cole Slaw",
-            "price": 2.50
-          },
-          {
-            "name": "Mac and Cheese",
-            "price": 3.00
-          },
-          {
-            "name": "Mashed Potatoes with Gravy",
-            "price": 2.50
-          },
-          {
-            "name": "Biscuits",
-            "price": 1.50
-          }
-        ]
-      },
-      "category4": {
-        "categoryTitle": "Bevande",
-        "dishes": [
-          {
-            "name": "Lemonade",
-            "price": 2.00
-          },
-          {
-            "name": "Sweet Tea",
-            "price": 1.50
-          },
-          {
-            "name": "Pepsi",
-            "price": 2.00
-          },
-          {
-            "name": "Mountain Dew",
-            "price": 2.00
-          }
-        ]
-      },
-      "category5": {
-        "categoryTitle": "Dolci",
-        "dishes": [
-          {
-            "name": "Chocolate Chip Cake",
-            "price": 3.50
-          },
-          {
-            "name": "Cookies",
-            "price": 2.00
-          },
-          {
-            "name": "Apple Pie",
-            "price": 2.50
           }
         ]
       }

@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 // media queries
 import { useMediaQuery } from 'react-responsive';
 
@@ -21,7 +23,13 @@ const Home = () => {
                 <Title>&Egrave; bello prenderci gusto!</Title>
             </div>
             <div className="text-center mt-10">
-                <Button>Trova i ristoranti</Button>
+                <Link to={'/ordini'}>
+                    <Button
+                        className={"focus:outline-none bg-primary hover:bg-secondary text-white focus:ring-0 font-semibold text-xl rounded-lg py-3 px-4 mr-2 mb-2 w-52 md:w-60"}
+                    >
+                        Trova i ristoranti
+                    </Button>
+                </Link>
             </div>
             <div className='mt-20 xl:mt-28 xl:flex xl:justify-evenly mx-auto gap-6 max-w-7xl'>
                 <div className='mx-auto flex justify-center xl:block xl:mx-0'>

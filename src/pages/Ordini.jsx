@@ -1,9 +1,13 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useMemo, useCallback, useContext } from 'react';
 import { TbSearch } from 'react-icons/tb';
 import { useMediaQuery } from 'react-responsive';
+import { MdArrowForwardIos, MdArrowBackIos } from "react-icons/md";
 
 // redux
 import { useSelector } from "react-redux";
+
+// context
+import { AppContext } from '../context/AppContext';
 
 // components
 import Navbar from '../components/navbar/Navbar';
@@ -13,43 +17,79 @@ import Footer from '../components/footer/Footer';
 import CuisineCarousel from '../components/carousel/CuisineCarousel';
 import CardsCategory from '../components/card/CardsCategory';
 import RestaurantCard from '../components/card/RestaurantCard';
+import Button from '../components/button/Button';
 
 const Ordini = () => {
-    const isCarouselMediaQuery = useMediaQuery({ query: '(max-width: 1200px)' });
+    const { selectedCuisine, setSelectedCuisine } = useContext(AppContext);
 
-    const [selectedCuisine, setSelectedCuisine] = useState('pizza');
     const [searchText, setSearchText] = useState('');
     const [initialRender, setInitialRender] = useState(true);
+    const [itemsPerPage] = useState(8);
+    const [currentPage, setCurrentPage] = useState(1);
+    const [hasNextPage, setHasNextPage] = useState(true);
+    const [showAllItems, setShowAllItems] = useState(false);
 
     const inputRef = useRef(null);
 
+    // redux
     const cuisineDataMap = useSelector((state) => state.ristoranti);
     const cuisineImages = useSelector((state) => state.cuisine);
 
-    let localiFiltrati = [];
-    localiFiltrati = cuisineDataMap[selectedCuisine] || [];
+    // media queries
+    const isCarouselMediaQuery = useMediaQuery({ query: '(max-width: 1200px)' });
+    const isPaginationVisible = useMediaQuery({ query: '(min-width: 990px)' });
 
-    // // funzione di ricerca / filtro tramite input
-    const filterLocali = (locali) => {
+    // filtro di ricerca in base alla cucina selezionata
+    const localiFiltrati = useMemo(() => {
+        return cuisineDataMap[selectedCuisine] || [];
+    }, [cuisineDataMap, selectedCuisine]);
+
+    // funzione di filtro di ricerca 
+    const filterLocali = useCallback((locali) => {
         return locali.filter((ristorante) =>
-            ristorante.name.toLowerCase().includes(searchText.toLowerCase()) ||  // per nome
-            ristorante.address.street.toLowerCase().includes(searchText.toLowerCase()) || // per indirizzo
-            ristorante.address.city.toLowerCase().includes(searchText.toLowerCase())  // per città
+            ristorante.name.toLowerCase().includes(searchText.toLowerCase()) ||             // .. per nome
+            ristorante.address.street.toLowerCase().includes(searchText.toLowerCase()) ||  // .. per via
+            ristorante.address.city.toLowerCase().includes(searchText.toLowerCase())      // .. per città
         );
+    }, [searchText]);
+
+    // corregge il bug che spostava la visualizzazione in alto durante il routing
+    useEffect(() => { initialRender ? setInitialRender(false) : window.scrollTo(0, 0); }, [initialRender]);
+
+    // al caricamento della pagina imposta il focus sul campo di ricerca
+    const focusInputFunction = useCallback(() => { inputRef.current.focus() }, []);
+
+    // ottiene i ristoranti attualmente mostrati nella pagina
+    const getCurrentPageItems = () => {
+        const startIndex = (currentPage - 1) * itemsPerPage;
+        const endIndex = startIndex + itemsPerPage;
+        return filterLocali(localiFiltrati).slice(startIndex, endIndex);
     };
 
-    // funzione per correggere l'errore dello scroll a metà pagina durante il routing
-    useEffect(() => {
-        if (initialRender) {
-            setInitialRender(false);
-        } else {
-            window.scrollTo(0, 0);
-        }
-    }, [initialRender]);
+    // gestisce se ci sono altre pagine da mostrare 
+    const checkHasNextPage = useCallback(() => {
+        const totalItems = filterLocali(localiFiltrati).length;
+        const totalPages = Math.ceil(totalItems / itemsPerPage);
+        setHasNextPage(currentPage < totalPages);
+    }, [currentPage, itemsPerPage, filterLocali, localiFiltrati]);
 
-    // funzione per impostare il focus sempre sull'input di ricerca
-    const focusInputFunction = () => {
-        inputRef.current.focus();
+    // richiama la funzione "checkHasNextPage" per assicurarsi che lo stato sia aggiornato
+    useEffect(() => { checkHasNextPage(); }, [checkHasNextPage]);
+
+    // reimposta la pagina iniziale alla selezione di una nuova categoria o del filtro di ricerca tramite il campo input
+    useEffect(() => { setCurrentPage(1); }, [selectedCuisine, searchText]);
+
+    // funzione per gestire le cards dei ristoranti 
+    const renderRestaurantCards = () => {
+        const restaurantsToRender = showAllItems
+            ? filterLocali(localiFiltrati) // .. mostra tutti gli elementi
+            : isPaginationVisible
+                ? getCurrentPageItems()
+                : filterLocali(localiFiltrati);
+
+        return restaurantsToRender.map((ristorante) => (
+            <RestaurantCard key={`${selectedCuisine}_` + ristorante.id} ristorante={ristorante} />
+        ));
     };
 
     return (
@@ -107,22 +147,70 @@ const Ordini = () => {
                             </div>
                         </div>
                         <div className={`flex flex-wrap ${searchText.length === 0 ? 'justify-center' : 'justify-start'} gap-2 mt-8`} key={`restaurant_container_search_${searchText}`}>
-                            {
-                                filterLocali(localiFiltrati).map((ristorante) => (
-                                    <RestaurantCard
-                                        searchText={searchText}
-                                        key={`${selectedCuisine}_` + ristorante.id}
-                                        ristorante={ristorante}
-                                    />
-                                ))
-                            }
+                            {/* restaurant cards */}
+                            {renderRestaurantCards()}
+
+                            {/* pagination control - visibili da 800px in poi */}
                         </div>
+                        {isPaginationVisible & (filterLocali(localiFiltrati).length > itemsPerPage) ?
+                            <>
+                                <div className='flex justify-between mt-8'>
+                                    <div>
+                                        <Button
+                                            onClick={(e) => {
+                                                setCurrentPage(1);
+                                                setShowAllItems(!showAllItems);
+                                                e.preventDefault();
+                                            }}
+                                            type={'button'}
+                                            className="bg-slate-200 text-black p-1 px-5 rounded-md"
+                                        >
+                                            {showAllItems ? "Nascondi" : "Mostra Tutti"}
+                                        </Button>
+                                    </div>
+                                    {
+                                        !showAllItems ?
+                                            <div className="flex gap-4">
+                                                <Button
+                                                    onClick={(event) => {
+                                                        setCurrentPage(prevPage => Math.max(prevPage - 1, 1));
+                                                        event.preventDefault();
+                                                    }}
+                                                    disabled={currentPage === 1}
+                                                    type={'button'}
+                                                    className={`bg-slate-200 text-black p-1 px-5 rounded-md ${currentPage === 1 ? 'opacity-50' : ''}`}
+                                                >
+                                                    <MdArrowBackIos />
+                                                </Button>
+
+                                                <Button
+                                                    onClick={(event) => {
+                                                        setCurrentPage((prevPage) => {
+                                                            if (prevPage * itemsPerPage < filterLocali(localiFiltrati).length) {
+                                                                return prevPage + 1;
+                                                            } else {
+                                                                return prevPage;
+                                                            }
+                                                        });
+                                                        event.preventDefault();
+                                                    }}
+                                                    type={'button'}
+                                                    disabled={!hasNextPage}
+                                                    className={`bg-slate-200 text-black p-1 px-5 rounded-md ${!hasNextPage ? 'opacity-50' : ''}`}
+                                                >
+                                                    <MdArrowForwardIos />
+                                                </Button>
+                                            </div> : null
+                                    }
+                                </div>
+                            </> : null
+                        }
                     </div>
                 </div>
             </div>
             <Footer />
         </>
     )
-}
+};
 
-export default Ordini
+export default Ordini;
