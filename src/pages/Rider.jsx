@@ -18,7 +18,7 @@ import Paragraph from '../components/paragraph/Paragraph';
 import Container from "../components/container/Container";
 import Accordion from "../components/accordion/Accordion";
 import Footer from "../components/footer/Footer";
-const Modal = lazy(() => import('../components/modal/Modal'));
+import Modal from "../components/modal/Modal";
 const ApplicationForm = lazy(() => import('../components/form/ApplicationForm'));
 
 const Rider = () => {
