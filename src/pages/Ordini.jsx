@@ -149,20 +149,19 @@ const Ordini = () => {
                         <div className={`flex flex-wrap ${searchText.length === 0 ? 'justify-center' : 'justify-start'} gap-2 mt-8`} key={`restaurant_container_search_${searchText}`}>
                             {/* restaurant cards */}
                             {renderRestaurantCards()}
-
-                            {/* pagination control - visibili da 800px in poi */}
                         </div>
+                        {/* pagination control - visibili da 800px in poi */}
                         {isPaginationVisible & (filterLocali(localiFiltrati).length > itemsPerPage) ?
                             <>
                                 <div className='flex justify-between mt-8'>
                                     <div>
                                         <Button
                                             onClick={(e) => {
+                                                e.preventDefault();
                                                 setCurrentPage(1);
                                                 setShowAllItems(!showAllItems);
-                                                e.preventDefault();
                                             }}
-                                            type={'button'}
+                                            type="button"
                                             className="bg-slate-200 text-black p-1 px-5 rounded-md"
                                         >
                                             {showAllItems ? "Nascondi" : "Mostra Tutti"}
@@ -173,11 +172,11 @@ const Ordini = () => {
                                             <div className="flex gap-4">
                                                 <Button
                                                     onClick={(event) => {
-                                                        setCurrentPage(prevPage => Math.max(prevPage - 1, 1));
                                                         event.preventDefault();
+                                                        setCurrentPage(prevPage => Math.max(prevPage - 1, 1));
                                                     }}
                                                     disabled={currentPage === 1}
-                                                    type={'button'}
+                                                    type="button"
                                                     className={`bg-slate-200 text-black p-1 px-5 rounded-md ${currentPage === 1 ? 'opacity-50' : ''}`}
                                                 >
                                                     <MdArrowBackIos />
@@ -186,15 +185,15 @@ const Ordini = () => {
                                                 <Button
                                                     onClick={(event) => {
                                                         setCurrentPage((prevPage) => {
+                                                            event.preventDefault();
                                                             if (prevPage * itemsPerPage < filterLocali(localiFiltrati).length) {
                                                                 return prevPage + 1;
                                                             } else {
                                                                 return prevPage;
                                                             }
                                                         });
-                                                        event.preventDefault();
                                                     }}
-                                                    type={'button'}
+                                                    type="button"
                                                     disabled={!hasNextPage}
                                                     className={`bg-slate-200 text-black p-1 px-5 rounded-md ${!hasNextPage ? 'opacity-50' : ''}`}
                                                 >

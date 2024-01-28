@@ -3,8 +3,13 @@ import { IoMdClose } from "react-icons/io";
 const Modal = ({ children, idModal, className }) => {
 
   /* 
-    si può aprire il modale usando il metodo document.getElementById('ID').showModal()
-    <button className="btn" onClick={() => document.getElementById(idModal).showModal()}>open modal</button> 
+    -- si apre usando il metodo document.getElementById('ID').showModal()
+    -- si chiude usando il metodo document.getElementById('ID').close()
+
+    esempio :
+        <button className="btn" onClick={() => document.getElementById(idModal).showModal()}>
+          open modal
+        </button>
   */
 
   return (
