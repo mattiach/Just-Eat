@@ -35,7 +35,7 @@ const ApplicationForm = ({
         onDragLeave={handleDragLeave}
         onDrop={handleDrop}
       >
-        <div className={`relative bg-blue-600 py-6 text-xl font-semibold tracking-wider text-white ${isDragging ? 'rounded-none' : 'rounded-sm'}`}>
+        <div className={`relative bg-primary py-6 text-xl font-semibold tracking-wider text-white ${isDragging ? 'rounded-none' : 'rounded-sm'}`}>
           Candidatura
         </div>
         <div className="pt-2 px-0.5">

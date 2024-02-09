@@ -35,7 +35,7 @@ const Home = () => {
                 <div className='mx-auto flex justify-center xl:block xl:mx-0'>
                     <img
                         src={'assets/img/apps_promo-wide-je.png'}
-                        className={`w-80 ${isMobile && "w-72"}`}
+                        className={`${isMobile ? "w-60" : "w-80"}`}
                         alt="App JustEat"
                         title="App JustEat"
                     />
