@@ -6,9 +6,9 @@ import { useMediaQuery } from 'react-responsive';
 // components
 import Navbar from '../components/navbar/Navbar';
 import Header from '../components/header/Header';
-import Title from '../components/title/title';
+import Title from '../components/typography/Title';
 import Button from '../components/button/Button';
-import Paragraph from '../components/paragraph/Paragraph';
+import Paragraph from '../components/typography/Paragraph';
 import Footer from '../components/footer/Footer';
 
 const Home = () => {

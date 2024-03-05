@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import uuid from 'react-uuid';
 
 // functions
-import { getResponsiveSettings } from '../../functions/getResponsiveSettings';
+import { getResponsiveSettings } from '../functions/getResponsiveSettings';
 
 // carousel react-slick
 import Slider from 'react-slick';
@@ -10,7 +10,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 // components
-import CardsCategory from '../card/CardsCategory';
+import CardsCategory from './card/CardsCategory';
 
 const CuisineCarousel = ({ setSelectedCuisine, images }) => {
     // impostazioni carousel

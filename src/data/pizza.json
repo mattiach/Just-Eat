@@ -2163,7 +2163,7 @@
     {
         "id": "188157365",
         "category": "Pizza",
-        "name": "Pizzeria Margari",
+        "name": "Pizzeria Màrgari",
         "address": {
             "street": "Via Marco Vincenzo Coronelli, 30 ",
             "postalCode": "00176",
@@ -2921,15 +2921,15 @@
                     },
                     {
                         "name": "Peroni (33 cl)",
-                        "price":3.50
+                        "price": 3.50
                     },
                     {
                         "name": "Moretti (33 cl)",
-                        "price":3.50
+                        "price": 3.50
                     },
                     {
                         "name": "Heineken (33 cl)",
-                        "price": 3.50              
+                        "price": 3.50
                     }
                 ]
             },
@@ -3379,7 +3379,7 @@
                         "name": "Tartufo di Pizzo al Rocher",
                         "price": 8.00
                     },
-                                        {
+                    {
                         "name": "Golosa",
                         "price": 8.00
                     }

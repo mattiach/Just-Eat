@@ -13,13 +13,13 @@ import { closeModalFunction } from "../functions/closeModalFunction";
 import Navbar from '../components/navbar/Navbar';
 import Button from '../components/button/Button';
 import HeaderOpaque from '../components/header/HeaderOpaque';
-import Subtitle from '../components/title/Subtitle';
-import Paragraph from '../components/paragraph/Paragraph';
-import Container from "../components/container/Container";
-import Accordion from "../components/accordion/Accordion";
+import Subtitle from '../components/typography/Subtitle';
+import Paragraph from '../components/typography/Paragraph';
+import Container from "../components/Container";
+import Accordion from "../components/Accordion";
 import Footer from "../components/footer/Footer";
-import Modal from "../components/modal/Modal";
-const ApplicationForm = lazy(() => import('../components/form/ApplicationForm'));
+import ModalRider from "../components/modal/ModalRider";
+import ApplicationForm from "../components/ApplicationForm";
 
 const Rider = () => {
     const [bgSRC] = useState(Math.random() < 0.5 ? imageRider1 : imageRider2); // cambia lo sfondo
@@ -55,7 +55,7 @@ const Rider = () => {
                         <Button onClick={() => openModal('rider_application_modal')}>
                             Candidati ora
                         </Button>
-                        <Modal idModal={"rider_application_modal"} className={"shadow-xl"}>
+                        <ModalRider idModal={"rider_application_modal"} className={"shadow-xl"}>
                             <Suspense fallback={null}>
                                 <div className="mt-5 mx-0">
                                     <ApplicationForm
@@ -67,7 +67,7 @@ const Rider = () => {
                                     />
                                 </div>
                             </Suspense>
-                        </Modal>
+                        </ModalRider>
                     </div>
                 </HeaderOpaque>
                 <main className="mt-5 md:mt-12">

@@ -1,57 +1,95 @@
-import { useEffect } from 'react';
-
-// redux
+import { useEffect, useState, lazy, Suspense } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { addToCart, removeFromCart } from '../redux/slices/cartSlice';
 import { setSelectedRestaurant, selectSelectedRestaurant } from '../redux/slices/selectedRestaurantIDSlice';
-
-// routing
 import { useParams, useNavigate } from 'react-router-dom';
-
-// components
 import Navbar from '../components/navbar/Navbar';
-import BannerRistorante from '../components/banner/BannerRistorante';
+import BannerRistorante from '../components/BannerRistorante';
+import Footer from '../components/footer/Footer';
+import CardRestaurantCategory from '../components/card/CardRestaurantCategory';
+const FloatingButton = lazy(() => import('../components/button/FloatingButton'))
+const ModalArticle = lazy(() => import('../components/modal/ModalArticle'));
 
 function Ristorante() {
   const { id } = useParams();
   const dispatch = useDispatch();
   const navigate = useNavigate();
-
-  // imposta su redux l'ID del ristorante selezionato per ricavarne le informazioni relative
-  useEffect(() => { dispatch(setSelectedRestaurant({ id: id })); }, [dispatch, id]);
-
-  // restituisce l'oggetto completo del ristorante selezionato tramite id
+  const [initialRender, setInitialRender] = useState(true);
   const selectedRestaurant = useSelector(selectSelectedRestaurant(id));
 
-  // se il ristorante non è stato trovato, reindirizza a '/ordini'
+  useEffect(() => {
+    if (initialRender) {
+      setInitialRender(false);
+      dispatch(setSelectedRestaurant({ id: id }));
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }, [dispatch, id, initialRender]);
+
   if (!selectedRestaurant) {
     navigate('/ordini');
-    return null; // .. evita l'esecuzione del resto del componente
+    return null;
   }
+
+  const [selectedArticle, setSelectedArticle] = useState({
+    name: '',
+    price: 0,
+    quantity: 0
+  });
+
+  const openArticleModalFunction = (dishTakenFromCategoryCard) => {
+    const newPiatto = {
+      restaurantId: selectedRestaurant.id,
+      restaurantCategory: selectedRestaurant.category,
+      restaurantName: selectedRestaurant.name,
+      restaurantAddress: selectedRestaurant.address,
+      restaurantImage: selectedRestaurant.image,
+      restaurantShipping: selectedRestaurant.shipping,
+      products: {
+        name: dishTakenFromCategoryCard.name,
+        price: dishTakenFromCategoryCard.price,
+        quantity: dishTakenFromCategoryCard.quantity
+      }
+    };
+    setSelectedArticle(newPiatto);
+    document.getElementById('modal-restaurant-article').showModal();
+  };
+
+  const addToCartFunction = (article) => {
+    dispatch(addToCart(article));
+  };
+
+  const removeFromCartFunction = (articleClicked) => {
+    dispatch(removeFromCart(articleClicked));
+  };
 
   return (
     <>
       <Navbar />
-      <div className='flex justify-start flex-wrap gap-5'>
-        {selectedRestaurant && Object.keys(selectedRestaurant.menu).map((categoryKey) => {
-          const category = selectedRestaurant.menu[categoryKey];
-
-          return (
-            <div key={categoryKey} className='bg-slate-100 p-4 w-72'>
-              <h2>{category.categoryTitle}</h2>
-              <ul>
-                {category.dishes.map((piatto, index) => (
-                  <li key={index}>
-                    {piatto.name} - {piatto.price}€
-                  </li>
-                ))}
-              </ul>
-            </div>
-          );
-        })}
+      <BannerRistorante ristorante={selectedRestaurant} />
+      <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mx-auto max-w-2xl lg:max-w-5xl gap-1.5 md:gap-0 my-7 md:my-9 lg:my-16'>
+        {selectedRestaurant &&
+          Object.keys(selectedRestaurant.menu).map((el, index) => (
+            <CardRestaurantCategory
+              key={'card-restaurant-category_KEY_' + index}
+              category={selectedRestaurant.menu[el]}
+              onClick={(dishTakenFromCategoryCard) => openArticleModalFunction(dishTakenFromCategoryCard)}
+            />
+          ))}
       </div>
-      <BannerRistorante />
+      <Suspense fallback={null}>
+        <FloatingButton scrollThreshold={200} />
+        <ModalArticle
+          modalId={"modal-restaurant-article"}
+          restaurantId={selectedRestaurant.id}
+          selectedArticle={selectedArticle}
+          addToCartFunction={() => addToCartFunction(selectedArticle)}
+          removeFromCartFunction={removeFromCartFunction}
+        />
+      </Suspense>
+      <Footer />
     </>
-  );
+  )
 }
 
 export default Ristorante;
