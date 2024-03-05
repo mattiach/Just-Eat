@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, useMemo, useCallback, useContext } from 'react';
+import { useState, useEffect, useRef, useMemo, useCallback, useContext, Suspense, lazy } from 'react';
 import { TbSearch } from 'react-icons/tb';
 import { useMediaQuery } from 'react-responsive';
 import { MdArrowForwardIos, MdArrowBackIos } from "react-icons/md";
@@ -12,12 +12,13 @@ import { AppContext } from '../context/AppContext';
 // components
 import Navbar from '../components/navbar/Navbar';
 import HeroOrders from '../components/header/HeroOrders';
-import Title from '../components/title/title';
+import Title from '../components/typography/Title';
 import Footer from '../components/footer/Footer';
-import CuisineCarousel from '../components/carousel/CuisineCarousel';
+import CuisineCarousel from '../components/CuisineCarousel';
 import CardsCategory from '../components/card/CardsCategory';
 import RestaurantCard from '../components/card/RestaurantCard';
 import Button from '../components/button/Button';
+const FloatingButton = lazy(() => import('../components/button/FloatingButton'))
 
 const Ordini = () => {
     const { selectedCuisine, setSelectedCuisine } = useContext(AppContext);
@@ -52,9 +53,6 @@ const Ordini = () => {
             ristorante.address.city.toLowerCase().includes(searchText.toLowerCase())      // .. per città
         );
     }, [searchText]);
-
-    // corregge il bug che spostava la visualizzazione in alto durante il routing
-    useEffect(() => { initialRender ? setInitialRender(false) : window.scrollTo(0, 0); }, [initialRender]);
 
     // al caricamento della pagina imposta il focus sul campo di ricerca
     const focusInputFunction = useCallback(() => { inputRef.current.focus() }, []);
@@ -207,6 +205,9 @@ const Ordini = () => {
                     </div>
                 </div>
             </div>
+            <Suspense fallback={null}>
+                <FloatingButton scrollThreshold={600} />
+            </Suspense>
             <Footer />
         </>
     )

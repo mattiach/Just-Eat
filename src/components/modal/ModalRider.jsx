@@ -1,6 +1,6 @@
 import { IoMdClose } from "react-icons/io";
 
-const Modal = ({ children, idModal, className }) => {
+const ModalRider = ({ children, idModal, className }) => {
 
   /* 
     -- si apre usando il metodo document.getElementById('ID').showModal()
@@ -31,4 +31,4 @@ const Modal = ({ children, idModal, className }) => {
     </>
   )
 }
-export default Modal
+export default ModalRider

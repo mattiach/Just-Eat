@@ -7,7 +7,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { FaShoppingCart } from 'react-icons/fa';
 
 // components
-import Logo from '../logo/Logo';
+import Logo from '../Logo';
 import NavbarItem from './NavbarItem';
 import HamburgerButton from './HamburgerButton';
 
