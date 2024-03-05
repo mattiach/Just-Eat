@@ -1,4 +1,3 @@
-import { lazy, Suspense } from 'react';
 import { Link } from 'react-router-dom';
 
 // media queries

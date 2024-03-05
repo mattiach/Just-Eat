@@ -1,6 +1,6 @@
 const CardRestaurantCategory = ({ category, onClick }) => {
   return (
-    <div className="m-2 mx-auto bg-white rounded-lg shadow-md overflow-hidden w-80">
+    <div className="m-2 mx-auto bg-white rounded-lg custom-shadow-card-restaurant overflow-hidden w-80">
       <div className="p-4">
         <div className="divider">
           <h2 className="text-lg font-semibold">{category.categoryTitle}</h2>

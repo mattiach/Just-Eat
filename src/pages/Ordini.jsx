@@ -24,7 +24,6 @@ const Ordini = () => {
     const { selectedCuisine, setSelectedCuisine } = useContext(AppContext);
 
     const [searchText, setSearchText] = useState('');
-    const [initialRender, setInitialRender] = useState(true);
     const [itemsPerPage] = useState(8);
     const [currentPage, setCurrentPage] = useState(1);
     const [hasNextPage, setHasNextPage] = useState(true);
