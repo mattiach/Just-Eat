@@ -69,12 +69,12 @@
     }
 }
 
-.floating-button-animation {
-    -webkit-animation: floating-button-animation 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-    animation: floating-button-animation 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+.fading-in-animation {
+    -webkit-animation: fading-in-animation 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: fading-in-animation 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
-@-webkit-keyframes floating-button-animation {
+@-webkit-keyframes fading-in-animation {
     0% {
         -webkit-transform: translateZ(-80px);
         transform: translateZ(-80px);
@@ -88,7 +88,7 @@
     }
 }
 
-@keyframes floating-button-animation {
+@keyframes fading-in-animation {
     0% {
         -webkit-transform: translateZ(-80px);
         transform: translateZ(-80px);
