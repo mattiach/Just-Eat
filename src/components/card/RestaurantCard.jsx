@@ -1,4 +1,3 @@
-// routing
 import { useNavigate } from 'react-router-dom';
 
 const RestaurantCard = ({ ristorante }) => {
@@ -12,7 +11,7 @@ const RestaurantCard = ({ ristorante }) => {
     return (
         <>
             <div className="card-restaurant-container my-[5px]">
-                <div className="cursor-pointer relative inline-block overflow-hidden">
+                <div className="relative inline-block overflow-hidden cursor-pointer">
                     <img
                         src={`assets/img/ristoranti/${(ristorante.category)}/${ristorante.image}`}
                         alt={`${ristorante.name}`}
@@ -21,7 +20,7 @@ const RestaurantCard = ({ ristorante }) => {
                         onClick={() => navigateToRestaurantPageFunction()}
                     />
                     <span
-                        className="absolute inset-0 border-primary border-2 pointer-events-none transition-all duration-300"
+                        className="absolute inset-0 transition-all duration-300 border-2 pointer-events-none border-primary"
                         aria-hidden="true"
                     ></span>
                 </div>
@@ -44,10 +43,12 @@ const RestaurantCard = ({ ristorante }) => {
                             </span>
                         </p>
                     </div>
-                    <div className="relative top-[-2px]">
-                        <p className="text-xs text-ellipsis opacity-75 tracking-wide">
-                            {ristorante.address.street + ', ' + ristorante.address.city}
-                        </p>
+                    <div className='flex justify-between'>
+                        <div className="relative top-[-2px]">
+                            <p className="text-xs tracking-wide opacity-75 text-ellipsis">
+                                {ristorante.address.street + ', ' + ristorante.address.city}
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div >

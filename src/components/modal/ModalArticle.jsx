@@ -33,7 +33,7 @@ const ModalArticle = ({
         </form>
         <div className="flex items-center justify-between pb-3 my-5 border-b">
           <h3 className="text-lg font-bold">{selectedArticle.products?.name}</h3>
-          <p className="pr-2.5 text-lg">
+          <p className="pr-2.5 text-lg select-none">
             {selectedArticle.products?.price.toLocaleString('it-IT', { style: 'currency', currency: 'EUR' })}
           </p>
         </div>
@@ -41,7 +41,7 @@ const ModalArticle = ({
           <button onClick={() => removeFromCartFunction(selectedArticle)} >
             <IoRemoveCircleOutline size={24} />
           </button>
-          <span className={`w-8 text-center text-lg ${quantityInCart > 99 ? "mx-1" : "mx-0-5"}`}>{quantityInCart}</span>
+          <span className={`w-8 text-center text-lg select-none ${quantityInCart > 99 ? "mx-1" : "mx-0-5"}`}>{quantityInCart}</span>
           <button onClick={() => addToCartFunction(selectedArticle)} >
             <IoAddCircleOutline size={24} />
           </button>

@@ -94,10 +94,10 @@ const Ordini = () => {
             <Navbar />
             <div onClick={focusInputFunction}>
                 <HeroOrders />
-                <div className="text-center mt-10">
+                <div className="mt-10 text-center select-none">
                     <Title>Di cosa hai voglia ?</Title>
                 </div>
-                <div className='mt-6'>
+                <div className="mt-6 select-none">
                     {
                         isCarouselMediaQuery ?
                             <>
@@ -127,17 +127,17 @@ const Ordini = () => {
                             </>
                     }
                 </div>
-                <div className='mt-10 lg:mt-5'>
+                <div className="mt-10 lg:mt-5">
                     <div className='max-w-[987px] mx-auto'>
-                        <div className='mx-auto px-3 sm:px-2 md:px-2 lg:px-0 container'>
-                            <div className="w-full mb-5 mx-auto px-4 border-2 border-slate-200 hover:border-slate-300 rounded-full flex items-center">
+                        <div className='container px-3 mx-auto sm:px-2 md:px-2 lg:px-0'>
+                            <div className="flex items-center w-full px-4 mx-auto mb-5 border-2 rounded-full border-slate-200 hover:border-slate-300">
                                 <div className="mr-3">
                                     <TbSearch size={22} className='text-primary' />
                                 </div>
                                 <input
                                     ref={inputRef}
                                     type="text"
-                                    className="p-2 border-transparent outline-none placeholder-gray-400"
+                                    className="p-2 my-2 placeholder-gray-400 border-transparent outline-none"
                                     placeholder="Cerca per ristorante .."
                                     onChange={(e) => setSearchText(e.target.value)}
                                 />
@@ -159,7 +159,7 @@ const Ordini = () => {
                                                 setShowAllItems(!showAllItems);
                                             }}
                                             type="button"
-                                            className="bg-slate-200 text-black p-1 px-5 rounded-md"
+                                            className="p-1 px-5 text-black rounded-md bg-slate-200"
                                         >
                                             {showAllItems ? "Nascondi" : "Mostra Tutti"}
                                         </Button>

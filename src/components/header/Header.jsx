@@ -6,7 +6,7 @@ const Header = () => {
 
     return (
         <>
-            <header>
+            <header className="fading-in-animation">
                 <div
                     className="jumbotron-justeat p-12 text-center relative overflow-hidden bg-no-repeat bg-center bg-cover"
                     style={{ backgroundImage: `url(${bgSRC})` }}>

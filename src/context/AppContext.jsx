@@ -13,11 +13,20 @@ const AppProvider = ({ children }) => {
     localStorage.setItem("cuisine", selectedCuisine);
   }, [selectedCuisine]);
 
+  const [creditCardInfo, setCreditCardInfo] = useState({
+    holder: '',
+    cardNumber: 0,
+    expirationDate: '',
+    cvc: 0
+  })
+
   return (
     <AppContext.Provider
       value={{
         selectedCuisine,
-        setSelectedCuisine
+        setSelectedCuisine,
+        creditCardInfo,
+        setCreditCardInfo
       }}
     >
       {children}
