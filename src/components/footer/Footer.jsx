@@ -1,12 +1,12 @@
 // functions
-import { getCurrentYear } from "../../functions/getCurrentYear";
+import { getCurrentYear } from "@functions/getCurrentYear";
 
 // data
-import { footerLinks } from "../../data/footerLinks";
+import { footerLinks } from "@data/footerLinks";
 
 // components
-import FooterLink from "./FooterLink";
-import FooterTitleSection from "./FooterTitleSection";
+import FooterLink from "@components/footer/FooterLink";
+import FooterTitleSection from "@components/footer/FooterTitleSection";
 
 const Footer = () => {
     const currentYear = getCurrentYear();
@@ -18,7 +18,7 @@ const Footer = () => {
 
     return (
         <>
-            <footer className="bg-white mt-32 mx-auto border-t">
+            <footer className="bg-white mt-32 mx-auto border-t select-none">
                 <div>
                     <div className="grid grid-cols text-start gap-8 px-6 xl:px-20 py-14 md:grid-cols-3 md:text-center">
                         <div className="flex justify-center w-full md:w-auto">

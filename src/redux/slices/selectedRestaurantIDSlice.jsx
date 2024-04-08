@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-// selettore che prende l'id selezionato e restituisce l'oggetto del ristorante corrispondente
+// selector that takes the selected id and returns the corresponding restaurant object
 export const selectSelectedRestaurant = (idSelected) => (state) => {
   const ristoranti = state.ristoranti;
   const allRistoranti = Object.values(ristoranti).flat();
