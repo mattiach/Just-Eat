@@ -7,18 +7,18 @@ import { MdArrowForwardIos, MdArrowBackIos } from "react-icons/md";
 import { useSelector } from "react-redux";
 
 // context
-import { AppContext } from '../context/AppContext';
+import { AppContext } from '@context/AppContext';
 
 // components
-import Navbar from '../components/navbar/Navbar';
-import HeroOrders from '../components/header/HeroOrders';
-import Title from '../components/typography/Title';
-import Footer from '../components/footer/Footer';
-import CuisineCarousel from '../components/CuisineCarousel';
-import CardsCategory from '../components/card/CardsCategory';
-import RestaurantCard from '../components/card/RestaurantCard';
-import Button from '../components/button/Button';
-const FloatingButton = lazy(() => import('../components/button/FloatingButton'))
+import Navbar from '@components/navbar/Navbar';
+import HeroOrders from '@components/header/HeroOrders';
+import Title from '@components/typography/Title';
+import Footer from '@components/footer/Footer';
+import CuisineCarousel from '@components/CuisineCarousel';
+import CardsCategory from '@components/card/CardsCategory';
+import RestaurantCard from '@components/card/RestaurantCard';
+import Button from '@components/button/Button';
+const FloatingButton = lazy(() => import('@components/button/FloatingButton'))
 
 const Ordini = () => {
     const { selectedCuisine, setSelectedCuisine } = useContext(AppContext);
@@ -39,47 +39,47 @@ const Ordini = () => {
     const isCarouselMediaQuery = useMediaQuery({ query: '(max-width: 1200px)' });
     const isPaginationVisible = useMediaQuery({ query: '(min-width: 990px)' });
 
-    // filtro di ricerca in base alla cucina selezionata
+    // earch filter based on the selected cuisine
     const localiFiltrati = useMemo(() => {
         return cuisineDataMap[selectedCuisine] || [];
     }, [cuisineDataMap, selectedCuisine]);
 
-    // funzione di filtro di ricerca 
+    // search filter function
     const filterLocali = useCallback((locali) => {
         return locali.filter((ristorante) =>
-            ristorante.name.toLowerCase().includes(searchText.toLowerCase()) ||             // .. per nome
-            ristorante.address.street.toLowerCase().includes(searchText.toLowerCase()) ||  // .. per via
-            ristorante.address.city.toLowerCase().includes(searchText.toLowerCase())      // .. per città
+            ristorante.name.toLowerCase().includes(searchText.toLowerCase()) ||             // .. name
+            ristorante.address.street.toLowerCase().includes(searchText.toLowerCase()) ||  // .. street
+            ristorante.address.city.toLowerCase().includes(searchText.toLowerCase())      // .. city
         );
     }, [searchText]);
 
-    // al caricamento della pagina imposta il focus sul campo di ricerca
+    // at page load, set focus on the search field
     const focusInputFunction = useCallback(() => { inputRef.current.focus() }, []);
 
-    // ottiene i ristoranti attualmente mostrati nella pagina
+    // get the restaurants currently displayed on the page
     const getCurrentPageItems = () => {
         const startIndex = (currentPage - 1) * itemsPerPage;
         const endIndex = startIndex + itemsPerPage;
         return filterLocali(localiFiltrati).slice(startIndex, endIndex);
     };
 
-    // gestisce se ci sono altre pagine da mostrare 
+    // handle if there are more pages to show
     const checkHasNextPage = useCallback(() => {
         const totalItems = filterLocali(localiFiltrati).length;
         const totalPages = Math.ceil(totalItems / itemsPerPage);
         setHasNextPage(currentPage < totalPages);
     }, [currentPage, itemsPerPage, filterLocali, localiFiltrati]);
 
-    // richiama la funzione "checkHasNextPage" per assicurarsi che lo stato sia aggiornato
+    // call the "checkHasNextPage" function to ensure the state is updated
     useEffect(() => { checkHasNextPage(); }, [checkHasNextPage]);
 
-    // reimposta la pagina iniziale alla selezione di una nuova categoria o del filtro di ricerca tramite il campo input
+    // reset the initial page when selecting a new category or using the search filter via the input field
     useEffect(() => { setCurrentPage(1); }, [selectedCuisine, searchText]);
 
-    // funzione per gestire le cards dei ristoranti 
+    // function to handle restaurant cards
     const renderRestaurantCards = () => {
         const restaurantsToRender = showAllItems
-            ? filterLocali(localiFiltrati) // .. mostra tutti gli elementi
+            ? filterLocali(localiFiltrati) // .. show all items
             : isPaginationVisible
                 ? getCurrentPageItems()
                 : filterLocali(localiFiltrati);
@@ -147,7 +147,7 @@ const Ordini = () => {
                             {/* restaurant cards */}
                             {renderRestaurantCards()}
                         </div>
-                        {/* pagination control - visibili da 800px in poi */}
+                        {/* pagination control - starting from 800px.. */}
                         {isPaginationVisible & (filterLocali(localiFiltrati).length > itemsPerPage) ?
                             <>
                                 <div className='flex justify-between mt-8'>

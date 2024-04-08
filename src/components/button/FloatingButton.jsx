@@ -1,13 +1,13 @@
 import { BsArrowUpCircle } from "react-icons/bs";
 import { useMediaQuery } from 'react-responsive';
-import { scrollToTopFunction } from "../../functions/scrollToTopFunction";
-import UseScrollToShowButton from "../../hooks/UseScollToShowButton";
+import { scrollToTopFunction } from "@functions/scrollToTopFunction";
+import UseScrollToShowButton from "@hooks/UseScollToShowButton";
 
 const FloatingButton = ({ scrollThreshold, isVisibleOnDesktop, className }) => {
   const showButton = UseScrollToShowButton(scrollThreshold ? scrollThreshold : 250);
   const isNotDesktopView = useMediaQuery({ query: '(max-width: 992px)' });
 
-  // calcola la visibilità del pulsante: in vista desktop se dichiarato nelle 'props', altrimenti in vista mobile/tablet.
+  // calculate button visibility: in desktop view if declared in 'props', otherwise in mobile/tablet view.
   const isButtonVisible = showButton && (isVisibleOnDesktop ? true : isNotDesktopView);
 
   return (

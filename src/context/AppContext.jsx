@@ -3,7 +3,7 @@ import { createContext, useState, useEffect } from "react";
 const AppContext = createContext();
 
 const AppProvider = ({ children }) => {
-  // imposta la selezione della cucina selezionata e la salva nel localstorage
+  // set the selected cuisine selection and save it in localStorage
   const [selectedCuisine, setSelectedCuisine] = useState(() => {
     const cuisineFromLocalStorage = localStorage.getItem("cuisine");
     return cuisineFromLocalStorage || 'pizza';

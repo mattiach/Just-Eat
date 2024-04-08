@@ -1,14 +1,14 @@
 import { useEffect, useState, lazy, Suspense } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { addToCart, removeFromCart } from '../redux/slices/cartSlice';
-import { setSelectedRestaurant, selectSelectedRestaurant } from '../redux/slices/selectedRestaurantIDSlice';
+import { addToCart, removeFromCart } from '@redux/slices/cartSlice';
+import { setSelectedRestaurant, selectSelectedRestaurant } from '@redux/slices/selectedRestaurantIDSlice';
 import { useParams, useNavigate } from 'react-router-dom';
-import Navbar from '../components/navbar/Navbar';
-import BannerRistorante from '../components/BannerRistorante';
-import Footer from '../components/footer/Footer';
-import CardRestaurantCategory from '../components/card/CardRestaurantCategory';
-const FloatingButton = lazy(() => import('../components/button/FloatingButton'))
-const ModalArticle = lazy(() => import('../components/modal/ModalArticle'));
+import Navbar from '@components/navbar/Navbar';
+import BannerRistorante from '@components/BannerRistorante';
+import Footer from '@components/footer/Footer';
+import CardRestaurantCategory from '@components/card/CardRestaurantCategory';
+const FloatingButton = lazy(() => import('@components/button/FloatingButton'))
+const ModalArticle = lazy(() => import('@components/modal/ModalArticle'));
 
 function Ristorante() {
   const { id } = useParams();
@@ -16,6 +16,12 @@ function Ristorante() {
   const navigate = useNavigate();
   const [initialRender, setInitialRender] = useState(true);
   const selectedRestaurant = useSelector(selectSelectedRestaurant(id));
+
+  const [selectedArticle, setSelectedArticle] = useState({
+    name: '',
+    price: 0,
+    quantity: 0
+  });
 
   useEffect(() => {
     if (initialRender) {
@@ -30,12 +36,6 @@ function Ristorante() {
     navigate('/ordini');
     return null;
   }
-
-  const [selectedArticle, setSelectedArticle] = useState({
-    name: '',
-    price: 0,
-    quantity: 0
-  });
 
   const openArticleModalFunction = (dishTakenFromCategoryCard) => {
     const newPiatto = {

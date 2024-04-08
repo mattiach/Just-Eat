@@ -1,25 +1,25 @@
 import { Fragment, useState, lazy, Suspense } from "react";
 
 // data & assets
-import faq from "../data/faq.json";
+import faq from "@data/faq.json";
 const imageRider1 = "assets/img/riders.webp";
 const imageRider2 = "assets/img/riders2.webp";
 
 // functions
-import { openModalFunction } from "../functions/openModalFunction";
-import { closeModalFunction } from "../functions/closeModalFunction";
+import { openModalFunction } from "@functions/openModalFunction";
+import { closeModalFunction } from "@functions/closeModalFunction";
 
 // components
-import Navbar from '../components/navbar/Navbar';
-import Button from '../components/button/Button';
-import HeaderOpaque from '../components/header/HeaderOpaque';
-import Subtitle from '../components/typography/Subtitle';
-import Paragraph from '../components/typography/Paragraph';
-import Container from "../components/Container";
-import Accordion from "../components/Accordion";
-import Footer from "../components/footer/Footer";
-import ModalRider from "../components/modal/ModalRider";
-import ApplicationForm from "../components/ApplicationForm";
+import Navbar from '@components/navbar/Navbar';
+import Button from '@components/button/Button';
+import HeaderOpaque from '@components/header/HeaderOpaque';
+import Subtitle from '@components/typography/Subtitle';
+import Paragraph from '@components/typography/Paragraph';
+import Container from "@components/Container";
+import Accordion from "@components/Accordion";
+import Footer from "@components/footer/Footer";
+import ModalRider from "@components/modal/ModalRider";
+const ApplicationForm = lazy(() => import("@components/ApplicationForm"));
 
 const Rider = () => {
     const [bgSRC] = useState(Math.random() < 0.5 ? imageRider1 : imageRider2); // cambia lo sfondo

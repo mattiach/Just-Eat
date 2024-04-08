@@ -1,6 +1,6 @@
 import { useContext } from "react";
-import { AppContext } from "../../context/AppContext";
-import useFieldsPopulated from "../../hooks/UseFieldPopulated";
+import { AppContext } from "@context/AppContext";
+import useFieldsPopulated from "@hooks//UseFieldPopulated";
 
 const CreditCardComponent = () => {
   const { creditCardInfo, setCreditCardInfo } = useContext(AppContext);

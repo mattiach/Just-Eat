@@ -11,16 +11,16 @@ const ModalArticle = ({
   addToCartFunction,
   removeFromCartFunction,
 }) => {
-  // stato del carrello da redux
+  // cart state from redux
   const cart = useSelector((state) => state.cart);
 
-  // trova il ristorante corrispondente nel carrello
+  // find the corresponding restaurant in the cart
   const restaurantInCart = cart.find(restaurant => restaurant.restaurantId === restaurantId);
 
-  // ... cerca nel ristorante il prodotto corrispondente al proprio carrello
+  // ... find the corresponding product in the restaurant's cart
   const productInCart = restaurantInCart ? restaurantInCart.products.find(product => product.name === selectedArticle.products?.name) : null;
 
-  // ... ottiene la quantità del prodotto nel carrello specifico
+  // ... get the quantity of the product in the specific cart
   const quantityInCart = productInCart ? productInCart.quantity : 0;
 
   return (

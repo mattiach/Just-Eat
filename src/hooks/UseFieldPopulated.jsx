@@ -1,18 +1,19 @@
 import { useState, useEffect } from "react";
 
-// custom hook per controllare se i campi dell'oggetto sono popolati
+// custom hook to check if object fields are populated
 const useFieldsPopulated = (fields) => {
   const [fieldsPopulated, setFieldsPopulated] = useState(false);
 
-  // funzione per controllare se i campi sono popolati
+  // function to check if fields are populated
   const checkFields = () => {
     const arePopulated = Object.values(fields).every((value) => value);
     setFieldsPopulated(arePopulated);
   };
 
-  // controllo sui campi ad ogni aggiornamento 
+  // check fields on every update
   useEffect(() => {
     checkFields();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [fields]);
 
   return fieldsPopulated;

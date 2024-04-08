@@ -18,13 +18,13 @@ const ApplicationForm = ({
     event.preventDefault();
     setIsDragging(false);
     const files = event.dataTransfer.files;
-    setSelectedFiles(Array.from(files)); // .. aggiunta dei file selezionati
+    setSelectedFiles(Array.from(files)); // .. adding selected files
   };
 
-  // funzione per monitorare i cambiamenti dell'upload dei file
+  // function to monitor changes in file uploads
   const handleFileChange = (event) => {
     const files = event.target.files;
-    setSelectedFiles(Array.from(files)); // .. aggiunta dei file selezionati
+    setSelectedFiles(Array.from(files)); // .. adding selected files
   };
 
   return (

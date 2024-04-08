@@ -1,19 +1,17 @@
 import { Suspense, useContext } from 'react';
-import { AppContext } from '../../context/AppContext';
+import { AppContext } from '@context/AppContext';
 import { Formik, Form, Field } from 'formik';
-import useFieldsPopulated from '../../hooks/UseFieldPopulated';
+import useFieldsPopulated from '@hooks//UseFieldPopulated';
 import { useMediaQuery } from 'react-responsive';
 
 // components
-import InputForm from '../InputForm';
+import InputForm from '@components/InputForm';
 
 // icons
 import { FaCheck } from "react-icons/fa6";
 import { FaUserAlt } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
 import { BsFillTelephoneFill } from 'react-icons/bs';
-
-
 
 const initialValues = {
   nome: '',

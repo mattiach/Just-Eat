@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import uuid from 'react-uuid';
 
 // functions
-import { getResponsiveSettings } from '../functions/getResponsiveSettings';
+import { getResponsiveSettings } from '@functions/getResponsiveSettings';
 
 // carousel react-slick
 import Slider from 'react-slick';
@@ -10,10 +10,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 // components
-import CardsCategory from './card/CardsCategory';
+import CardsCategory from '@components/card/CardsCategory';
 
 const CuisineCarousel = ({ setSelectedCuisine, images }) => {
-    // impostazioni carousel
+    // carousel settings
     const settings = {
         dots: true,
         infinite: false,
@@ -24,22 +24,22 @@ const CuisineCarousel = ({ setSelectedCuisine, images }) => {
         slidesToShow: 1,
     };
 
-    // Funzione che calcola le impostazioni in base alla media query trovata
+    // it calculates settings based on the found media-query
     const responsiveSettings = getResponsiveSettings(settings);
 
     const [sliderKEY, setSliderKEY] = useState('cuisine-carousel__d9f5d550-827e-69b5-f2ee-d4457ceaeefc')
 
     useEffect(() => {
-        // Genera un nuovo UUID ogni volta che la larghezza della finestra cambia
+        // generate a new UUID every time the window width changes
         const handleResize = () => {
             const randomUUID = uuid();
             setSliderKEY(randomUUID);
         };
 
-        // Aggiungi l'event listener al montaggio del componente
+        // add the event listener on component mount
         window.addEventListener('resize', handleResize);
 
-        // .. rimuovi l'event listener al smontaggio del componente
+        // .. remove the event listener on component unmount
         return () => {
             window.removeEventListener('resize', handleResize);
         };

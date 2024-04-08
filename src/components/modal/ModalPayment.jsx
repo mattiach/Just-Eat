@@ -1,5 +1,5 @@
 import { IoCloseSharp } from "react-icons/io5";
-import CreditCardComponent from "../cart/CreditCardComponent"
+import CreditCardComponent from "@components/cart/CreditCardComponent"
 
 const ModalPayment = ({ modalId }) => {
   return (

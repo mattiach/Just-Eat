@@ -3,8 +3,8 @@ import { IoMdClose } from "react-icons/io";
 const ModalRider = ({ children, idModal, className }) => {
 
   /* 
-    -- si apre usando il metodo document.getElementById('ID').showModal()
-    -- si chiude usando il metodo document.getElementById('ID').close()
+    it opens using the document.getElementById('ID').showModal() method
+    it closes using the document.getElementById('ID').close() method
 
     esempio :
         <button className="btn" onClick={() => document.getElementById(idModal).showModal()}>

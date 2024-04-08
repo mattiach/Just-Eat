@@ -8,9 +8,9 @@ import { Link, useNavigate } from 'react-router-dom';
 import { FaShoppingCart } from 'react-icons/fa';
 
 // components
-import Logo from '../Logo';
-import NavbarItem from './NavbarItem';
-import HamburgerButton from './HamburgerButton';
+import Logo from '@components/Logo';
+import NavbarItem from '@components/navbar/NavbarItem';
+import HamburgerButton from '@components/navbar/HamburgerButton';
 
 const Navbar = () => {
     const cart = useSelector((state) => state.cart);
@@ -21,12 +21,12 @@ const Navbar = () => {
         navigate(value);
     }
 
-    // Funzione per calcolare il numero totale di elementi in tutti i carrelli
+    // function to calculate the total number of items in all carts
     const calculateTotalItems = () => {
         let totalItems = 0;
-        // Itera su ogni carrello
+        // iterate over each cart
         cart.forEach((cartItem) => {
-            // Itera su ogni prodotto nel carrello corrente e aggiungi la quantità al totale
+            // iterate over each product in the current cart and add the quantity to the total
             cartItem.products.forEach((product) => {
                 totalItems += product.quantity;
             });
@@ -34,7 +34,7 @@ const Navbar = () => {
         return totalItems;
     };
 
-    // Calcola il numero totale di elementi in tutti i carrelli
+    // calculate the total number of items in all carts
     const totalItems = calculateTotalItems();
 
     return (

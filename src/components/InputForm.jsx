@@ -1,5 +1,3 @@
-import React from 'react';
-
 const InputForm = ({
   field,
   form: { touched, errors },
@@ -8,7 +6,7 @@ const InputForm = ({
   className
 }) => {
 
-  // impostare il valore nel localStorage
+  // set the value in localStorage
   const setLSInputValue = (value) => {
     localStorage.setItem(field.name, value);
   };

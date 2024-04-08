@@ -7,10 +7,7 @@ import './styles/global.css';
 import './styles/animations.css';
 import './styles/index.css';
 
-// routing
 import { BrowserRouter } from 'react-router-dom';
-
-// context
 import { AppProvider } from './context/AppContext';
 
 // redux

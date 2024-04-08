@@ -2,11 +2,11 @@
 import { Routes, Route } from "react-router-dom";
 
 // pages
-import Home from "./pages/Home";
-import Rider from "./pages/Rider";
-import Ordini from "./pages/Ordini";
-import Ristorante from "./pages/Ristorante";
-import Carrello from "./pages/Carrello";
+import Home from "@pages/Home";
+import Rider from "@pages/Rider";
+import Ordini from "@pages/Ordini";
+import Ristorante from "@pages/Ristorante";
+import Carrello from "@pages/Carrello";
 
 function App() {
 

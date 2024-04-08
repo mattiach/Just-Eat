@@ -1,7 +1,7 @@
-// funzione per tornare sopra la pagina con un'animazione fluida
+// function to scroll to the top of the page with smooth animation
 export function scrollToTopFunction() {
   window.scrollTo({
     top: 0,
     behavior: "smooth"
   });
-};
+}

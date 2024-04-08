@@ -1,12 +1,12 @@
 import { lazy, Suspense } from "react";
 
 // components
-import Navbar from "../components/navbar/Navbar";
-import Container from "../components/Container";
-import Cart from "../components/cart/Cart";
-import Footer from "../components/footer/Footer";
-const CartUserProfile = lazy(() => import('../components/cart/CartUserProfile'));
-const ModalPayment = lazy(() => import('../components/modal/ModalPayment'));
+import Navbar from "@components/navbar/Navbar";
+import Container from "@components/Container";
+import Cart from "@components/cart/Cart";
+import Footer from "@components/footer/Footer";
+const CartUserProfile = lazy(() => import('@components/cart/CartUserProfile'));
+const ModalPayment = lazy(() => import('@components/modal/ModalPayment'));
 
 const Carrello = () => {
   const openPaymentModalFunction = () => {

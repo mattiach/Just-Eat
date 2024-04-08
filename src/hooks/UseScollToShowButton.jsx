@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-// custom hook per controllare la visibilità dell'elemento in base all'altezza 'scrollThreshold' passata
+// custom hook to control the visibility of the element based on the passed scrollThreshold height
 const UseScrollToShowElement = (scrollThreshold) => {
   const [showElement, setShowElement] = useState(false);
 
