@@ -1,13 +1,13 @@
 const Cart = () => {
   return (
     <>
-      <div className="lg:h-screen lg:sticky lg:top-0 rounded-md shadow bg-white">
+      <div className="bg-white rounded-md shadow lg:h-screen lg:sticky lg:top-0">
         <div className="relative h-full">
           <div className="p-10 lg:overflow-auto lg:h-[calc(100vh)]">
             <h2 className="text-2xl">Riepilogo</h2>
             <div className="mt-10 space-y-6">
               <div className="grid items-start gap-6 sm:grid-cols-2">
-                <div className="px-4 py-7 rounded-md shrink-0 bg-gray-50">
+                <div className="px-4 rounded-md py-7 shrink-0 bg-gray-50">
                   <img
                     src=""
                     className="object-contain w-full"
@@ -28,7 +28,7 @@ const Cart = () => {
               </div>
             </div>
           </div>
-          <div className="absolute left-0 bottom-0 bg-gray-100 border-t-2 w-full p-4">
+          <div className="absolute bottom-0 left-0 w-full p-4 bg-gray-100 border-t-2">
             <h4 className="flex flex-wrap gap-4 text-base">
               Total <span className="ml-auto">$84.00</span>
             </h4>

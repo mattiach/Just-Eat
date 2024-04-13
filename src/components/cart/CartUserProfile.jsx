@@ -17,13 +17,15 @@ const CartUserProfile = ({ openPaymentModalFunction }) => {
   const { userCartInfo, setUserCartInfo } = useContext(AppContext);
   const { creditCardInfo } = useContext(AppContext);
   const areCCFieldsPopulated = useFieldsPopulated(creditCardInfo);
-  const isNotDesktopView = useMediaQuery({ query: '(max-width: 992px)' });
+  const isNotDesktopView = useMediaQuery({ query: "(max-width: 992px)" });
 
   const handleSubmit = (values, { setSubmitting }) => {
     setUserCartInfo(values);
-    setTimeout(() => {
-      setSubmitting(false);
-    }, 3000);
+    if (areCCFieldsPopulated) {
+      setTimeout(() => {
+        setSubmitting(false);
+      }, 3000);
+    }
   };
 
   return (
@@ -97,7 +99,7 @@ const CartUserProfile = ({ openPaymentModalFunction }) => {
                       <>
                         <Suspense fallback={null}>
                           <p className={`${areCCFieldsPopulated ? "visible fade-in" : "invisible"} text-emerald-600 text-md mt-5 flex gap-1`}>
-                            Metodo di pagamento aggiunto correttamente <FaCheck className='relative top-1' />
+                            Metodo di pagamento aggiunto correttamente  <FaCheck className='relative top-1' />
                           </p>
                         </Suspense>
                       </> : null

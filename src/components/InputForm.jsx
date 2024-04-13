@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { AppContext } from "@context/AppContext";
 
 const InputForm = ({
@@ -31,7 +31,7 @@ const InputForm = ({
         disabled={isSubmitting}
       />
       {touched[field.name] && errors[field.name] && (
-        <div className="text-red-500 text-sm">{errors[field.name]}</div>
+        <div className="text-sm text-red-500">{errors[field.name]}</div>
       )}
     </>
   );

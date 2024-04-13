@@ -56,7 +56,7 @@ const AppProvider = ({ children }) => {
         creditCardInfo,
         setCreditCardInfo,
         userCartInfo,
-        setUserCartInfo
+        setUserCartInfo,
       }}
     >
       {children}

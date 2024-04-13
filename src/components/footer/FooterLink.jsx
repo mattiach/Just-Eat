@@ -1,13 +1,15 @@
 const FooterLink = ({ children }) => {
-    return (
-        <>
-            <li className="mb-4">
-                <a href="#" className="hover:underline">
-                    {children}
-                </a>
-            </li>
-        </>
-    )
-}
+    const handleClick = (event) => {
+        event.preventDefault();
+    };
 
-export default FooterLink
+    return (
+        <li className="mb-4">
+            <a href="#" className="hover:underline" onClick={(event) => handleClick(event)}>
+                {children}
+            </a>
+        </li>
+    );
+};
+
+export default FooterLink;
