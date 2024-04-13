@@ -25,6 +25,7 @@ const CreditCardComponent = () => {
                   type="text"
                   name="card-holder"
                   id="card-holder"
+                  value={creditCardInfo.holder}
                   onChange={(event) => setCreditCardInfo({ ...creditCardInfo, holder: event.target.value })}
                   placeholder="Nome e cognome"
                   className="px-4 py-3.5 bg-white w-full text-sm border-b-2 focus:border-primary outline-none custom-shadow-sm"

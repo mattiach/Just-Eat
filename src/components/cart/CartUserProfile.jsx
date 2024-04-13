@@ -4,34 +4,26 @@ import { Formik, Form, Field } from 'formik';
 import useFieldsPopulated from '@hooks//UseFieldPopulated';
 import { useMediaQuery } from 'react-responsive';
 
-// components
-import InputForm from '@components/InputForm';
-
 // icons
 import { FaCheck } from "react-icons/fa6";
 import { FaUserAlt } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
 import { BsFillTelephoneFill } from 'react-icons/bs';
 
-const initialValues = {
-  nome: '',
-  cognome: '',
-  email: '',
-  telefono: '',
-  indirizzo: '',
-  città: '',
-  paese: '',
-  zip: '',
-}
+// components
+import InputForm from '@components/InputForm';
 
 const CartUserProfile = ({ openPaymentModalFunction }) => {
+  const { userCartInfo, setUserCartInfo } = useContext(AppContext);
   const { creditCardInfo } = useContext(AppContext);
-  const areFieldsPopulated = useFieldsPopulated(creditCardInfo);
+  const areCCFieldsPopulated = useFieldsPopulated(creditCardInfo);
   const isNotDesktopView = useMediaQuery({ query: '(max-width: 992px)' });
 
   const handleSubmit = (values, { setSubmitting }) => {
-    console.log(values);
-    setSubmitting(false);
+    setUserCartInfo(values);
+    setTimeout(() => {
+      setSubmitting(false);
+    }, 3000);
   };
 
   return (
@@ -42,14 +34,14 @@ const CartUserProfile = ({ openPaymentModalFunction }) => {
           !isNotDesktopView ?
             <>
               <Suspense fallback={null}>
-                <p className={`${areFieldsPopulated ? "visible fade-in" : "invisible"} text-emerald-600 text-md my-2 flex gap-1`}>
+                <p className={`${areCCFieldsPopulated ? "visible fade-in" : "invisible"} text-emerald-600 text-md my-2 flex gap-1`}>
                   Metodo di pagamento aggiunto correttamente <FaCheck className='relative top-1' />
                 </p>
               </Suspense>
             </> : null
         }
         <Formik
-          initialValues={initialValues}
+          initialValues={userCartInfo}
           onSubmit={handleSubmit}
         >
           {({ isSubmitting }) => (
@@ -96,7 +88,7 @@ const CartUserProfile = ({ openPaymentModalFunction }) => {
                     type="button"
                     onClick={openPaymentModalFunction}
                     disabled={isSubmitting}
-                    className={`w-full px-6 py-3 text-sm font-semibold text-white rounded-md max-w-52 bg-blue-600 hover:bg-blue-700 ${isSubmitting ? "invisible" : 'visible'}`}
+                    className={`w-full px-6 py-3 text-sm font-semibold text-white rounded-md max-w-52 bg-blue-600 hover:bg-blue-700 ${isSubmitting ? "opacity-60" : 'opacity-100'}`}
                   >
                     Metodo di pagamento
                   </button>
@@ -104,7 +96,7 @@ const CartUserProfile = ({ openPaymentModalFunction }) => {
                     isNotDesktopView ?
                       <>
                         <Suspense fallback={null}>
-                          <p className={`${areFieldsPopulated ? "visible fade-in" : "invisible"} text-emerald-600 text-md mt-5 flex gap-1`}>
+                          <p className={`${areCCFieldsPopulated ? "visible fade-in" : "invisible"} text-emerald-600 text-md mt-5 flex gap-1`}>
                             Metodo di pagamento aggiunto correttamente <FaCheck className='relative top-1' />
                           </p>
                         </Suspense>
@@ -115,8 +107,8 @@ const CartUserProfile = ({ openPaymentModalFunction }) => {
                 <div className='flex mt-8 xl:justify-end'>
                   <button
                     type="submit"
-                    disabled={isSubmitting}
-                    className="w-full max-w-sm px-6 py-3 text-sm font-semibold text-white rounded-md bg-emerald-600 hover:bg-emerald-700"
+                    disabled={isSubmitting || !areCCFieldsPopulated}
+                    className={`w-full max-w-sm px-6 py-3 text-sm font-semibold text-white rounded-md bg-emerald-600 ${areCCFieldsPopulated ? 'opacity-100 hover:bg-emerald-700' : 'opacity-50'}`}
                   >
                     {isSubmitting ? 'Inviando...' : 'Conferma ordine'}
                   </button>

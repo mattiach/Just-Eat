@@ -7,19 +7,16 @@ const Cart = () => {
             <h2 className="text-2xl">Riepilogo</h2>
             <div className="mt-10 space-y-6">
               <div className="grid items-start gap-6 sm:grid-cols-2">
-                <div className="px-4 py-6 rounded-md shrink-0 bg-gray-50">
+                <div className="px-4 py-7 rounded-md shrink-0 bg-gray-50">
                   <img
-                    src="https://readymadeui.com/images/product10.webp"
+                    src=""
                     className="object-contain w-full"
                     alt=".."
                   />
                 </div>
                 <div>
-                  <h3 className="text-base">Naruto: Split Sneakers</h3>
-                  <ul className="mt-4 space-y-3 text-xs">
-                    <li className="flex flex-wrap gap-4">
-                      Size <span className="ml-auto">37</span>
-                    </li>
+                  <h3 className="text-base">Pizza Rossa</h3>
+                  <ul className="mt-2 space-y-2 text-xs">
                     <li className="flex flex-wrap gap-4">
                       Quantity <span className="ml-auto">2</span>
                     </li>
