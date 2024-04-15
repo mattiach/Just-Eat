@@ -16,10 +16,10 @@ const Carrello = () => {
   return (
     <>
       <Navbar />
-      <Container className="shadow-xl rounded-7xl">
+      <Container className="md:shadow-sm rounded-7xl">
         <div className="my-8 rounded-lg shadow-sm bg-gray-50 p-11 sm:my-10 lg:my-15">
           <div className="bg-gray-50">
-            <div className="grid h-full gap-4 lg:grid-cols-2 xl:grid-cols-3">
+            <div className="grid h-full gap-6 lg:grid-cols-2 xl:grid-cols-3">
               <Cart />
               <Suspense fallback={null}>
                 <CartUserProfile openPaymentModalFunction={openPaymentModalFunction} />

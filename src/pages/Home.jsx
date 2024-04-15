@@ -1,7 +1,11 @@
 import { Link } from 'react-router-dom';
-
-// media queries
 import { useMediaQuery } from 'react-responsive';
+
+// assets
+const headerImage1 = "assets/img/bg_hero-wide.jpg";
+const headerImage2 = "assets/img/bg_hero-wide2.jpg";
+const appStore = 'assets/img/app-store.png';
+const appStoreMobile = 'assets/img/app-store-mobile.jpg';
 
 // components
 import Navbar from '@components/navbar/Navbar';
@@ -15,10 +19,12 @@ const Home = () => {
     const isDesktop = useMediaQuery({ query: '(min-width: 992px)' });
     const isMobile = useMediaQuery({ query: '(max-width: 600px)' });
 
+    const bgSRC = Math.random() < .5 ? headerImage1 : headerImage2;
+
     return (
         <>
             <Navbar />
-            <Header />
+            <Header bgSRC={bgSRC} />
             <main className='fading-in-animation select-none'>
                 <div className="mt-10 text-center">
                     <Title>&Egrave; bello prenderci gusto!</Title>
@@ -50,7 +56,7 @@ const Home = () => {
                         </Paragraph>
                         <div className='flex justify-center mt-20 sm:mt-14'>
                             <img
-                                src={`${isDesktop ? 'assets/img/app-store.png' : 'assets/img/app-store-mobile.jpg'}`}
+                                src={isDesktop ? appStore : appStoreMobile}
                                 className={`${isDesktop ? "w-96" : "w-40"}`}
                                 alt="App JustEat"
                                 title="App JustEat"

@@ -1,12 +1,7 @@
-const Header = () => {
-    const image1 = "assets/img/bg_hero-wide.jpg";
-    const image2 = "assets/img/bg_hero-wide2.jpg";
-
-    const bgSRC = Math.random() < .5 ? image1 : image2;
-
+const Header = ({ bgSRC }) => {
     return (
         <>
-            <header className="fading-in-animation">
+            <header>
                 <div
                     className="jumbotron-justeat p-12 text-center relative overflow-hidden bg-no-repeat bg-center bg-cover"
                     style={{ backgroundImage: `url(${bgSRC})` }}>

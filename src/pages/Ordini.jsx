@@ -153,8 +153,9 @@ const Ordini = () => {
                                 <div className='flex justify-between mt-8'>
                                     <div>
                                         <Button
-                                            onClick={(e) => {
-                                                e.preventDefault();
+                                            onClick={(event) => {
+                                                event.preventDefault();
+                                                event.stopPropagation();
                                                 setCurrentPage(1);
                                                 setShowAllItems(!showAllItems);
                                             }}
@@ -170,6 +171,7 @@ const Ordini = () => {
                                                 <Button
                                                     onClick={(event) => {
                                                         event.preventDefault();
+                                                        event.stopPropagation();
                                                         setCurrentPage(prevPage => Math.max(prevPage - 1, 1));
                                                     }}
                                                     disabled={currentPage === 1}
@@ -183,6 +185,7 @@ const Ordini = () => {
                                                     onClick={(event) => {
                                                         setCurrentPage((prevPage) => {
                                                             event.preventDefault();
+                                                            event.stopPropagation();
                                                             if (prevPage * itemsPerPage < filterLocali(localiFiltrati).length) {
                                                                 return prevPage + 1;
                                                             } else {
