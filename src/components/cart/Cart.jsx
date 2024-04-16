@@ -2,7 +2,6 @@ import { lazy, Suspense } from "react";
 import { useSelector } from "react-redux";
 import { calculateCartTotal } from "../../functions/calculateCartTotal";
 const CartItem = lazy(() => import('@components/cart/CartItem'));
-const Button = lazy(() => import('@components/button/Button'));
 
 const Cart = () => {
   const cart = useSelector((state) => state.cart);

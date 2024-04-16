@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import uuid from 'react-uuid';
+import { v4 as uuid } from 'uuid';
 
 // functions
 import { getResponsiveSettings } from '@functions/getResponsiveSettings';
