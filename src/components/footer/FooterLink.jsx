@@ -1,13 +1,9 @@
 const FooterLink = ({ children }) => {
-    const handleClick = (event) => {
-        event.preventDefault();
-    };
-
     return (
         <li className="mb-4">
-            <a href="#" className="hover:underline" onClick={(event) => handleClick(event)}>
+            <span className="hover:underline">
                 {children}
-            </a>
+            </span>
         </li>
     );
 };

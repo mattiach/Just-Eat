@@ -18,7 +18,7 @@ import InputForm from '@components/InputForm';
 import CartMessage from '@components/cart/CartMessage';
 import Button from '@components/button/Button';
 
-const CartUserProfile = ({ modalId }) => {
+const CartUserProfile = ({ modalId, setisLoading }) => {
   const dispatch = useDispatch();
   const cart = useSelector((state) => state.cart);
   const { userCartInfo, setUserCartInfo } = useContext(AppContext);
@@ -41,8 +41,11 @@ const CartUserProfile = ({ modalId }) => {
     }
 
     if ((cart.length > 0) && isEligibleForDelivery && areCCFieldsPopulated) {
+      setisLoading(true);
+
       setTimeout(() => {
         dispatch(removeAllFromCart());
+        setisLoading(false);
         setSubmitting(false);
         navigate('/home');
       }, 3000);

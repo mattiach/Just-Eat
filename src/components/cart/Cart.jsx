@@ -5,7 +5,7 @@ import { calculateCartTotal } from "@functions/calculateCartTotal";
 const CartItem = lazy(() => import("@components/cart/CartItem"));
 const ModalArticle = lazy(() => import("@components/modal/ModalArticle"));
 
-const Cart = () => {
+const Cart = ({ isLoading }) => {
   const dispatch = useDispatch();
   const cart = useSelector((state) => state.cart);
   const cartTotal = calculateCartTotal(cart);
@@ -17,14 +17,18 @@ const Cart = () => {
   });
 
   const addToCartFunction = (article) => {
+    if (isLoading) return;
     dispatch(addToCart(article));
   };
 
   const removeFromCartFunction = (articleClicked) => {
+    if (isLoading) return;
     dispatch(removeFromCart(articleClicked));
   };
 
   const openArticleModalFunction = (productFound, cartItem) => {
+    if (isLoading) return;
+
     setRestaurantId(cartItem.restaurantId);
     const newPiatto = {
       restaurantId: cartItem.restaurantId,
@@ -39,6 +43,7 @@ const Cart = () => {
         quantity: productFound.quantity
       }
     };
+
     setSelectedArticle(newPiatto);
     document.getElementById('modal-cart-article').showModal();
   }
@@ -50,7 +55,7 @@ const Cart = () => {
           <div className="p-5 py-4 md:max-w-96 md:px-9">
             <h2 className="pt-1 sm:mb-2 text-2xl lg:pl-2 xl:pl-0">Riepilogo</h2>
           </div>
-          <div className="p-5 md:p-6 lg:overflow-auto lg:hover:overflow-auto lg:h-[calc(60vh)] pb-24">
+          <div className={`p-5 md:p-6 lg:overflow-auto lg:hover:overflow-auto lg:h-[calc(60vh)] pb-24 ${isLoading ? 'opacity-70' : null}`}>
             <Suspense fallback={null}>
               <CartItem onClick={openArticleModalFunction} />
             </Suspense>
