@@ -11,6 +11,9 @@ module.exports = {
         'primary': '#fe7e00',
         'secondary': '#fb6100',
       },
+      screens: {
+        'xs': '450px',
+      },
     },
   },
   plugins: [require("daisyui")],

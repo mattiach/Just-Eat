@@ -51,7 +51,7 @@ const CartUserProfile = ({ modalId }) => {
 
   return (
     <>
-      <div className="p-6 bg-white rounded-md sm:shadow lg:shadow-md xl:col-span-2 fading-in-animation">
+      <div className="p-6 bg-white rounded-md shadow lg:shadow-md xl:col-span-2 fading-in-animation">
         <h2 className="text-2xl">Completa il tuo ordine</h2>
         {
           !isNotDesktopView ?
@@ -74,7 +74,7 @@ const CartUserProfile = ({ modalId }) => {
             <Form className="mt-5">
               <div>
                 <h3 className="mb-5 text-lg">I tuoi dati personali</h3>
-                <div className="grid gap-4 gap-x-6 sm:grid-cols-2">
+                <div className="grid gap-4 gap-x-5 sm:grid-cols-2">
                   <Field type="text" name="nome" placeholder="Il tuo nome" component={InputForm} />
                   <Field type="text" name="cognome" placeholder="Il tuo cognome" component={InputForm} />
                   <Field type="email" name="email" placeholder="La tua email" component={InputForm} />
@@ -83,7 +83,7 @@ const CartUserProfile = ({ modalId }) => {
               </div>
               <div className="mt-8">
                 <h3 className="mb-5 text-lg">Indirizzo di spedizione</h3>
-                <div className="grid gap-4 gap-x-6 sm:grid-cols-2">
+                <div className="grid gap-4 gap-x-5 sm:grid-cols-2">
                   <Field type="text" name="indirizzo" placeholder="Indirizzo, via/strada .." component={InputForm} />
                   <Field type="text" name="città" placeholder="Città" component={InputForm} />
                   <Field type="text" name="paese" placeholder="Paese" component={InputForm} />
@@ -94,7 +94,7 @@ const CartUserProfile = ({ modalId }) => {
                     type="button"
                     onClick={() => openPaymentModalFunction()}
                     disabled={isSubmitting}
-                    className={`w-full py-2.5 text-sm font-semibold text-white rounded-md max-w-52 xl:mt-6  bg-blue-600 hover:bg-blue-700 ${isSubmitting ? "opacity-60" : 'opacity-100'}`}
+                    className={`w-full py-2.5 text-sm font-semibold text-white rounded-md xl:max-w-52 bg-blue-600 hover:bg-blue-700 ${isSubmitting ? "opacity-60" : 'opacity-100'}`}
                   >
                     Metodo di pagamento
                   </Button>
@@ -125,7 +125,7 @@ const CartUserProfile = ({ modalId }) => {
                   <Button
                     type="submit"
                     disabled={isSubmitting || !areCCFieldsPopulated || !isEligibleForDelivery}
-                    className={`w-full max-w-72 px-6 py-3 xl:mt-10 text-sm font-semibold text-white rounded-md bg-emerald-600 ${(areCCFieldsPopulated && parsedTotalCart > 0 && isEligibleForDelivery) ? 'opacity-100 hover:bg-emerald-700' : 'opacity-50'}`}
+                    className={`w-full xl:max-w-60 px-6 py-3 mt-3 text-sm font-semibold text-white rounded-md bg-emerald-600 ${(areCCFieldsPopulated && parsedTotalCart > 0 && isEligibleForDelivery) ? 'opacity-100 hover:bg-emerald-700' : 'opacity-60'}`}
                   >
                     {isSubmitting ? 'Inviando...' : 'Conferma ordine'}
                   </Button>
