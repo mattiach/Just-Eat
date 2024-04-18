@@ -1,5 +1,3 @@
-// cartSlice.js
-
 import { createSlice } from '@reduxjs/toolkit';
 
 const storedCart = localStorage.getItem('cart');
@@ -81,5 +79,11 @@ const cartSlice = createSlice({
   },
 });
 
-export const { addToCart, removeFromCart, removeAllFromCart } = cartSlice.actions;
+export const {
+  addToCart,
+  removeFromCart,
+  removeAllFromCart,
+  increaseQuantityInCart,
+  decreaseQuantityInCart
+} = cartSlice.actions;
 export default cartSlice.reducer;

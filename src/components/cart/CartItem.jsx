@@ -1,28 +1,17 @@
-import {
-  // useDispatch,
-  useSelector
-} from "react-redux";
-// import { addToCart, removeFromCart } from '@redux/slices/cartSlice';
+import { useNavigate } from "react-router-dom";
+import { useSelector } from "react-redux";
 import { calculateRestaurantTotal } from "@functions/calculateRestaurantTotal";
 import { formatCurrency } from "@functions/formatCurrency";
-import { useNavigate } from "react-router-dom";
 
-const CartItem = () => {
-  // const dispatch = useDispatch();
+const CartItem = ({ onClick }) => {
   const cart = useSelector((state) => state.cart);
   const navigate = useNavigate();
 
-  // const removeFromCartFunction = (articleClicked) => {
-  //   dispatch(removeFromCart(articleClicked));
-  // };
-
-  // const addToCartFunction = (article) => {
-  //   dispatch(addToCart(article));
-  // };
+  if (cart.length === 0) return null
 
   return (
     <>
-      <section>
+      <section className="select-none">
         {
           (cart.length > 0) ? cart.map((cartItem, index) => {
             const {
@@ -53,8 +42,12 @@ const CartItem = () => {
                     const { name, price, quantity } = productFound; // product destructuring assignment
 
                     return (
-                      <li className="flex items-center justify-between col-span-12 text-sm leading-4" key={'CART_productFound_KEY_' + productIndex}>
-                        <span className="w-8/12 col-span-7 text-wrap">x{quantity} <span className="pl-2">{name}</span></span>
+                      <li
+                        className="flex items-center justify-between col-span-12 text-sm leading-4 cursor-pointer"
+                        key={'CART_productFound_KEY_' + productIndex}
+                        onClick={() => onClick(productFound, cartItem)}
+                      >
+                        <span className="w-8/12 col-span-7 text-wrap"><b>x{quantity}</b><span className="pl-2">{name}</span></span>
                         <span className="flex justify-end w-1/12 col-span-2 italic">
                           {formatCurrency(price)}
                         </span>
@@ -64,14 +57,14 @@ const CartItem = () => {
 
                   {/* restaurant total */}
                   {!freeShipping && shippingCost > 0 && (
-                    <li className="flex justify-between col-span-12 pt-4 text-sm text-right">
+                    <li className="flex justify-between col-span-12 pt-3 text-sm text-right">
                       Consegna:
                       <span className="italic">
                         {formatCurrency(shippingCost)}
                       </span>
                     </li>
                   )}
-                  <li className={`flex justify-between col-span-12 text-sm text-right ${shippingCost > 0 ? 'pt-0' : 'pt-4'}`}>
+                  <li className={`flex justify-between col-span-12 text-sm text-right ${shippingCost > 0 ? 'pt-0' : 'pt-3'}`}>
                     Totale:
                     <span className="italic">
                       {formatCurrency(calculateRestaurantTotal(cartItem) + shippingCost)}
@@ -86,7 +79,7 @@ const CartItem = () => {
                 </div>
               </div>
             )
-          }) : (<h2 className="opacity-50">Carrello vuoto..</h2>)
+          }) : null
         }
       </section >
     </>

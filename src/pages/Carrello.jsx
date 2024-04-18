@@ -1,4 +1,4 @@
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useState } from "react";
 
 // components
 import Navbar from "@components/navbar/Navbar";
@@ -9,16 +9,17 @@ const CartUserProfile = lazy(() => import('@components/cart/CartUserProfile'));
 const ModalPayment = lazy(() => import('@components/modal/ModalPayment'));
 
 const Carrello = () => {
+  const [isLoading, setisLoading] = useState(false);
   const modalId = 'modal-payment-credit-card';
 
   return (
     <>
       <Navbar />
       <Container>
-        <div className="grid h-full gap-6 p-8 bg-gray-100 xl:gap-10 lg:grid-cols-2 xl:grid-cols-3 lg:rounded-md xl:max-w-7xl xl:mx-auto">
-          <Cart />
+        <div className={`grid h-full max-w-xl gap-6 mx-auto bg-gray-100 xs:p-4 sm:p-8 md:max-w-xl lg:max-w-5xl xl:gap-8 lg:grid-cols-2 xl:grid-cols-3 lg:rounded-md xl:max-w-7xl ${isLoading ? 'cursor-wait' : null}`}>
+          <Cart isLoading={isLoading} />
           <Suspense fallback={null}>
-            <CartUserProfile modalId={modalId} />
+            <CartUserProfile modalId={modalId} setisLoading={setisLoading} />
           </Suspense>
         </div>
       </Container >
