@@ -9,27 +9,21 @@ const CartUserProfile = lazy(() => import('@components/cart/CartUserProfile'));
 const ModalPayment = lazy(() => import('@components/modal/ModalPayment'));
 
 const Carrello = () => {
-  const openPaymentModalFunction = () => {
-    document.getElementById('modal-payment-credit-card').showModal();
-  };
+  const modalId = 'modal-payment-credit-card';
 
   return (
     <>
       <Navbar />
-      <Container className="md:shadow-sm rounded-7xl">
-        <div className="my-8 rounded-lg shadow-sm bg-gray-50 p-11 sm:my-10 lg:my-15">
-          <div className="bg-gray-50">
-            <div className="grid h-full gap-6 lg:grid-cols-2 xl:grid-cols-3">
-              <Cart />
-              <Suspense fallback={null}>
-                <CartUserProfile openPaymentModalFunction={openPaymentModalFunction} />
-              </Suspense>
-            </div>
-          </div>
-        </div >
+      <Container>
+        <div className="grid h-full gap-6 p-8 bg-gray-100 xl:gap-10 lg:grid-cols-2 xl:grid-cols-3 lg:rounded-md xl:max-w-7xl xl:mx-auto">
+          <Cart />
+          <Suspense fallback={null}>
+            <CartUserProfile modalId={modalId} />
+          </Suspense>
+        </div>
       </Container >
       <Suspense fallback={null}>
-        <ModalPayment modalId={'modal-payment-credit-card'} />
+        <ModalPayment modalId={modalId} />
       </Suspense>
       <Footer />
     </>

@@ -42,6 +42,7 @@ const CreditCardComponent = () => {
                   type="text"
                   name="card-number"
                   id="card-number"
+                  value={creditCardInfo.cardNumber || ''}
                   onChange={(event) => setCreditCardInfo({ ...creditCardInfo, cardNumber: event.target.value })}
                   placeholder="0000 0000 0000 0000"
                   className="px-4 py-3.5 bg-white w-full text-sm border-b-2 focus:border-primary outline-none custom-shadow-sm"
@@ -58,6 +59,7 @@ const CreditCardComponent = () => {
                   type="text"
                   name="expiration-date"
                   id="expiration-date"
+                  value={creditCardInfo.expirationDate || ''}
                   onChange={(event) => setCreditCardInfo({ ...creditCardInfo, expirationDate: event.target.value })}
                   placeholder="MM / AA"
                   className="px-4 py-3.5 bg-white  w-full text-sm border-b-2 focus:border-primary outline-none custom-shadow-sm"
@@ -74,6 +76,7 @@ const CreditCardComponent = () => {
                   type="text"
                   name="cvv"
                   id="cvv"
+                  value={creditCardInfo.cvc || ''}
                   onChange={(event) => setCreditCardInfo({ ...creditCardInfo, cvc: event.target.value })}
                   placeholder='123'
                   className="px-4 py-3.5 bg-white  w-full text-sm border-b-2 focus:border-primary outline-none custom-shadow-sm"

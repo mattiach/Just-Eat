@@ -73,9 +73,13 @@ const cartSlice = createSlice({
           localStorage.setItem('cart', JSON.stringify(state));
         }
       }
+    },
+    removeAllFromCart(state) {
+      state.splice(0, state.length);
+      localStorage.setItem('cart', JSON.stringify(state));
     }
   },
 });
 
-export const { addToCart, removeFromCart } = cartSlice.actions;
+export const { addToCart, removeFromCart, removeAllFromCart } = cartSlice.actions;
 export default cartSlice.reducer;
