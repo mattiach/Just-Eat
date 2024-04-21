@@ -87,13 +87,13 @@ const CreditCardComponent = () => {
               <button
                 type="submit"
                 disabled={!areFieldsPopulated}
-                className={`w-full bg-blue-600 text-white font-medium py-3 rounded-lg focus:outline-none ${!areFieldsPopulated ? 'cursor-not-allowed opacity-50' : 'hover:bg-blue-700'
+                className={`w-full bg-blue-600 text-white font-medium py-2.5 rounded-lg focus:outline-none ${!areFieldsPopulated ? 'cursor-not-allowed opacity-50' : 'hover:bg-blue-700'
                   }`}
               >
                 Aggiungi
               </button>
             </div>
-            <div className="relative top-6">
+            <div className="relative top-4">
               <p className="text-sm italic text-gray-400">
                 Le informazioni inserite non saranno salvate.*
               </p>

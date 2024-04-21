@@ -2,29 +2,32 @@ import { useEffect, useState } from 'react';
 
 // custom hook to check eligibility for delivery
 const useCheckDeliveryEligibility = (cart) => {
-  const [isEligible, setIsEligible] = useState(false);
+  const [isEligible, setIsEligible] = useState(true);
 
   useEffect(() => {
-    let total = 0;
-    let minOrder = 0;
-
     if (!cart.length > 0) {
       setIsEligible(false);
       return;
     }
 
-    // calculate the total order amount by summing the price of each product multiplied by its quantity
-    total = cart.reduce((acc, cartItem) => {
-      return acc + cartItem.products.reduce((subTotal, product) => {
-        return subTotal + product.price * product.quantity;
+    // loop through each item in the cart
+    for (let i = 0; i < cart.length; i++) {
+      const cartItem = cart[i];
+      const total = cartItem.products.reduce((acc, product) => {
+        const delivery = cartItem.restaurantShipping.shippingCost;
+        const totalPriceItems = product.price * product.quantity;
+        return acc + totalPriceItems + delivery;
       }, 0);
-    }, 0);
 
-    // retrieve the minimum order amount from the cart's restaurant shipping information
-    minOrder = cart[0].restaurantShipping.minOrder;
+      // check if the total order amount is greater than or equal to the minimum order amount
+      if (total < cartItem.restaurantShipping.minOrder) {
+        setIsEligible(false);
+        return; // exit loop if one restaurant doesn't meet the condition and set isEligible to false
+      }
+    }
 
-    // check if the total order amount is greater than or equal to the minimum order amount
-    setIsEligible(total >= minOrder);
+    // if all restaurants meet the condition, set isEligible to true
+    setIsEligible(true);
   }, [cart]);
 
   return isEligible; // returns a boolean value

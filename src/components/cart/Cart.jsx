@@ -30,13 +30,14 @@ const Cart = ({ isLoading }) => {
     if (isLoading) return;
 
     setRestaurantId(cartItem.restaurantId);
+
     const newPiatto = {
       restaurantId: cartItem.restaurantId,
-      restaurantCategory: cartItem.category,
-      restaurantName: cartItem.name,
-      restaurantAddress: cartItem.address,
-      restaurantImage: cartItem.image,
-      restaurantShipping: cartItem.shipping,
+      restaurantCategory: cartItem.restaurantCategory,
+      restaurantName: cartItem.restaurantName,
+      restaurantAddress: cartItem.restaurantAddress,
+      restaurantImage: cartItem.restaurantImage,
+      restaurantShipping: cartItem.restaurantShipping,
       products: {
         name: productFound.name,
         price: productFound.price,

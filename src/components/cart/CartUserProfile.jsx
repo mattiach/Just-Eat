@@ -92,12 +92,12 @@ const CartUserProfile = ({ modalId, setisLoading }) => {
                   <Field type="text" name="paese" placeholder="Paese" component={InputForm} />
                   <Field type="text" name="zip" placeholder="Zip Code" component={InputForm} />
                 </div>
-                <div className='mt-8 lg:mt-10'>
+                <div className='mt-8'>
                   <Button
                     type="button"
                     onClick={() => openPaymentModalFunction()}
                     disabled={isSubmitting}
-                    className={`w-full py-2.5 text-sm font-semibold text-white rounded-md xl:max-w-52 bg-blue-600 hover:bg-blue-700 ${isSubmitting ? "opacity-60" : 'opacity-100'}`}
+                    className={`w-full py-2 text-sm font-semibold text-white rounded-md xl:max-w-52 bg-blue-600 hover:bg-blue-700 ${isSubmitting ? "opacity-60" : 'opacity-100'}`}
                   >
                     Metodo di pagamento
                   </Button>
@@ -128,7 +128,7 @@ const CartUserProfile = ({ modalId, setisLoading }) => {
                   <Button
                     type="submit"
                     disabled={isSubmitting || !areCCFieldsPopulated || !isEligibleForDelivery}
-                    className={`w-full xl:max-w-60 px-6 py-3 mt-3 text-sm font-semibold text-white rounded-md bg-emerald-600 ${(areCCFieldsPopulated && parsedTotalCart > 0 && isEligibleForDelivery) ? 'opacity-100 hover:bg-emerald-700' : 'opacity-60'}`}
+                    className={`w-full xl:max-w-60 px-6 py-2 mt-3 text-sm font-semibold text-white rounded-md bg-emerald-600 ${(areCCFieldsPopulated && parsedTotalCart > 0 && isEligibleForDelivery) ? 'opacity-100 hover:bg-emerald-700' : 'opacity-60'}`}
                   >
                     {isSubmitting ? 'Inviando...' : 'Conferma ordine'}
                   </Button>
