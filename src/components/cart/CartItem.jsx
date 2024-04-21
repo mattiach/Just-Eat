@@ -7,7 +7,7 @@ const CartItem = ({ onClick }) => {
   const cart = useSelector((state) => state.cart);
   const navigate = useNavigate();
 
-  if (cart.length === 0) return null
+  if (!cart.length === 0) return null
 
   return (
     <>
@@ -15,7 +15,7 @@ const CartItem = ({ onClick }) => {
         {
           (cart.length > 0) ? cart.map((cartItem, index) => {
             const {
-              // restaurantCategory,
+              // restaurantCategory,   'cartItem' properties that I am not using
               // restaurantImage,
               restaurantId,
               restaurantName,
@@ -43,11 +43,11 @@ const CartItem = ({ onClick }) => {
 
                     return (
                       <li
-                        className="flex items-center justify-between col-span-12 text-sm leading-4 cursor-pointer"
+                        className="flex items-center justify-between col-span-12 text-sm leading-4 cursor-pointer text-pretty"
                         key={'CART_productFound_KEY_' + productIndex}
-                        onClick={() => onClick(productFound, cartItem)}
+                        onClick={() => { onClick(productFound, cartItem) }}
                       >
-                        <span className="w-8/12 col-span-7 text-wrap"><b>x{quantity}</b><span className="pl-2">{name}</span></span>
+                        <span className="w-8/12 col-span-7"><b>x{quantity}</b><span className="pl-2">{name}</span></span>
                         <span className="flex justify-end w-1/12 col-span-2 italic">
                           {formatCurrency(price)}
                         </span>

@@ -3,7 +3,9 @@ export function calculateCartTotal(cart) {
 
   cart.forEach((restaurant) => {
     restaurant.products.forEach((product) => {
-      totalPrice += product.price * product.quantity;
+      const productsPrice = product.price * product.quantity;
+      const delivery = restaurant.restaurantShipping.shippingCost
+      totalPrice += productsPrice + delivery;
     });
   });
 
