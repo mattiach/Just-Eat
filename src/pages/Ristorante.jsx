@@ -37,6 +37,7 @@ function Ristorante() {
     return null;
   }
 
+  // function to open a modal displaying details of a selected article from a restaurant category card
   const openArticleModalFunction = (dishTakenFromCategoryCard) => {
     const newPiatto = {
       restaurantId: selectedRestaurant.id,

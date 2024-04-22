@@ -1,3 +1,4 @@
+// calculate the total price of the items in the cart, including delivery costs
 export function calculateCartTotal(cart) {
   let totalPrice = 0;
 
