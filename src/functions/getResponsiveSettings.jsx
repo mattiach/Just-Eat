@@ -1,3 +1,4 @@
+// function to return responsive settings for a slider based on different breakpoints
 export const getResponsiveSettings = (settings) => {
     return [
         {

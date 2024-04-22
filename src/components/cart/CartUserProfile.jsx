@@ -101,17 +101,6 @@ const CartUserProfile = ({ modalId, setisLoading }) => {
                   >
                     Metodo di pagamento
                   </Button>
-                  {
-                    isNotDesktopView ?
-                      <>
-                        <Suspense fallback={null}>
-                          <CartMessage
-                            message={'Metodo di pagamento aggiunto correttamente'}
-                            isVisible={areCCFieldsPopulated}
-                          />
-                        </Suspense>
-                      </> : null
-                  }
                 </div>
                 {
                   isNotDesktopView ?

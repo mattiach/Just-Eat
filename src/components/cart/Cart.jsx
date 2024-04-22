@@ -16,16 +16,19 @@ const Cart = ({ isLoading }) => {
     quantity: 0
   });
 
+  // add an article to the cart. Prevents action if isLoading is true.
   const addToCartFunction = (article) => {
     if (isLoading) return;
     dispatch(addToCart(article));
   };
 
+  // remove an article from the cart. Prevents action if isLoading is true.
   const removeFromCartFunction = (articleClicked) => {
     if (isLoading) return;
     dispatch(removeFromCart(articleClicked));
   };
 
+  // open the article modal with the selected article's details.
   const openArticleModalFunction = (productFound, cartItem) => {
     if (isLoading) return;
 
@@ -58,7 +61,7 @@ const Cart = ({ isLoading }) => {
           </div>
           <div className={`p-5 md:p-6 lg:overflow-auto lg:hover:overflow-auto lg:h-[calc(60vh)] pb-24 ${isLoading ? 'opacity-70' : null}`}>
             <Suspense fallback={null}>
-              <CartItem onClick={openArticleModalFunction} />
+              <CartItem onClick={openArticleModalFunction} isLoading={isLoading} />
             </Suspense>
           </div>
           <Suspense fallback={null}>

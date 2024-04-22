@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import { calculateRestaurantTotal } from "@functions/calculateRestaurantTotal";
 import { formatCurrency } from "@functions/formatCurrency";
 
-const CartItem = ({ onClick }) => {
+const CartItem = ({ onClick, isLoading }) => {
   const cart = useSelector((state) => state.cart);
   const navigate = useNavigate();
 
@@ -30,7 +30,7 @@ const CartItem = ({ onClick }) => {
                   <h2
                     className="font-semibold cursor-pointer text-primary hover:text-secondary"
                     name={`${restaurantName}`}
-                    onClick={() => navigate(`/ristorante/${restaurantId}`)}
+                    onClick={() => { !isLoading ? navigate(`/ristorante/${restaurantId}`) : null }}
                   >
                     &quot;{restaurantName}&quot;
                   </h2>
