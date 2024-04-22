@@ -10,7 +10,7 @@
         "plugin:react-hooks/recommended"
     ],
     "parserOptions": {
-        "ecmaVersion": "latest",
+        "ecmaVersion": "latest", 
         "sourceType": "module"
     },
     "plugins": [
@@ -19,11 +19,12 @@
     ],
     "settings": {
         "react": {
-            "version": "detect"
+            "version": "detect" 
         }
     },
     "rules": {
-        "react-refresh/only-export-components": "warn",
-        "react/prop-types": "off" // Disabilita la verifica delle prop validation
+        "react-refresh/only-export-components": "warn", 
+        "react/prop-types": "off" // Disable prop validation
     }
 }
+

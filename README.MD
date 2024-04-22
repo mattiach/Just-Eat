@@ -1,30 +1,36 @@
-
 # Just Eat - Clone
 
-### Descrizione
-App clone del sito di JustEat. Il progetto è ancora in fase di realizzazione.
+### Description
 
-### Installazione dipendenze e Node Modules
-Assicurati di avere già [Node js](https://nodejs.org/it/download/) prima di proseguire. Successivamente, installare i node modules necessari all'avvio dell'applicazione :
+App clone of the JustEat
+
+### Dependencies Installation and Node Modules
+
+Make sure you already have [Node js](https://nodejs.org/it/download/) installed before proceeding. Then, install the necessary node modules to start the application
+
 ```sh
 npm install
 ```
 
 ### Come avviare l'applicazione
-Conclusa l'installazione di tutte le dipendenze necessarie, si può ora proseguire con l'avvio del'applicazione il comando :
+
+After installing all the necessary dependencies, you can now proceed with launching the application using the command:
+
 ```sh
 npm start
 ```
 
-Collegarsi al [http://localhost:3000/](http://localhost:3000) per visualizzare l'applicazione
+Connect to [http://localhost:3000/](http://localhost:3000) to view the application
 
-### Tecnologie utilizzate
+### Technologies used
+
 - React js
 - Vite js
-- Tailwind CSS 
+- Tailwind CSS
 
-### Autore e diritti
-Ideata, scritta e realizzata da [Mattia](https://www.linkedin.com/in/mattiach/).
+### Author and rights
 
-L'applicazione può essere scaricata e modificata liberamente da chiunque! 😊
-ogni suggerimento o miglioria saranno graditi.
+Designed and written by [Mattia](https://www.linkedin.com/in/mattiach/).
+
+The application can be downloaded and freely modified by anyone! 😊
+Any suggestions or improvements will be appreciated.
