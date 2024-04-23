@@ -14,8 +14,11 @@ import Title from '@components/typography/Title';
 import Button from '@components/button/Button';
 import Paragraph from '@components/typography/Paragraph';
 import Footer from '@components/footer/Footer';
+import { useTranslation } from 'react-i18next';
 
 const Home = () => {
+    const { t } = useTranslation();
+
     const isDesktop = useMediaQuery({ query: '(min-width: 992px)' });
     const isMobile = useMediaQuery({ query: '(max-width: 600px)' });
 
@@ -27,14 +30,14 @@ const Home = () => {
             <Header bgSRC={bgSRC} />
             <main className='fading-in-animation select-none'>
                 <div className="mt-10 text-center">
-                    <Title>&Egrave; bello prenderci gusto!</Title>
+                    <Title>{t('home.title')}</Title>
                 </div>
                 <div className="mt-10 text-center">
-                    <Link to={'/ordini'}>
+                    <Link to={'/orders'}>
                         <Button
                             className={"focus:outline-none bg-primary hover:bg-secondary text-white focus:ring-0 font-semibold text-xl rounded-lg py-3 px-4 mr-2 mb-2 w-52 md:w-60"}
                         >
-                            Trova i ristoranti
+                            {t('home.button')}
                         </Button>
                     </Link>
                 </div>
@@ -49,9 +52,9 @@ const Home = () => {
                     </div>
                     <div className="text-center pt-14 md:pt-20 lg:pt-24">
                         <Paragraph>
-                            Scarica l&apos;app di Just Eat e ordina dove vuoi,
+                            {t('home.paragraph1')}
                             <span className='inline-block pl-1 sm:block sm:pl-0'>
-                                qualunque cosa desideri
+                                {t('home.paragraph2')}
                             </span>
                         </Paragraph>
                         <div className='flex justify-center mt-20 sm:mt-14'>

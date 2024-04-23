@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react-swc';
 import path from 'path';
@@ -21,6 +22,7 @@ export default defineConfig({
       '@pages': path.resolve(__dirname, 'src/pages/'),
       '@redux': path.resolve(__dirname, 'src/redux/'),
       '@styles': path.resolve(__dirname, 'src/styles/'),
+      '@languages': path.resolve(__dirname, 'src/languages/'),
     }
   }
 });

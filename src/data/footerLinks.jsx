@@ -1,20 +1,41 @@
+// export const footerLinksENG = [
+//     [
+//         "About Us",
+//         "Information about Just Eat",
+//         "Did not receive an order?",
+//         "Work with us"
+//     ],
+//     [
+//         "Cuisines",
+//         "Allergies",
+//         "Find restaurants",
+//         "Become a rider on Just Eat"
+//     ],
+//     [
+//         "Customer Service",
+//         "Frequently Asked Questions",
+//         "Download the Just Eat app",
+//         "Register on Just Eat"
+//     ]
+// ]
+
 export const footerLinks = [
     [
-        "Chi siamo",
-        "Informazioni su Just Eat",
-        "Non hai ricevuto un ordine?",
-        "Lavora con noi"
+        "aboutUs",
+        "infoAboutJE",
+        "orderNotReceived",
+        "workWithUs"
     ],
     [
-        "Cucine",
-        "Allergie",
-        "Trova i ristoranti",
-        "Diventa rider su Just Eat"
+        "cuisines",
+        "allergies",
+        "findRestaurants",
+        "BecomeaJustEatrider"
     ],
     [
-        "Servizio Clienti",
-        "Domande frequenti",
-        "Scarica l'app di Just Eat",
-        "Registrati su Just Eat"
+        "customerService",
+        "faq",
+        "downloadJustEatApp",
+        "registerJustEat"
     ]
 ]

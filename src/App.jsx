@@ -1,4 +1,3 @@
-// routing
 import { Routes, Route } from "react-router-dom";
 
 // pages
@@ -9,14 +8,13 @@ import Ristorante from "@pages/Ristorante";
 import Carrello from "@pages/Carrello";
 
 function App() {
-
   return (
     <>
       <Routes>
         <Route path="*" element={<Home />} index />
-        <Route path="/diventa-un-rider" element={<Rider />} />
-        <Route path="/ordini" element={<Ordini />} />
-        <Route path="/ristorante/:id" element={<Ristorante />} />
+        <Route path="/work-with-us" element={<Rider />} />
+        <Route path="/orders" element={<Ordini />} />
+        <Route path="/restaurant/:id" element={<Ristorante />} />
         <Route path="/carrello" element={<Carrello />} />
       </Routes>
     </>

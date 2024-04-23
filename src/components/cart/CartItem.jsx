@@ -30,7 +30,7 @@ const CartItem = ({ onClick, isLoading }) => {
                   <h2
                     className="font-semibold cursor-pointer text-primary hover:text-secondary"
                     name={`${restaurantName}`}
-                    onClick={() => { !isLoading ? navigate(`/ristorante/${restaurantId}`) : null }}
+                    onClick={() => { !isLoading ? navigate(`/restaurant/${restaurantId}`) : null }}
                   >
                     &quot;{restaurantName}&quot;
                   </h2>

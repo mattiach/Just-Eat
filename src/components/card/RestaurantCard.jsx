@@ -5,7 +5,7 @@ const RestaurantCard = ({ ristorante }) => {
 
     // function to navigate to the specific restaurant page
     const navigateToRestaurantPageFunction = () => {
-        navigate(`/ristorante/${ristorante.id}`);
+        navigate(`/restaurant/${ristorante.id}`);
     }
 
     return (

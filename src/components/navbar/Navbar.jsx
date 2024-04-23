@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useSelector } from 'react-redux';
+import { useTranslation } from 'react-i18next';
 
 // routing
 import { Link, useNavigate } from 'react-router-dom';
@@ -16,6 +17,7 @@ const Navbar = () => {
     const cart = useSelector((state) => state.cart);
     const [open, setOpen] = useState(false);
     const navigate = useNavigate();
+    const { t } = useTranslation()
 
     const navigateFunction = (value) => {
         navigate(value);
@@ -66,18 +68,18 @@ const Navbar = () => {
                                 </Link>
                             </NavbarItem>
                             <NavbarItem>
-                                <Link to={'/ordini'}>
-                                    Ordini
+                                <Link to={'/orders'}>
+                                    {t('navbar.orders')}
                                 </Link>
                             </NavbarItem>
                             <NavbarItem>
-                                <Link to={'/diventa-un-rider'}>
-                                    Diventa un rider
+                                <Link to={'/work-with-us'}>
+                                    {t('navbar.becomeARider')}
                                 </Link>
                             </NavbarItem>
                             <NavbarItem className={"sm:hidden"}>
                                 <Link to={'/carrello'}>
-                                    Carrello
+                                    {t('navbar.cart')}
                                 </Link>
                             </NavbarItem>
                         </ul>

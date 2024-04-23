@@ -10,7 +10,7 @@ export const selectSelectedRestaurant = (idSelected) => (state) => {
   if (selectedRistorante) {
     return selectedRistorante;
   } else {
-    window.location.href = '/ordini';
+    window.location.href = '/orders';
     return null;
   }
 };
