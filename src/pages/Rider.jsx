@@ -1,4 +1,5 @@
 import { Fragment, useState, lazy, Suspense } from "react";
+import { useTranslation } from "react-i18next";
 
 // data & assets
 import faq from "@data/faq.json";
@@ -22,24 +23,25 @@ import ModalRider from "@components/modal/ModalRider";
 const ApplicationForm = lazy(() => import("@components/ApplicationForm"));
 
 const Rider = () => {
-    const [bgSRC] = useState(Math.random() < 0.5 ? imageRider1 : imageRider2); // cambia lo sfondo
+    const { t } = useTranslation();
+    const [bgSRC] = useState(Math.random() < 0.5 ? imageRider1 : imageRider2); // change image background
 
-    // form caricamento file
+    // file upload form
     const [isDragging, setIsDragging] = useState(false);
     const [selectedFiles, setSelectedFiles] = useState([]);
 
-    // funzione di apertura/chiusa del modale
-    const openModal = openModalFunction()
-    const closeModal = closeModalFunction()
+    // modal open/close function
+    const openModal = openModalFunction();
+    const closeModal = closeModalFunction();
 
-    // funzione per confermare ed inviare la candidatura. 
+    // function to confirm and send the resume.
     const sendResumeFunction = () => {
         if (selectedFiles.length > 0) {
-            alert('CV Inviato!');    // TODO: da collegare con un backend tramite 'POST' request 😊
+            alert('CV Sent!');    // TODO: connect with a backend via 'POST' request 😊
             closeModal('rider_application_modal');
             setSelectedFiles([]);
         } else {
-            alert('Seleziona un file prima di inviare il CV.');
+            alert('Select a file before sending the CV.');
         }
     };
 
@@ -50,10 +52,10 @@ const Rider = () => {
                 <HeaderOpaque img={bgSRC}>
                     <div className="text-white">
                         <h2 className="mb-6 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight">
-                            Lavora come rider
+                            {t('pages.workWithUs.title')}
                         </h2>
                         <Button onClick={() => openModal('rider_application_modal')}>
-                            Candidati ora
+                            {t('pages.workWithUs.button')}
                         </Button>
                         <ModalRider idModal={"rider_application_modal"} className={"shadow-xl"}>
                             <Suspense fallback={null}>
@@ -75,12 +77,12 @@ const Rider = () => {
                         <div className="text-center my-14 md:my-16 lg:my-28">
                             <div className="mb-4">
                                 <Subtitle>
-                                    Ti offriamo un lavoro <span className="text-primary"> stabile e flessibile</span>
+                                    {t('pages.workWithUs.subtitle')}<span className="text-primary"> {t('pages.workWithUs.subtitle2')}</span>
                                 </Subtitle>
                             </div>
                             <div>
                                 <Paragraph>
-                                    Consegna i tuoi ordini... al resto ci pensiamo noi
+                                    {t('pages.workWithUs.paragraph')}
                                 </Paragraph>
                             </div>
                         </div>

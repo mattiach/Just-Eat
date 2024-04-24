@@ -1,10 +1,10 @@
 # Just Eat - Clone
 
-### Description
+## Description
 
 App clone of the JustEat
 
-### Dependencies Installation and Node Modules
+## Dependencies Installation and Node Modules
 
 Make sure you already have [Node js](https://nodejs.org/it/download/) installed before proceeding. Then, install the necessary node modules to start the application
 
@@ -12,7 +12,7 @@ Make sure you already have [Node js](https://nodejs.org/it/download/) installed 
 npm install
 ```
 
-### Come avviare l'applicazione
+## Come avviare l'applicazione
 
 After installing all the necessary dependencies, you can now proceed with launching the application using the command:
 
@@ -22,13 +22,13 @@ npm start
 
 Connect to [http://localhost:3000/](http://localhost:3000) to view the application
 
-### Technologies used
+## Technologies used
 
 - React js
 - Vite js
 - Tailwind CSS
 
-### Author and rights
+## Author and rights
 
 Designed and written by [Mattia](https://www.linkedin.com/in/mattiach/).
 

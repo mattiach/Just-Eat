@@ -1,4 +1,8 @@
+import { useTranslation } from "react-i18next";
+
 const BannerRistorante = ({ ristorante }) => {
+  const { t } = useTranslation();
+
   const { street, postalCode, city } = ristorante.address;
   const { freeShipping, shippingCost, minOrder } = ristorante.shipping;
 
@@ -17,7 +21,8 @@ const BannerRistorante = ({ ristorante }) => {
               {street} - {postalCode}, {city}
             </p>
             <p className="text-sm italic">
-              {freeShipping ? 'Consegna gratuita' : `${shippingCost}€ di consegna`}, {minOrder > 0 ? `ordine minimo di ${minOrder}€` : null}
+              {freeShipping ? t('common.freeDelivery') : `${shippingCost}€ ${t('common.delivery')}`},
+              <span className="pl-1">{minOrder > 0 ? `${minOrder}€ ${t('common.minOrder')}` : null}</span>
             </p>
           </div>
         </div>

@@ -1,11 +1,13 @@
+import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 
 const RestaurantCard = ({ ristorante }) => {
+    const { t } = useTranslation();
     const navigate = useNavigate();
 
     // function to navigate to the specific restaurant page
     const navigateToRestaurantPageFunction = () => {
-        navigate(`/ristorante/${ristorante.id}`);
+        navigate(`/restaurant/${ristorante.id}`);
     }
 
     return (
@@ -37,7 +39,7 @@ const RestaurantCard = ({ ristorante }) => {
                             {ristorante.rating}<span className="pl-[1px]">/5</span>
                         </p>
                         <p className="italic pl-1.5">
-                            ordine minimo {ristorante.shipping.minOrder}
+                            {t('common.minOrder')} {ristorante.shipping.minOrder}
                             <span className="pl-[1px]">
                                 &euro;
                             </span>

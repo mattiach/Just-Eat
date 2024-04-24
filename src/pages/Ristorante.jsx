@@ -33,7 +33,7 @@ function Ristorante() {
   }, [dispatch, id, initialRender]);
 
   if (!selectedRestaurant) {
-    navigate('/ordini');
+    navigate('/orders');
     return null;
   }
 

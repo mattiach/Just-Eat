@@ -1,0 +1,62 @@
+export const it = {
+  translation: {
+    pages: {
+      home: {
+        title: 'È bello prenderci gusto!',
+        button: 'Trova un ristorante',
+        paragraph1: 'Scarica l\'app di Just Eat e ordina dove vuoi, ',
+        paragraph2: 'qualunque cosa desideri'
+      },
+      orders: {
+        title: 'Di cosa hai voglia ?',
+        searchForRestaurant: 'Cerca per ristorante ..',
+      },
+      workWithUs: {
+        title: 'Lavora come rider',
+        button: 'Candidati ora',
+        subtitle: 'Ti offriamo un lavoro',
+        subtitle2: 'stabile e flessibile',
+        paragraph: 'Consegna i tuoi ordini... al resto ci pensiamo noi!',
+        descrApplication: 'Allega qui il tuo curriculum vitae aggiornato contenente informazioni come nome, cognome e recapito telefonico per poter essere ricontattato. Il gruppo di JustEat costituisce il luogo ideale in cui ciascuno può scrivere la propria storia professionale contribuendo, con impegno e determinazione, a scrivere la storia del Paese. Ti aspettiamo!',
+        uploadedFile: 'File caricato:',
+        dragHereYourFileOr: 'Trascina qui il tuo file oppure',
+        sendApplication: 'Invia candidatura'
+      }
+    },
+    components: {
+      navbar: {
+        orders: 'Ordini',
+        becomeARider: 'Diventa un Rider',
+        cart: 'Carrello',
+      },
+      footer: {
+        allRightsReserved: 'Tutti i diritti riservati',
+        footerLinks: {
+          aboutUs: 'Chi siamo',
+          infoAboutJE: 'Informationi su Just Eat',
+          orderNotReceived: 'Non hai ricevuto un ordine?',
+          workWithUs: 'Lavora con noi',
+          cuisines: 'Cucine',
+          allergies: 'Allergie',
+          findRestaurants: 'Trova ristoranti',
+          BecomeaJustEatrider: 'Diventa un rider su Just Eat',
+          customerService: 'Servizio clienti',
+          faq: 'Domande frequenti',
+          downloadJustEatApp: 'Scarica l\'applicazione Just Eat',
+          registerJustEat: 'Registrati su Just Eat'
+        }
+      },
+    },
+    common: {
+      hide: 'Nascondi',
+      show: 'Mostra',
+      showAll: 'Mostra tutti',
+      freeDelivery: 'Free delivery',
+      minOrder: 'ordine minimo',
+      delivery: 'consegna',
+      application: 'Candidatura',
+      select: 'Seleziona',
+      fileUpdated: 'File caricato correttamente'
+    },
+  }
+};

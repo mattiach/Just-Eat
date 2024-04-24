@@ -1,0 +1,162 @@
+[
+    {
+        "id": "",
+        "category": "",
+        "name": "",
+        "address": {
+            "street": "",
+            "postalCode": "",
+            "city": "Roma"
+        },
+        "image": "",
+        "rating": 4,
+        "shipping": {
+            "freeShipping": false,
+            "shippingCost": 2,
+            "minOrder": 10
+        },
+        "menu": {
+            "category1": {
+                "categoryTitle": "Pizze rosse",
+                "dishes": [
+                    {
+                        "name": "Pizza Rossa",
+                        "price": 2.99
+                    },
+                    {
+                        "name": "Pizza Margherita",
+                        "price": 3.99
+                    },
+                    {
+                        "name": "Pizza Cotto e Mozzarella",
+                        "price": 4.99
+                    },
+                    {
+                        "name": "Pizza Rossa Diavola",
+                        "price": 4.99
+                    },
+                    {
+                        "name": "Pizza Rossa ai Funghi",
+                        "price": 5.99
+                    },
+                    {
+                        "name": "Pizza Rossa Wrüstel",
+                        "price": 3.99
+                    },
+                    {
+                        "name": "Pizza Peperoni Salsiccia",
+                        "price": 6.99
+                    }
+                ]
+            },
+            "category2": {
+                "categoryTitle": "Pizze bianche",
+                "dishes": [
+                    {
+                        "name": "Pizza Bianca ai Funghi",
+                        "price": 5.99
+                    },
+                    {
+                        "name": "Pizza Patate e Zucchine",
+                        "price": 4.99
+                    },
+                    {
+                        "name": "Pizza Quattro Formaggi",
+                        "price": 6.99
+                    },
+                    {
+                        "name": "Pizza Bianca Boscaiola",
+                        "price": 6.99
+                    },
+                    {
+                        "name": "Pizza Broccoli e Salsiccia",
+                        "price": 6.99
+                    },
+                    {
+                        "name": "Pizza Cicoria e Salsiccia",
+                        "price": 6.99
+                    }
+                ]
+            },
+            "category3": {
+                "categoryTitle": "Fritti",
+                "dishes": [
+                    {
+                        "name": "Supplì Cacio e Pepe",
+                        "price": 1.99
+                    },
+                    {
+                        "name": "Patatine Fritte",
+                        "price": 1.99
+                    },
+                    {
+                        "name": "Mozzarelline Fritte",
+                        "price": 1.99
+                    },
+                    {
+                        "name": "Olive Ascolane (6pz)",
+                        "price": 2.99
+                    }
+                ]
+            },
+            "category4": {
+                "categoryTitle": "Bevande e Alcolici",
+                "dishes": [
+                    {
+                        "name": "Acqua Naturale",
+                        "price": 0.99
+                    },
+                    {
+                        "name": "Coca-Cola in Lattina",
+                        "price": 1.99
+                    },
+                    {
+                        "name": "Fanta in Lattina",
+                        "price": 1.99
+                    },
+                    {
+                        "name": "Sprite in Lattina",
+                        "price": 1.99
+                    },
+                    {
+                        "name": "Coca-Cola Zero in Lattina",
+                        "price": 1.99
+                    },
+                    {
+                        "name": "Peroni (33 cl)",
+                        "price": 2.99
+                    },
+                    {
+                        "name": "Moretti (33 cl)",
+                        "price": 2.99
+                    },
+                    {
+                        "name": "Heineken (33 cl)",
+                        "price": 2.99
+                    }
+                ]
+            },
+            "category5": {
+                "categoryTitle": "Dolci",
+                "dishes": [
+                    {
+                        "name": "Calzone alla Nutella",
+                        "price": 2.99
+                    },
+                    {
+                        "name": "Calzone al Cocco",
+                        "price": 2.99
+                    },
+                    {
+                        "name": "Bomba alla Crema",
+                        "price": 2.99
+                    },
+                    {
+                        "name": "Tiramisù Classico",
+                        "price": 2.99
+                    }
+                ]
+            }
+        }
+    }
+]
