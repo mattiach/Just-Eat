@@ -38,7 +38,7 @@ const RestaurantCard = ({ ristorante }) => {
                         <p>
                             {ristorante.rating}<span className="pl-[1px]">/5</span>
                         </p>
-                        <p className="italic pl-1.5">
+                        <p className="italic pl-1">
                             {t('common.minOrder')} {ristorante.shipping.minOrder}
                             <span className="pl-[1px]">
                                 &euro;

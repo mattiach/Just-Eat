@@ -2,54 +2,63 @@
     {
         "id": "q1",
         "question": "La mia città non è nell'elenco, ma vorrei lavorare con voi. Cosa posso fare?",
+        "questionENG": "My city is not on the list, but I would like to work with you. What can I do?",
         "answer": "Se la tua città non è nell'elenco significa che non abbiamo ancora il nostro team di riders attivo. Ti invitiamo a rimanere informato perché è probabile che arriveremo presto nella tua città.",
         "answerENG": "If your city is not on the list, it means that we do not have our team of riders active yet. We invite you to stay informed because we will likely arrive soon in your city."
     },
     {
         "id": "q2",
         "question": "I riders Just Eat vengono pagati all'ora?",
+        "questionENG": "Are Just Eat riders paid hourly?",
         "answer": "Si, con il nostro contratto avrai un fisso orario garantito di 8,75€. In più offriamo un bonus per ogni consegna effettuata che si aggiunge al tuo guadagno.",
         "answerENG": "Yes, with our contract you will have a guaranteed hourly rate of €8.75. Additionally, we offer a bonus for each delivery made that adds to your earnings."
     },
     {
         "id": "q3",
         "question": "Che tipo di veicolo e attrezzatura devo avere per poter lavorare con Just Eat?",
+        "questionENG": "What type of vehicle and equipment do I need to work with Just Eat?",
         "answer": "I veicoli ammessi per lavorare con noi sono: scooter, e-bike, bicicletta. L’attrezzatura sarà fornita da Just Eat e ti verrà spedita all’indirizzo di domicilio da te indicato. In più stiamo lavorando per aprire nuovi Hub in diverse città, ti invitiamo a rimanere informato.",
         "answerENG": "The vehicles allowed to work with us are: scooter, e-bike, bicycle. The equipment will be provided by Just Eat and will be shipped to the address you have indicated. Additionally, we are working to open new Hubs in different cities, we invite you to stay informed."
     },
     {
         "id": "q4",
         "question": "Quali documenti bisogna avere per iniziare a lavorare con Just Eat?",
+        "questionENG": "What documents do I need to start working with Just Eat?",
         "answer": "I documenti richiesti sono: documento d’identità, permesso di soggiorno (cittadini non europei), patente di guida e assicurazione del veicolo (per chi usa lo scooter).",
         "answerENG": "The required documents are: identity document, residence permit (non-European citizens), driver's license, and vehicle insurance (for those using a scooter)."
     },
     {
         "id": "q5",
         "question": "Ho altre domande, come posso contattarvi?",
+        "questionENG": "I have other questions, how can I contact you?",
         "answer": "Ci puoi mandare una email all’indirizzo joincouriers-it@takeaway.com oppure chiamarci al numero 0230453422.",
         "answerENG": "You can send us an email at joincouriers-it@takeaway.com or call us at 0230453422."
     },
     {
         "id": "q6",
         "question": "Quali sono i vantaggi di essere un Rider Just eat?",
+        "questionENG": "What are the benefits of being a Just Eat rider?",
         "answer": "Paga oraria, possibilità di ricevere bonus, ferie pagate, assicurazione vita, TFR. L'opportunità di creare nuove amicizie e far parte della grande famiglia Just Eat.",
         "answerENG": "Hourly pay, possibility of receiving bonuses, paid holidays, life insurance, TFR. The opportunity to make new friends and be part of the great Just Eat family."
     },
     {
         "id": "q7",
         "question": "La visita medica e il corso di sicurezza sono a carico di Just Eat?",
+        "questionENG": "Are the medical check-up and the safety course covered by Just Eat?",
         "answer": "Si, sono a carico di Just Eat. La presenza alla visita medica e il completamento del corso di sicurezza sono un requisito fondamentale per poter iniziare a lavorare e percepire lo stipendio.",
         "answerENG": "Yes, they are covered by Just Eat. Attending the medical visit and completing the safety course are essential requirements to start working and receive the salary."
     },
     {
         "id": "q8",
         "question": "Come funzionano i contratti con Just Eat?",
+        "questionENG": "How do contracts with Just Eat work?",
         "answer": "L'assunzione come rider per Just Eat prevede un regolare contratto come dipendente diretto.",
         "answerENG": "Being hired as a rider for Just Eat involves a regular direct employee contract."
     },
     {
         "id": "q9",
         "question": "Come diventare un rider Just Eat?",
+        "questionENG": "How can I become a Just Eat rider?",
         "answer": "Diventare un rider Just Eat è facile! Basta completare l'applicazione sopra, e attendere che uno dei nostri reclutatori ti contatti.",
         "answerENG": "Becoming a Just Eat rider is easy! Just complete the application above, and wait for one of our recruiters to contact you."
     }

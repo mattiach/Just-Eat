@@ -46,6 +46,20 @@ export const it = {
           registerJustEat: 'Registrati su Just Eat'
         }
       },
+      cartItem: {
+        paragraph: 'Il ristorante si trova in'
+      },
+      cartUserProfile: {
+        title: 'Completa il tuo ordine',
+        yourInfo: 'I tuoi dati personali',
+        yourName: 'Il tuo nome',
+        yourLastName: 'Il tuo cognome',
+        yourEmail: 'La tua email',
+        yourPhoneNumber: 'Numero di telefono'
+      },
+      cartMessage: {
+        message: 'Metodo di pagamento aggiunto correttamente'
+      }
     },
     common: {
       hide: 'Nascondi',
@@ -56,7 +70,19 @@ export const it = {
       delivery: 'consegna',
       application: 'Candidatura',
       select: 'Seleziona',
-      fileUpdated: 'File caricato correttamente'
+      fileUpdated: 'File caricato correttamente',
+      summary: 'Riepilogo',
+      total: 'Totale',
+      totalOrder: 'Totale ordine',
+      name: 'Nome',
+      lastname: 'Cognome',
+      phone: ' Telefono',
+      deliveryAddress: 'Indirizzo di consegna',
+      city: 'Città',
+      country: 'Paese',
+      paymentMethod: 'Metodo di pagamento',
+      sending: 'Inviando',
+      confirmOrder: 'Conferma ordine'
     },
   }
 };

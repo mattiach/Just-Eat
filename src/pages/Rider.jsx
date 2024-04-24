@@ -23,7 +23,7 @@ import ModalRider from "@components/modal/ModalRider";
 const ApplicationForm = lazy(() => import("@components/ApplicationForm"));
 
 const Rider = () => {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
     const [bgSRC] = useState(Math.random() < 0.5 ? imageRider1 : imageRider2); // change image background
 
     // file upload form
@@ -93,8 +93,8 @@ const Rider = () => {
                                         <Fragment key={faq.id}>
                                             <Accordion
                                                 id={faq.id}
-                                                question={faq.question}
-                                                answer={faq.answer}
+                                                question={i18n.language === 'it' ? faq.question : faq.questionENG}
+                                                answer={i18n.language === 'it' ? faq.answer : faq.answerENG}
                                             />
                                         </Fragment>
                                     )
