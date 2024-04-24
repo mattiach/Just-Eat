@@ -21,7 +21,7 @@ export const en = {
         uploadedFile: 'Uploaded file:',
         dragHereYourFileOr: 'Drag your file here or',
         sendApplication: 'Send application'
-      }
+      },
     },
     components: {
       navbar: {
@@ -46,6 +46,20 @@ export const en = {
           registerJustEat: 'Register on Just Eat'
         },
       },
+      cartItem: {
+        paragraph: 'The restaurant is located in'
+      },
+      cartUserProfile: {
+        title: 'Complete your order',
+        yourInfo: 'Your personal information',
+        yourName: 'Your name',
+        yourLastName: 'Your last name',
+        yourEmail: 'Your email',
+        yourPhoneNumber: 'Phone number'
+      },
+      cartMessage: {
+        message: 'Payment method added successfully'
+      }
     },
     common: {
       hide: 'Hide',
@@ -56,7 +70,19 @@ export const en = {
       delivery: 'delivery',
       application: 'Application',
       select: 'Select',
-      fileUpdated: 'File uploaded successfully'
+      fileUpdated: 'File uploaded successfully',
+      summary: 'Summary',
+      total: 'Total',
+      totalOrder: 'Total order',
+      name: 'Name',
+      lastname: 'Last name',
+      phone: ' Telephone',
+      deliveryAddress: 'Delivery address',
+      city: 'City',
+      country: 'Country',
+      paymentMethod: 'Payment method',
+      sending: 'Sending',
+      confirmOrder: 'Confirm order'
     },
     cuisines: {
       cinese: 'Chinese',

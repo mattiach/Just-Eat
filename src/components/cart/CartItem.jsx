@@ -2,8 +2,10 @@ import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { calculateRestaurantTotal } from "@functions/calculateRestaurantTotal";
 import { formatCurrency } from "@functions/formatCurrency";
+import { useTranslation } from "react-i18next";
 
 const CartItem = ({ onClick, isLoading }) => {
+  const { t } = useTranslation();
   const cart = useSelector((state) => state.cart);
   const navigate = useNavigate();
 
@@ -58,14 +60,14 @@ const CartItem = ({ onClick, isLoading }) => {
                   {/* restaurant total */}
                   {!freeShipping && shippingCost > 0 && (
                     <li className="flex justify-between col-span-12 pt-3 text-sm text-right">
-                      Consegna:
+                      {t('common.delivery').charAt(0).toUpperCase() + t('common.delivery').slice(1)}:
                       <span className="italic">
                         {formatCurrency(shippingCost)}
                       </span>
                     </li>
                   )}
                   <li className={`flex justify-between col-span-12 text-sm text-right ${shippingCost > 0 ? 'pt-0' : 'pt-3'}`}>
-                    Totale:
+                    {t('common.total')}:
                     <span className="italic">
                       {formatCurrency(calculateRestaurantTotal(cartItem) + shippingCost)}
                     </span>
@@ -74,8 +76,8 @@ const CartItem = ({ onClick, isLoading }) => {
 
                 {/* restaurant location */}
                 <div className="w-full mx-auto mt-4 mb-16 text-xs italic leading-tighter md:max-w-96">
-                  <p>Ordine minimo: {minOrder !== 0 ? formatCurrency(minOrder) : null}</p>
-                  <p>Il ristorante si trova in {street}, {postalCode} - {city}</p>
+                  <p>{t('common.minOrder').charAt(0).toUpperCase() + t('common.minOrder').slice(1)}: {minOrder !== 0 ? formatCurrency(minOrder) : null}</p>
+                  <p>{t('components.cartItem.paragraph')} {street}, {postalCode} - {city}</p>
                 </div>
               </div>
             )
