@@ -1,4 +1,8 @@
+import { useTranslation } from "react-i18next";
+
 const CardsCategory = ({ imgSRC, title, setSelectedCuisine }) => {
+    const { t } = useTranslation();
+
     const selectCuisineFunction = () => {
         setSelectedCuisine(title);
     };
@@ -17,7 +21,7 @@ const CardsCategory = ({ imgSRC, title, setSelectedCuisine }) => {
                 onClick={selectCuisineFunction}
             />
             <p className={cardClasses} title={title}>
-                {title.charAt(0).toUpperCase() + title.slice(1)}
+                {t(`cuisines.` + title).charAt(0).toUpperCase() + t(`cuisines.` + title).slice(1)}
             </p>
         </div>
     );

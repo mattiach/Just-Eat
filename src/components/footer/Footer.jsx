@@ -17,11 +17,11 @@ const Footer = () => {
                     {footerLinks.map((linksArray, arrayIndex) => (
                         <div key={arrayIndex} className="flex justify-center w-full md:w-auto">
                             <div className="w-52">
-                                <FooterTitleSection>{t(`footer.footerLinks.${linksArray[0]}`)}</FooterTitleSection>
+                                <FooterTitleSection>{t(`components.footer.footerLinks.${linksArray[0]}`)}</FooterTitleSection>
                                 <ul className="text-gray-800">
                                     {linksArray.slice(1).map((link, index) => (
                                         <FooterLink {...link} key={`footerLink_KEY_${index}`}>
-                                            {t(`footer.footerLinks.${link}`)}
+                                            {t(`components.footer.footerLinks.${link}`)}
                                         </FooterLink>
                                     ))}
                                 </ul>
@@ -35,7 +35,7 @@ const Footer = () => {
                         <span className="pl-1 pr-2">
                             JustEat&trade;.
                         </span>
-                        {t('footer.allRightsReserved')}
+                        {t('components.footer.allRightsReserved')}
                     </span>
                 </div>
             </footer>

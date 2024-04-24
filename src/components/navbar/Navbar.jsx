@@ -69,17 +69,17 @@ const Navbar = () => {
                             </NavbarItem>
                             <NavbarItem>
                                 <Link to={'/orders'}>
-                                    {t('navbar.orders')}
+                                    {t('components.navbar.orders')}
                                 </Link>
                             </NavbarItem>
                             <NavbarItem>
                                 <Link to={'/work-with-us'}>
-                                    {t('navbar.becomeARider')}
+                                    {t('components.navbar.becomeARider')}
                                 </Link>
                             </NavbarItem>
                             <NavbarItem className={"sm:hidden"}>
                                 <Link to={'/carrello'}>
-                                    {t('navbar.cart')}
+                                    {t('components.navbar.cart')}
                                 </Link>
                             </NavbarItem>
                         </ul>

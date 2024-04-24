@@ -30,14 +30,14 @@ const Home = () => {
             <Header bgSRC={bgSRC} />
             <main className='fading-in-animation select-none'>
                 <div className="mt-10 text-center">
-                    <Title>{t('home.title')}</Title>
+                    <Title>{t('pages.home.title')}</Title>
                 </div>
                 <div className="mt-10 text-center">
                     <Link to={'/orders'}>
                         <Button
                             className={"focus:outline-none bg-primary hover:bg-secondary text-white focus:ring-0 font-semibold text-xl rounded-lg py-3 px-4 mr-2 mb-2 w-52 md:w-60"}
                         >
-                            {t('home.button')}
+                            {t('pages.home.button')}
                         </Button>
                     </Link>
                 </div>
@@ -52,9 +52,9 @@ const Home = () => {
                     </div>
                     <div className="text-center pt-14 md:pt-20 lg:pt-24">
                         <Paragraph>
-                            {t('home.paragraph1')}
+                            {t('pages.home.paragraph1')}
                             <span className='inline-block pl-1 sm:block sm:pl-0'>
-                                {t('home.paragraph2')}
+                                {t('pages.home.paragraph2')}
                             </span>
                         </Paragraph>
                         <div className='flex justify-center mt-20 sm:mt-14'>

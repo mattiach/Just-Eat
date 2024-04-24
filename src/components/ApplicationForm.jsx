@@ -1,3 +1,5 @@
+import { useTranslation } from "react-i18next";
+
 const ApplicationForm = ({
   isDragging,
   setIsDragging,
@@ -5,6 +7,8 @@ const ApplicationForm = ({
   setSelectedFiles,
   sendResumeFunction
 }) => {
+  const { t } = useTranslation();
+
   const handleDragOver = (event) => { // .. onDragOver
     event.preventDefault();
     setIsDragging(true);
@@ -36,11 +40,11 @@ const ApplicationForm = ({
         onDrop={handleDrop}
       >
         <div className={`relative bg-primary py-6 text-xl font-semibold tracking-wider text-white ${isDragging ? 'rounded-none' : 'rounded-sm'}`}>
-          Candidatura
+          {t('common.application')}
         </div>
         <div className="pt-2 px-0.5">
           <p className="text-sm text-justify break-words">
-            Allega qui il tuo curriculum vitae aggiornato contenente informazioni come nome, cognome e recapito telefonico per poter essere ricontattato. Il gruppo di JustEat costituisce il luogo ideale in cui ciascuno può scrivere la propria storia professionale contribuendo, con impegno e determinazione, a scrivere la storia del Paese. Ti aspettiamo!
+            {t('pages.workWithUs.descrApplication')}
           </p>
         </div>
         <div className="space-y-4 px:4 pt-5 pb-2 md:px-8 md:pt-10 md:pb-4">
@@ -96,8 +100,8 @@ const ApplicationForm = ({
             </svg>
             <p className="mt-4 text-center text-sm font-medium text-gray-800">
               {selectedFiles.length > 0
-                ? `File caricato: ${selectedFiles[0].name}`
-                : 'Trascina qui il tuo file oppure'}
+                ? `${t('pages.workWithUs.uploadedFile')} ${selectedFiles[0].name}`
+                : t('pages.workWithUs.dragHereYourFileOr')}
               <label className="shadow-blue-100 mt-2 block rounded-full border bg-white px-4 py-0.5 font-normal text-blue-500 shadow hover:bg-blue-50">
                 <input
                   className="hidden"
@@ -109,11 +113,11 @@ const ApplicationForm = ({
                   onDrop={handleDrop}
                   onChange={handleFileChange}
                 />
-                Seleziona
+                {t('common.select')}
               </label>
             </p>
             <p className={`text-green-600 mt-3 ${selectedFiles.length > 0 ? 'block' : 'hidden'}`}>
-              File caricato correttamente
+              {t('common.fileUpdated')}
             </p>
           </div>
           <div>
@@ -124,7 +128,7 @@ const ApplicationForm = ({
               onClick={() => sendResumeFunction()}
               disabled={selectedFiles.length < 1 ? true : false}
             >
-              Invia candidatura
+              {t('pages.workWithUs.sendApplication')}
             </button>
           </div>
         </div>
