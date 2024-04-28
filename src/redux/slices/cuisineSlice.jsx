@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 // data
-import { cuisineImages } from '../../data/cuisineImages';
+import { cuisineImages } from '@data/cuisineImages';
 
 // reducer
 const cuisineSlice = createSlice({
