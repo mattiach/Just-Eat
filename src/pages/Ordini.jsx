@@ -100,7 +100,7 @@ const Ordini = () => {
         <div className="mt-10 text-center select-none">
           <Title>{t('pages.orders.title')}</Title>
         </div>
-        <div className="mt-6 select-none">
+        <div className="mt-6 select-none overflow-x-hidden">
           {
             isCarouselMediaQuery ?
               <>

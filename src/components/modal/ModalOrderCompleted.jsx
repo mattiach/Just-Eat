@@ -1,13 +1,12 @@
 import { IoCloseSharp } from "react-icons/io5";
-import CreditCardComponent from "@components/cart/CreditCardComponent";
 import { useTranslation } from "react-i18next";
 
-const ModalPayment = ({ modalId }) => {
+const ModalOrderCompleted = ({ modalPayment, orderNumber }) => {
   const { t } = useTranslation();
 
   return (
     <>
-      <dialog id={modalId} className="modal">
+      <dialog id={modalPayment} className="modal">
         <div className="max-w-xl modal-box">
           <form method="dialog" className="modal-backdrop">
             <button className="absolute p-1 outline-none btn btn-sm btn-circle btn-ghost right-2 top-2">
@@ -15,7 +14,7 @@ const ModalPayment = ({ modalId }) => {
             </button>
           </form>
           <div className="pb-3 my-5 bg-white border-b">
-            <CreditCardComponent />
+            {orderNumber}
           </div>
         </div>
         <form method="dialog" className="modal-backdrop">
@@ -25,4 +24,4 @@ const ModalPayment = ({ modalId }) => {
     </>
   )
 }
-export default ModalPayment
+export default ModalOrderCompleted

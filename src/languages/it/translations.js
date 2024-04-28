@@ -21,6 +21,9 @@ export const it = {
         uploadedFile: 'File caricato:',
         dragHereYourFileOr: 'Trascina qui il tuo file oppure',
         sendApplication: 'Invia candidatura'
+      },
+      orderCompleted: {
+        paragraph: 'A breve ti arriverà un\'email con il riepilogo del tuo ordine!'
       }
     },
     components: {
@@ -42,7 +45,7 @@ export const it = {
           BecomeaJustEatrider: 'Diventa un rider su Just Eat',
           customerService: 'Servizio clienti',
           faq: 'Domande frequenti',
-          downloadJustEatApp: 'Scarica l\'applicazione Just Eat',
+          downloadJustEatApp: 'Scarica l\'APP Just Eat',
           registerJustEat: 'Registrati su Just Eat'
         }
       },
@@ -59,6 +62,10 @@ export const it = {
       },
       cartMessage: {
         message: 'Metodo di pagamento aggiunto correttamente'
+      },
+      creditCardComponent: {
+        title: 'Aggiungi metodo di pagamento',
+        paragraph: 'Le informazioni inserite non saranno salvate.*'
       }
     },
     common: {
@@ -74,6 +81,8 @@ export const it = {
       summary: 'Riepilogo',
       total: 'Totale',
       totalOrder: 'Totale ordine',
+      orderCompleted: 'Ordine completato',
+      orderNumber: 'Numero ordine',
       name: 'Nome',
       lastname: 'Cognome',
       phone: ' Telefono',
@@ -82,7 +91,21 @@ export const it = {
       country: 'Paese',
       paymentMethod: 'Metodo di pagamento',
       sending: 'Inviando',
-      confirmOrder: 'Conferma ordine'
+      confirmOrder: 'Conferma ordine',
+      close: 'Chiudi',
+      clickToCopy: 'Clicca per copiare',
+      cardNumber: 'Numero di carta',
+      expirationDate: 'Data di scadenza',
+      confirm: 'Conferma'
     },
+    cuisines: {
+      cinese: 'Cinese',
+      fritti: 'Fritti',
+      giapponese: 'Giapponese',
+      sushi: 'Sushi',
+      hamburger: 'Hamburger',
+      italiano: 'Italiano',
+      pizza: 'Pizza',
+    }
   }
 };

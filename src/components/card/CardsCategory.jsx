@@ -7,8 +7,6 @@ const CardsCategory = ({ imgSRC, title, setSelectedCuisine }) => {
         setSelectedCuisine(title);
     };
 
-    const cardClasses = "text-center font-bold relative text-sm bottom-6"
-
     return (
         <div>
             <img
@@ -20,7 +18,7 @@ const CardsCategory = ({ imgSRC, title, setSelectedCuisine }) => {
                 className="cursor-pointer hover:opacity-90 px-1"
                 onClick={selectCuisineFunction}
             />
-            <p className={cardClasses} title={title}>
+            <p className="text-center font-bold relative text-sm bottom-6" title={title}>
                 {t(`cuisines.` + title).charAt(0).toUpperCase() + t(`cuisines.` + title).slice(1)}
             </p>
         </div>
