@@ -1,4 +1,4 @@
 // function to get the current year
 export const getCurrentYear = () => {
-    return new Date().getFullYear();
+  return new Date().getFullYear();
 }

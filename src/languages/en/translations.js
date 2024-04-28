@@ -98,6 +98,11 @@ export const en = {
       expirationDate: 'Expiration Date',
       confirm: 'Confirm'
     },
+    notifications: {
+      message1: 'CV sent !',
+      message2: 'Select a file before sending the CV',
+      message3: 'Order number copied!'
+    },
     cuisines: {
       cinese: 'Chinese',
       fritti: 'Fried',
@@ -106,6 +111,6 @@ export const en = {
       hamburger: 'Hamburger',
       italiano: 'Italian',
       pizza: 'Pizza',
-    }
+    },
   }
 }
