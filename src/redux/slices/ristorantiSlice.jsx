@@ -1,13 +1,13 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 // data
-import pizza from '../../data/pizza.json';
-import sushi from '../../data/sushi.json';
-import hamburger from '../../data/hamburger.json';
-import italiano from '../../data/italiano.json';
-import giapponese from '../../data/giapponese.json';
-import fritti from '../../data/fritti.json';
-import cinese from '../../data/cinese.json';
+import pizza from '@data/pizza.json';
+import sushi from '@data/sushi.json';
+import hamburger from '@data/hamburger.json';
+import italiano from '@data/italiano.json';
+import giapponese from '@data/giapponese.json';
+import fritti from '@data/fritti.json';
+import cinese from '@data/cinese.json';
 
 const initialState = {
   pizza,

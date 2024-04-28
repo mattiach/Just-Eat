@@ -39,9 +39,7 @@ const CartUserProfile = ({ modalId, setisLoading }) => {
 
   const handleSubmit = (values, { setSubmitting }) => {
     setUserCartInfo(values);
-    if (areCCFieldsPopulated) {
-      console.log(areCCFieldsPopulated);
-    }
+    if (!areCCFieldsPopulated) return;
 
     if ((cart.length > 0) && isEligibleForDelivery && areCCFieldsPopulated) {
       setisLoading(true);

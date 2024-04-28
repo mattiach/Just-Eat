@@ -24,7 +24,7 @@ export const it = {
       },
       orderCompleted: {
         paragraph: 'A breve ti arriverà un\'email con il riepilogo del tuo ordine!'
-      }
+      },
     },
     components: {
       navbar: {
@@ -98,6 +98,11 @@ export const it = {
       expirationDate: 'Data di scadenza',
       confirm: 'Conferma'
     },
+    notifications: {
+      message1: 'Curriculum inviato!',
+      message2: 'È necessario aggiungere un file!',
+      message3: 'Numero ordine copiato!'
+    },
     cuisines: {
       cinese: 'Cinese',
       fritti: 'Fritti',
@@ -106,6 +111,6 @@ export const it = {
       hamburger: 'Hamburger',
       italiano: 'Italiano',
       pizza: 'Pizza',
-    }
+    },
   }
 };

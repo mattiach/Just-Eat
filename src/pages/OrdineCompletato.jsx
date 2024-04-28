@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { useContext } from 'react';
 import { AppContext } from '@context/AppContext';
 import { copyToClipboardFunction } from '@functions/copyToClipboardFunction';
+import { enqueueSnackbar } from 'notistack';
 
 // components
 import Navbar from '@components/navbar/Navbar';
@@ -15,6 +16,9 @@ const OrdineCompletato = () => {
 
   //  copy the "order number" to the clipboard when the user clicks on it
   const copyOrderNumber = () => {
+    enqueueSnackbar(t('notifications.message3'), {
+      autoHideDuration: 3500,
+    })
     copyToClipboardFunction(orderNumber);
   }
 
