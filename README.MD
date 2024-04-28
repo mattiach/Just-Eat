@@ -12,7 +12,7 @@ Make sure you already have [Node js](https://nodejs.org/it/download/) installed 
 npm install
 ```
 
-## Come avviare l'applicazione
+## How to run the application
 
 After installing all the necessary dependencies, you can now proceed with launching the application using the command:
 
@@ -26,7 +26,10 @@ Connect to [http://localhost:3000/](http://localhost:3000) to view the applicati
 
 - React js
 - Vite js
-- Tailwind CSS
+- Tailwind CSS, DaisyUI
+- Redux Toolkit
+- eslint
+- i18next, formik, uuid, react-router-dom and many other JS libraries..
 
 ## Author and rights
 
