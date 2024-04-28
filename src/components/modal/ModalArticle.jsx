@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux';
 // icons
 import { IoCloseSharp } from "react-icons/io5";
 import { IoAddCircleOutline, IoRemoveCircleOutline } from "react-icons/io5";
+import { useTranslation } from 'react-i18next';
 
 const ModalArticle = ({
   restaurantId,
@@ -11,6 +12,9 @@ const ModalArticle = ({
   addToCartFunction,
   removeFromCartFunction,
 }) => {
+
+  const { t } = useTranslation();
+
   // cart state from redux
   const cart = useSelector((state) => state.cart);
 
@@ -28,7 +32,7 @@ const ModalArticle = ({
       <div className="modal-box">
         <form method="dialog" className="modal-backdrop">
           <button className="absolute p-1 outline-none btn btn-sm btn-circle btn-ghost right-2 top-2">
-            <IoCloseSharp size={22} fill="black" title="Chiudi" />
+            <IoCloseSharp size={22} fill="black" title={t('common.close')} />
           </button>
         </form>
         <div className="flex items-center justify-between pb-3 my-5 border-b">
@@ -48,7 +52,7 @@ const ModalArticle = ({
         </div>
       </div>
       <form method="dialog" className="modal-backdrop">
-        <button>Chiudi</button>
+        <button>{t('common.close')}</button>
       </form>
     </dialog>
   );

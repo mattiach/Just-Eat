@@ -46,7 +46,9 @@ const AppProvider = ({ children }) => {
     cardNumber: 0,
     expirationDate: '',
     cvc: 0
-  })
+  });
+
+  const [orderNumber, setOrderNumber] = useState(0);
 
   return (
     <AppContext.Provider
@@ -57,6 +59,8 @@ const AppProvider = ({ children }) => {
         setCreditCardInfo,
         userCartInfo,
         setUserCartInfo,
+        orderNumber,
+        setOrderNumber,
       }}
     >
       {children}

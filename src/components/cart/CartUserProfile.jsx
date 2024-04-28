@@ -4,6 +4,7 @@ import { Formik, Form, Field } from 'formik';
 import { useMediaQuery } from 'react-responsive';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { v4 as uuid } from 'uuid';
 
 // redux
 import { useDispatch, useSelector } from 'react-redux';
@@ -23,7 +24,7 @@ const CartUserProfile = ({ modalId, setisLoading }) => {
   const dispatch = useDispatch();
   const { t } = useTranslation();
   const cart = useSelector((state) => state.cart);
-  const { userCartInfo, setUserCartInfo } = useContext(AppContext);
+  const { userCartInfo, setUserCartInfo, setOrderNumber } = useContext(AppContext);
   const { creditCardInfo } = useContext(AppContext);
   const areCCFieldsPopulated = useFieldsPopulated(creditCardInfo);
   const isNotDesktopView = useMediaQuery({ query: "(max-width: 992px)" });
@@ -44,12 +45,14 @@ const CartUserProfile = ({ modalId, setisLoading }) => {
 
     if ((cart.length > 0) && isEligibleForDelivery && areCCFieldsPopulated) {
       setisLoading(true);
+      const randomUUID = uuid();
 
       setTimeout(() => {
+        setOrderNumber(randomUUID);
         dispatch(removeAllFromCart());
         setisLoading(false);
         setSubmitting(false);
-        navigate('/home');
+        navigate(`/order/${randomUUID}`);
       }, 3000);
     }
   };

@@ -1,6 +1,6 @@
 const FooterLink = ({ children }) => {
     return (
-        <li className="mb-4">
+        <li className="mb-4 text-balance">
             <span className="hover:underline">
                 {children}
             </span>

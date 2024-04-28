@@ -20,8 +20,11 @@ export const en = {
         descrApplication: 'Attach your updated resume here containing information such as name, surname, and telephone number to be contacted. JustEat\'s team is the ideal place where everyone can write their professional story by contributing, with commitment and determination, to write the country\'s history. We\'re waiting for you!',
         uploadedFile: 'Uploaded file:',
         dragHereYourFileOr: 'Drag your file here or',
-        sendApplication: 'Send application'
+        sendApplication: 'Invia domanda di lavoro'
       },
+      orderCompleted: {
+        paragraph: 'You will soon receive an email with the summary of your order!'
+      }
     },
     components: {
       navbar: {
@@ -59,6 +62,10 @@ export const en = {
       },
       cartMessage: {
         message: 'Payment method added successfully'
+      },
+      creditCardComponent: {
+        title: 'Add payment method',
+        paragraph: 'The entered information will not be saved.*'
       }
     },
     common: {
@@ -74,6 +81,8 @@ export const en = {
       summary: 'Summary',
       total: 'Total',
       totalOrder: 'Total order',
+      orderCompleted: 'Order completed',
+      orderNumber: 'Order number',
       name: 'Name',
       lastname: 'Last name',
       phone: ' Telephone',
@@ -82,7 +91,12 @@ export const en = {
       country: 'Country',
       paymentMethod: 'Payment method',
       sending: 'Sending',
-      confirmOrder: 'Confirm order'
+      confirmOrder: 'Confirm order',
+      close: 'Close',
+      clickToCopy: 'Click to copy',
+      cardNumber: 'Card Number',
+      expirationDate: 'Expiration Date',
+      confirm: 'Confirm'
     },
     cuisines: {
       cinese: 'Chinese',

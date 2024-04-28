@@ -50,7 +50,7 @@ const Navbar = () => {
                         </h1>
                     </div>
                     <div className="flex md:order-2">
-                        <div className='px-5 py-2.5 sm:flex gap-2 cursor-pointer' onClick={() => navigateFunction('/carrello')}>
+                        <div className='px-5 py-2.5 sm:flex gap-2 cursor-pointer' onClick={() => navigateFunction('/cart')}>
                             <FaShoppingCart fill='#fe7e00' size={23} />
                             <span className='hidden sm:inline w-4 text-center'>
                                 <span className={`${totalItems > 0 ? "" : "invisible"}`}>
@@ -78,7 +78,7 @@ const Navbar = () => {
                                 </Link>
                             </NavbarItem>
                             <NavbarItem className={"sm:hidden"}>
-                                <Link to={'/carrello'}>
+                                <Link to={'/cart'}>
                                     {t('components.navbar.cart')}
                                 </Link>
                             </NavbarItem>

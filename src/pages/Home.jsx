@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
+import { useTranslation } from 'react-i18next';
 
 // assets
 const headerImage1 = "assets/img/bg_hero-wide.jpg";
@@ -14,7 +15,6 @@ import Title from '@components/typography/Title';
 import Button from '@components/button/Button';
 import Paragraph from '@components/typography/Paragraph';
 import Footer from '@components/footer/Footer';
-import { useTranslation } from 'react-i18next';
 
 const Home = () => {
     const { t } = useTranslation();
