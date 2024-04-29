@@ -47,10 +47,10 @@ const OrdineCompletato = () => {
               src={'/assets/img/order-completed.png'}
               alt='order-completed.png'
               loading='eager'
-              className='w-80 xs:w-96 md:w-[30rem] mx-auto'
+              className='w-80 xs:w-96 md:w-[34rem] mx-auto'
             />
           </div>
-          <div className='relative bottom-8'>
+          <div className='relative bottom-8 md:bottom-12'>
             <p className='tracking-tight text-center text-balance opacity-90 p-1.5 text-xs xs:text-sm sm:text-md md:text-base'>
               {t('pages.orderCompleted.paragraph')}
             </p>

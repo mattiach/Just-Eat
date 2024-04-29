@@ -24,9 +24,9 @@ const CartUserProfile = ({ modalId, setisLoading }) => {
   const dispatch = useDispatch();
   const { t } = useTranslation();
   const cart = useSelector((state) => state.cart);
-  const { userCartInfo, setUserCartInfo, setOrderNumber } = useContext(AppContext);
-  const { creditCardInfo } = useContext(AppContext);
+  const { userCartInfo, setUserCartInfo, setOrderNumber, creditCardInfo } = useContext(AppContext);
   const areCCFieldsPopulated = useFieldsPopulated(creditCardInfo);
+  const areUserFieldsPopulated = useFieldsPopulated(userCartInfo);
   const isNotDesktopView = useMediaQuery({ query: "(max-width: 992px)" });
   const isEligibleForDelivery = useCheckDeliveryEligibility(cart);
   const navigate = useNavigate();
@@ -39,9 +39,9 @@ const CartUserProfile = ({ modalId, setisLoading }) => {
 
   const handleSubmit = (values, { setSubmitting }) => {
     setUserCartInfo(values);
-    if (!areCCFieldsPopulated) return;
+    if (!areCCFieldsPopulated || !areUserFieldsPopulated) return;
 
-    if ((cart.length > 0) && isEligibleForDelivery && areCCFieldsPopulated) {
+    if ((cart.length > 0) && isEligibleForDelivery && areCCFieldsPopulated && areUserFieldsPopulated) {
       setisLoading(true);
       const randomUUID = uuid();
 
@@ -83,13 +83,13 @@ const CartUserProfile = ({ modalId, setisLoading }) => {
                 <div className="grid gap-4 gap-x-5 sm:grid-cols-2">
                   <Field
                     type="text"
-                    name={t('common.name')}
+                    name="nome"
                     placeholder={t('components.cartUserProfile.yourName')}
                     component={InputForm}
                   />
                   <Field
                     type="text"
-                    name={t('common.lastname')}
+                    name="cognome"
                     placeholder={t('components.cartUserProfile.yourLastName')}
                     component={InputForm}
                   />
@@ -101,7 +101,7 @@ const CartUserProfile = ({ modalId, setisLoading }) => {
                   />
                   <Field
                     type="text"
-                    name={t('common.phone')}
+                    name="telefono"
                     placeholder={t('components.cartUserProfile.yourPhoneNumber')}
                     component={InputForm}
                   />
@@ -112,19 +112,19 @@ const CartUserProfile = ({ modalId, setisLoading }) => {
                 <div className="grid gap-4 gap-x-5 sm:grid-cols-2">
                   <Field
                     type="text"
-                    name={t('common.deliveryAddress')}
+                    name="indirizzo"
                     placeholder={t('common.deliveryAddress')}
                     component={InputForm}
                   />
                   <Field
                     type="text"
-                    name={t('common.city')}
-                    placeholder={t('common.city')}
+                    name="città"
+                    placeholder="città"
                     component={InputForm}
                   />
                   <Field
                     type="text"
-                    name={t('common.country')}
+                    name="paese"
                     placeholder={t('common.country')}
                     component={InputForm}
                   />
@@ -159,8 +159,8 @@ const CartUserProfile = ({ modalId, setisLoading }) => {
                 <div className='flex justify-center md:justify-end'>
                   <Button
                     type="submit"
-                    disabled={isSubmitting || !areCCFieldsPopulated || !isEligibleForDelivery}
-                    className={`w-full xl:max-w-60 px-6 py-2 mt-3 text-sm font-semibold text-white rounded-md bg-emerald-600 ${(areCCFieldsPopulated && parsedTotalCart > 0 && isEligibleForDelivery) ? 'opacity-100 hover:bg-emerald-700' : 'opacity-60'}`}
+                    disabled={isSubmitting || !areCCFieldsPopulated || !areUserFieldsPopulated || !isEligibleForDelivery}
+                    className={`w-full xl:max-w-60 px-6 py-2 mt-3 text-sm font-semibold text-white rounded-md bg-emerald-600 ${(areCCFieldsPopulated && parsedTotalCart > 0 && isEligibleForDelivery && areUserFieldsPopulated) ? 'opacity-100 hover:bg-emerald-700' : 'opacity-60'}`}
                   >
                     {isSubmitting ? (t('common.sending') + '...') : t('common.confirmOrder')}
                   </Button>
