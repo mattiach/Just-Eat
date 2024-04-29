@@ -28,9 +28,7 @@ const RestaurantCard = ({ ristorante }) => {
         </div>
         <div className="mt-1 text-ellipsis cursor-text">
           <div>
-            <h2 className="text-base tracking-tight cursor-pointer"
-              onClick={() => navigateToRestaurantPageFunction()}
-            >
+            <h2 className="text-base tracking-tight cursor-pointer" onClick={() => navigateToRestaurantPageFunction()}>
               {ristorante.name}
             </h2>
           </div>
