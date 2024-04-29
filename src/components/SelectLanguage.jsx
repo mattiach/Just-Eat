@@ -19,6 +19,7 @@ const SelectLanguage = () => {
             src={`assets/img/flags/${language}.svg`}
             alt={language}
             width={22}
+            height={22}
             className="aspect-auto"
             loading="eager"
           />
@@ -33,7 +34,7 @@ const SelectLanguage = () => {
                 return (
                   <li
                     value={languageFound}
-                    onClick={() => { handleLanguageChange(languageFound); console.log(languageFound); }}
+                    onClick={() => handleLanguageChange(languageFound)}
                     key={'language_KEY_' + languageFound}
                   >
                     <span onClick={() => handleLanguageChange(languageFound)}>
@@ -41,6 +42,7 @@ const SelectLanguage = () => {
                         src={`assets/img/flags/${languageFound}.svg`}
                         alt={languageFound}
                         width={22}
+                        height={22}
                         className="aspect-auto"
                         loading="lazy"
                       />

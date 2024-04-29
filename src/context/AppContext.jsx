@@ -51,7 +51,6 @@ const AppProvider = ({ children }) => {
     const parsedCartInfo = userCartInfoFromLocalStorage ? JSON.parse(userCartInfoFromLocalStorage) : null;
     return parsedCartInfo !== null ? parsedCartInfo : initialValues;
   });
-  console.log('userCartInfo ➡️', userCartInfo)
 
   // update localStorage when userCartInfo changes
   useEffect(() => {
