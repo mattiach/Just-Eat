@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useSelector } from 'react-redux';
 import { useTranslation } from 'react-i18next';
+import { useMediaQuery } from 'react-responsive';
 
 // routing
 import { Link, useNavigate } from 'react-router-dom';
@@ -12,12 +13,14 @@ import { FaShoppingCart } from 'react-icons/fa';
 import Logo from '@components/Logo';
 import NavbarItem from '@components/navbar/NavbarItem';
 import HamburgerButton from '@components/navbar/HamburgerButton';
+import SelectLanguage from '@components/SelectLanguage';
 
 const Navbar = () => {
   const cart = useSelector((state) => state.cart);
   const [open, setOpen] = useState(false);
   const navigate = useNavigate();
-  const { t } = useTranslation()
+  const { t } = useTranslation();
+  const isLessThan640 = useMediaQuery({ query: "(max-width: 640px)" });
 
   const navigateFunction = (value) => {
     navigate(value);
@@ -50,6 +53,9 @@ const Navbar = () => {
             </h1>
           </div>
           <div className="flex md:order-2">
+            <span className='hidden sm:inline relative top-1.5 right-1'>
+              <SelectLanguage />
+            </span>
             <div className='px-5 py-2.5 sm:flex gap-2 cursor-pointer' onClick={() => navigateFunction('/cart')}>
               <FaShoppingCart fill='#fe7e00' size={23} />
               <span className='hidden sm:inline w-4 text-center'>
@@ -77,11 +83,19 @@ const Navbar = () => {
                   {t('components.navbar.becomeARider')}
                 </Link>
               </NavbarItem>
-              <NavbarItem className={"sm:hidden"}>
-                <Link to={'/cart'}>
-                  {t('components.navbar.cart')}
-                </Link>
-              </NavbarItem>
+              {
+                isLessThan640 ?
+                  <>
+                    <NavbarItem className={"sm:hidden"}>
+                      <Link to={'/cart'}>
+                        {t('components.navbar.cart')}
+                      </Link>
+                    </NavbarItem>
+                    <NavbarItem className={"sm:hidden flex justify-start"}>
+                      <SelectLanguage />
+                    </NavbarItem>
+                  </> : null
+              }
             </ul>
           </div>
         </div>

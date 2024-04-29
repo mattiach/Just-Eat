@@ -1,4 +1,6 @@
 import { createContext, useState, useEffect } from "react";
+import { supportedLanguages } from "@settings/supportedLanguages";
+import { useTranslation } from "react-i18next";
 
 const AppContext = createContext();
 
@@ -15,6 +17,21 @@ const initialValues = {
 }
 
 const AppProvider = ({ children }) => {
+  const { i18n } = useTranslation();
+  const [language, setLanguage] = useState('');
+
+  // get the user's preferred language from the browser
+  useEffect(() => {
+    const detectedLanguage = navigator.language.substring(0, 2);
+    if (!supportedLanguages.includes(detectedLanguage)) {
+      setLanguage('en');
+      return;
+    }
+    setLanguage(detectedLanguage);
+    i18n.changeLanguage(detectedLanguage);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   // state to store the selected cuisine and save it in localStorage
   // get the selected cuisine from localStorage, default to 'pizza' if not found
   const [selectedCuisine, setSelectedCuisine] = useState(() => {
@@ -61,6 +78,8 @@ const AppProvider = ({ children }) => {
         setUserCartInfo,
         orderNumber,
         setOrderNumber,
+        language,
+        setLanguage,
       }}
     >
       {children}

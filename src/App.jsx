@@ -17,7 +17,7 @@ import Carrello from "@pages/Carrello";
 import OrdineCompletato from "@pages/OrdineCompletato";
 
 function App() {
-  const { orderNumber } = useContext(AppContext);
+  const { orderNumber, language } = useContext(AppContext);
   const { t } = useTranslation();
   const snackbarREF = useRef();
 
@@ -33,14 +33,19 @@ function App() {
           <ActionButton value={t('common.close')} onClick={() => closeSnackbar(snackbarId)} />
         }
       />
-      <Routes>
-        <Route path="*" element={<Home />} index />
-        <Route path="/work-with-us" element={<Rider />} />
-        <Route path="/orders" element={<Ordini />} />
-        <Route path="/restaurant/:id" element={<Ristorante />} />
-        <Route path="/cart" element={<Carrello />} />
-        <Route path="/order/:id" element={pageToShow} />
-      </Routes>
+      {
+        language !== '' &&
+        <>
+          <Routes>
+            <Route path="*" element={<Home />} index />
+            <Route path="/work-with-us" element={<Rider />} />
+            <Route path="/orders" element={<Ordini />} />
+            <Route path="/restaurant/:id" element={<Ristorante />} />
+            <Route path="/cart" element={<Carrello />} />
+            <Route path="/order/:id" element={pageToShow} />
+          </Routes>
+        </>
+      }
     </>
   )
 }
