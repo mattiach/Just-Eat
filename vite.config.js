@@ -23,6 +23,7 @@ export default defineConfig({
       '@redux': path.resolve(__dirname, 'src/redux/'),
       '@styles': path.resolve(__dirname, 'src/styles/'),
       '@languages': path.resolve(__dirname, 'src/languages/'),
+      '@settings': path.resolve(__dirname, 'src/settings/'),
     }
   }
 });

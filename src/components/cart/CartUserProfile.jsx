@@ -83,13 +83,13 @@ const CartUserProfile = ({ modalId, setisLoading }) => {
                 <div className="grid gap-4 gap-x-5 sm:grid-cols-2">
                   <Field
                     type="text"
-                    name="nome"
+                    name={t('common.name')}
                     placeholder={t('components.cartUserProfile.yourName')}
                     component={InputForm}
                   />
                   <Field
                     type="text"
-                    name="cognome"
+                    name={t('common.lastname')}
                     placeholder={t('components.cartUserProfile.yourLastName')}
                     component={InputForm}
                   />
@@ -101,7 +101,7 @@ const CartUserProfile = ({ modalId, setisLoading }) => {
                   />
                   <Field
                     type="text"
-                    name="telefono"
+                    name={t('common.phone')}
                     placeholder={t('components.cartUserProfile.yourPhoneNumber')}
                     component={InputForm}
                   />
@@ -112,19 +112,19 @@ const CartUserProfile = ({ modalId, setisLoading }) => {
                 <div className="grid gap-4 gap-x-5 sm:grid-cols-2">
                   <Field
                     type="text"
-                    name="indirizzo"
+                    name={t('common.deliveryAddress')}
                     placeholder={t('common.deliveryAddress')}
                     component={InputForm}
                   />
                   <Field
                     type="text"
-                    name="città"
+                    name={t('common.city')}
                     placeholder={t('common.city')}
                     component={InputForm}
                   />
                   <Field
                     type="text"
-                    name="paese"
+                    name={t('common.country')}
                     placeholder={t('common.country')}
                     component={InputForm}
                   />

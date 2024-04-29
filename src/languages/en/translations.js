@@ -1,5 +1,9 @@
 export const en = {
   translation: {
+    languages: {
+      en: 'English',
+      it: 'Italian',
+    },
     pages: {
       home: {
         title: 'Tuck into a takeaway today!',
@@ -96,7 +100,7 @@ export const en = {
       clickToCopy: 'Click to copy',
       cardNumber: 'Card Number',
       expirationDate: 'Expiration Date',
-      confirm: 'Confirm'
+      confirm: 'Confirm',
     },
     notifications: {
       message1: 'CV sent !',

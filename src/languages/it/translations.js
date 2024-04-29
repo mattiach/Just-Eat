@@ -1,5 +1,9 @@
 export const it = {
   translation: {
+    languages: {
+      en: 'Inglese',
+      it: 'Italiano',
+    },
     pages: {
       home: {
         title: 'È bello prenderci gusto!',
@@ -96,7 +100,7 @@ export const it = {
       clickToCopy: 'Clicca per copiare',
       cardNumber: 'Numero di carta',
       expirationDate: 'Data di scadenza',
-      confirm: 'Conferma'
+      confirm: 'Conferma',
     },
     notifications: {
       message1: 'Curriculum inviato!',
