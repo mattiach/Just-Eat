@@ -8,24 +8,14 @@ import { getResponsiveSettings } from '@functions/getResponsiveSettings';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { carouselSettings } from '@settings/carouselSettings';
 
 // components
 import CardsCategory from '@components/card/CardsCategory';
 
 const CuisineCarousel = ({ setSelectedCuisine, images }) => {
-  // carousel settings
-  const settings = {
-    dots: true,
-    infinite: false,
-    centerMode: false,
-    centerPadding: "20px",
-    lazyLoad: 'ondemand',
-    speed: 300,
-    slidesToShow: 1,
-  };
-
   // it calculates settings based on the found media-query
-  const responsiveSettings = getResponsiveSettings(settings);
+  const responsiveSettings = getResponsiveSettings(carouselSettings);
 
   const [sliderKEY, setSliderKEY] = useState('cuisine-carousel__d9f5d550-827e-69b5-f2ee-d4457ceaeefc')
 
@@ -46,7 +36,11 @@ const CuisineCarousel = ({ setSelectedCuisine, images }) => {
   }, []);
 
   return (
-    <Slider {...settings} responsive={responsiveSettings} key={`CuisineCarousel.jsx_${sliderKEY}`}>
+    <Slider
+      key={`CuisineCarousel.jsx_${sliderKEY}`}
+      {...carouselSettings}
+      responsive={responsiveSettings}
+    >
       {images.map(({ id, src, title }) => (
         <CardsCategory
           key={'mobile-carousel' + id}
