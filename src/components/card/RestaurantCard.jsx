@@ -12,13 +12,13 @@ const RestaurantCard = ({ ristorante }) => {
 
   return (
     <>
-      <div className="card-restaurant-container my-[5px]">
+      <div className="card-restaurant-container my-2">
         <div className="relative inline-block overflow-hidden cursor-pointer">
           <img
             src={`assets/img/ristoranti/${(ristorante.category)}/${ristorante.image}`}
             alt={`${ristorante.name}`}
             title={`${ristorante.name}`}
-            className="aspect-video w-[275px] sm:w-[240px] rounded-sm hover:opacity-90 border-primary border-2 zoomImgEffect transform transition-all duration-500"
+            className="aspect-video w-72 xs:w-80 xsm:w-60 rounded-sm hover:opacity-90 border-primary border-2 zoomImgEffect transform transition-all duration-500"
             onClick={() => navigateToRestaurantPageFunction()}
           />
           <span
