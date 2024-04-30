@@ -16,19 +16,23 @@ const initialValues = {
   zip: '',
 }
 
+const detectedBrowserLanguage = navigator.language.substring(0, 2);
+
 const AppProvider = ({ children }) => {
   const { i18n } = useTranslation();
-  const [language, setLanguage] = useState('');
+  const [language, setLanguage] = useState(
+    localStorage.getItem('language') || detectedBrowserLanguage || 'en'
+  );
 
-  // get the user's preferred language from the browser
+  // get the user's preferred language from localStorage or from the user's browser settings
   useEffect(() => {
-    const detectedLanguage = navigator.language.substring(0, 2);
-    if (!supportedLanguages.includes(detectedLanguage)) {
-      setLanguage('en');
-      return;
-    }
-    setLanguage(detectedLanguage);
-    i18n.changeLanguage(detectedLanguage);
+    const storedLanguage = localStorage.getItem('language');
+
+    const languageToSet = supportedLanguages.includes(storedLanguage) ? storedLanguage : detectedBrowserLanguage;
+
+    setLanguage(languageToSet);
+    i18n.changeLanguage(languageToSet);
+
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
