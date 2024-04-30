@@ -1,8 +1,12 @@
 import { useEffect, useState, lazy, Suspense } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
+
+// redux
 import { useDispatch, useSelector } from 'react-redux';
 import { addToCart, removeFromCart } from '@redux/slices/cartSlice';
 import { setSelectedRestaurant, selectSelectedRestaurant } from '@redux/slices/selectedRestaurantIDSlice';
-import { useParams, useNavigate } from 'react-router-dom';
+
+// components
 import Navbar from '@components/navbar/Navbar';
 import BannerRistorante from '@components/BannerRistorante';
 import Footer from '@components/footer/Footer';
@@ -23,6 +27,7 @@ function Ristorante() {
     quantity: 0
   });
 
+  // fetch the selected restaurant when the page is loaded and scroll to the top of the page
   useEffect(() => {
     if (initialRender) {
       setInitialRender(false);
@@ -32,6 +37,7 @@ function Ristorante() {
     }
   }, [dispatch, id, initialRender]);
 
+  // if the selected restaurant is not found, redirect to the orders page
   if (!selectedRestaurant) {
     navigate('/orders');
     return null;
@@ -56,10 +62,12 @@ function Ristorante() {
     document.getElementById('modal-restaurant-article').showModal();
   };
 
+  // functions to add an article from the cart
   const addToCartFunction = (article) => {
     dispatch(addToCart(article));
   };
 
+  // function to remove the article from the cart
   const removeFromCartFunction = (articleClicked) => {
     dispatch(removeFromCart(articleClicked));
   };

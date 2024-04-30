@@ -12,7 +12,7 @@ const Accordion = ({ id, question, answer }) => {
 
   return (
     <>
-      <div id={`faq-${id}`} className={`bg-white w-full max-w-2xl md:w-3/4 md:mx-auto ${isAccordionOpen ? "mb-4 mt-2" : "my-2"}`} >
+      <div id={`faq-${id}`} className={`bg-white dark:bg-white w-full max-w-2xl md:w-3/4 md:mx-auto ${isAccordionOpen ? "mb-4 mt-2" : "my-2"}`} >
         <div>
           <h2>
             <button onClick={() => setIsAccordionOpen(!isAccordionOpen)} type="button" className={`flex items-center justify-between w-full p-5 font-medium text-left text-gray-800 rounded-sm border-2 border-gray-200 ${isAccordionOpen && 'border-b-0'}`}>

@@ -25,5 +25,5 @@ export default defineConfig({
       '@languages': path.resolve(__dirname, 'src/languages/'),
       '@settings': path.resolve(__dirname, 'src/settings/'),
     }
-  }
+  },
 });

@@ -16,7 +16,7 @@ const SelectLanguage = () => {
       <div className="flex justify-center gap-2 relative top-1.5">
         <div className="hidden md:block">
           <img
-            src={`assets/img/flags/${language}.svg`}
+            src={`/assets/img/flags/${language}.svg`}
             alt={language}
             width={22}
             height={22}
@@ -39,7 +39,7 @@ const SelectLanguage = () => {
                   >
                     <span onClick={() => handleLanguageChange(languageFound)}>
                       <img
-                        src={`assets/img/flags/${languageFound}.svg`}
+                        src={`/assets/img/flags/${languageFound}.svg`}
                         alt={languageFound}
                         width={22}
                         height={22}
