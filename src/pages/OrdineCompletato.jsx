@@ -1,8 +1,11 @@
 import { useTranslation } from 'react-i18next';
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 import { AppContext } from '@context/AppContext';
-import { copyToClipboardFunction } from '@functions/copyToClipboardFunction';
 import { enqueueSnackbar } from 'notistack';
+
+// functions
+import { copyToClipboardFunction } from '@functions/copyToClipboardFunction';
+import { scrollToTopFunction } from '@functions/scrollToTopFunction';
 
 // components
 import Navbar from '@components/navbar/Navbar';
@@ -21,6 +24,10 @@ const OrdineCompletato = () => {
     })
     copyToClipboardFunction(orderNumber);
   }
+
+  useEffect(() => {
+    scrollToTopFunction();
+  }, [])
 
   return (
     <>
