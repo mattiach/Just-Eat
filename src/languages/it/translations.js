@@ -3,6 +3,7 @@ export const it = {
     languages: {
       en: 'Inglese',
       it: 'Italiano',
+      fr: 'Francese',
     },
     pages: {
       home: {

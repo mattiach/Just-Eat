@@ -28,7 +28,7 @@ const SelectLanguage = () => {
           <div tabIndex={0} role="button" className="bg-transparent shadow-none border-none relative bottom-0.5">
             {t(`languages.${language}`)}
           </div>
-          <ul tabIndex={0} className="dropdown-content z-[1] bg-gray-50 menu p-2 shadow w-32 rounded-md md:relative md:right-0">
+          <ul tabIndex={0} className="dropdown-content z-[1] bg-gray-50 menu p-2 shadow w-36 rounded-md md:relative md:right-0">
             {
               supportedLanguages.map((languageFound) => {
                 return (

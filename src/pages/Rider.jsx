@@ -99,15 +99,21 @@ const Rider = () => {
               <div className="px-2">
                 {
                   faq.map((faq) => {
+                    const languageMap = {
+                      it: { question: faq.question, answer: faq.answer },
+                      en: { question: faq.questionENG, answer: faq.answerENG },
+                      fr: { question: faq.questionFR, answer: faq.answerFR }
+                    };
+
                     return (
                       <Fragment key={faq.id}>
                         <Accordion
                           id={faq.id}
-                          question={i18n.language === 'it' ? faq.question : faq.questionENG}
-                          answer={i18n.language === 'it' ? faq.answer : faq.answerENG}
+                          question={languageMap[i18n.language].question}
+                          answer={languageMap[i18n.language].answer}
                         />
                       </Fragment>
-                    )
+                    );
                   })
                 }
               </div>
