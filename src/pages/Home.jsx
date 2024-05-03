@@ -29,7 +29,7 @@ const Home = () => {
     // delay the image loading to speed up the initial page load
     const timer = setTimeout(() => {
       setShowImages(true);
-    }, 500);
+    }, 700);
 
     return () => clearTimeout(timer);
   }, []);
@@ -59,7 +59,7 @@ const Home = () => {
                 <>
                   <img
                     src={'assets/img/apps_promo-wide-je.png'}
-                    className={`${isMobile ? "w-60" : "w-80"}`}
+                    className={`${isMobile ? "w-52" : "w-80"}`}
                     alt="App JustEat"
                     title="App JustEat"
                     loading='lazy'

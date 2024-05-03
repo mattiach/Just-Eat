@@ -31,6 +31,8 @@ export const getResponsiveSettings = (settings) => {
         ...settings,
         slidesToShow: 4,
         slidesToScroll: 2,
+        dots: false,
+        infinite: false,
       },
     },
     {
@@ -39,6 +41,8 @@ export const getResponsiveSettings = (settings) => {
         ...settings,
         slidesToShow: 3,
         slidesToScroll: 2,
+        dots: false,
+        infinite: false,
       },
     },
   ];
