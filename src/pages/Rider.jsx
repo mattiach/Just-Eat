@@ -80,7 +80,7 @@ const Rider = () => {
         <main className="mt-5 md:mt-12">
           <Suspense fallback={null}>
             <Container>
-              <div className="text-center my-14 md:my-16 lg:my-28">
+              <div className="text-center my-14 md:my-16 lg:my-28 px-2">
                 <div className="mb-4">
                   <Suspense fallback={null}>
                     <Subtitle>
@@ -96,7 +96,7 @@ const Rider = () => {
                   </Suspense>
                 </div>
               </div>
-              <div className="px-3">
+              <div className="px-2">
                 {
                   faq.map((faq) => {
                     return (
