@@ -17,6 +17,7 @@ const CuisineCarousel = ({ setSelectedCuisine, images }) => {
   // it calculates settings based on the found media-query
   const responsiveSettings = getResponsiveSettings(carouselSettings);
 
+
   const [sliderKEY, setSliderKEY] = useState('cuisine-carousel__d9f5d550-827e-69b5-f2ee-d4457ceaeefc')
 
   useEffect(() => {
