@@ -69,9 +69,11 @@ const Home = () => {
             </div>
             <div className="text-center pt-14 md:pt-20 lg:pt-24">
               <Paragraph>
-                {t('pages.home.paragraph1')}
-                <span className='inline-block pl-1 sm:block sm:pl-0'>
-                  {t('pages.home.paragraph2')}
+                <span className='px-2'>
+                  {t('pages.home.paragraph1')}
+                  <span className='inline-block pl-1 sm:block sm:pl-0'>
+                    {t('pages.home.paragraph2')}
+                  </span>
                 </span>
               </Paragraph>
               <div className='flex justify-center mt-20 sm:mt-14'>
