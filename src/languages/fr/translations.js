@@ -79,7 +79,7 @@ export const fr = {
       showAll: 'Afficher tout',
       freeDelivery: 'Livraison gratuite',
       minOrder: 'commande minimum',
-      delivery: 'Livraison',
+      delivery: 'livraison',
       application: 'Candidature',
       select: 'Sélectionner',
       fileUpdated: 'Fichier mis à jour avec succès',
