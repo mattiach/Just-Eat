@@ -102,7 +102,8 @@ const Rider = () => {
                     const languageMap = {
                       it: { question: faq.question, answer: faq.answer },
                       en: { question: faq.questionENG, answer: faq.answerENG },
-                      fr: { question: faq.questionFR, answer: faq.answerFR }
+                      fr: { question: faq.questionFR, answer: faq.answerFR },
+                      de: { question: faq.questionDE, answer: faq.answerDE },
                     };
 
                     return (

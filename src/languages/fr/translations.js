@@ -4,6 +4,7 @@ export const fr = {
       en: 'Anglais',
       it: 'Italien',
       fr: 'Français',
+      de: 'Allemand'
     },
     pages: {
       home: {
