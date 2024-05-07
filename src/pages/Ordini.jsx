@@ -39,6 +39,7 @@ const Ordini = () => {
   const cuisineImages = useSelector((state) => state.cuisine);
 
   // media queries
+  const isAtLeastTablet = useMediaQuery({ query: '(min-width: 768px)' });
   const isCarouselMediaQuery = useMediaQuery({ query: '(max-width: 1200px)' });
   const isPaginationVisible = useMediaQuery({ query: '(min-width: 990px)' });
 
@@ -57,7 +58,10 @@ const Ordini = () => {
   }, [searchText]);
 
   // at page load, set focus on the search field
-  const focusInputFunction = useCallback(() => { inputRef.current.focus() }, []);
+  const focusInputFunction = useCallback(() => {
+    if (!isAtLeastTablet) return;  // blocks the focus on mobile devices for better UX
+    inputRef.current.focus()
+  }, []);
 
   // get the restaurants currently displayed on the page
   const getCurrentPageItems = () => {
