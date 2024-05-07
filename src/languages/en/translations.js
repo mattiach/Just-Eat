@@ -4,7 +4,8 @@ export const en = {
       en: 'English',
       it: 'Italian',
       fr: 'French',
-      de: 'German'
+      de: 'German',
+      es: 'Spanish',
     },
     pages: {
       home: {

@@ -104,6 +104,7 @@ const Rider = () => {
                       en: { question: faq.questionENG, answer: faq.answerENG },
                       fr: { question: faq.questionFR, answer: faq.answerFR },
                       de: { question: faq.questionDE, answer: faq.answerDE },
+                      es: { question: faq.questionES, answer: faq.answerES },
                     };
 
                     return (

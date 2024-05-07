@@ -61,6 +61,7 @@ const Ordini = () => {
   const focusInputFunction = useCallback(() => {
     if (!isAtLeastTablet) return;  // blocks the focus on mobile devices for better UX
     inputRef.current.focus()
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // get the restaurants currently displayed on the page

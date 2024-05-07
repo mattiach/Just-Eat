@@ -40,7 +40,7 @@ const SelectLanguage = () => {
                     <span onClick={() => handleLanguageChange(languageFound)}>
                       <img
                         src={`/assets/img/flags/${languageFound}.svg`}
-                        alt={languageFound}
+                        alt={'laguageFound'}
                         width={22}
                         height={22}
                         className="aspect-auto"
