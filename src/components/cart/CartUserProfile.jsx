@@ -1,7 +1,7 @@
 import { Suspense, useContext } from 'react';
 import { AppContext } from '@context/AppContext';
 import { Formik, Form, Field } from 'formik';
-import { useMediaQuery } from 'react-responsive';
+import { useMediaQuery } from 'react-amazing-hooks';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { v4 as uuid } from 'uuid';
@@ -11,7 +11,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { removeAllFromCart } from '@redux/slices/cartSlice';
 
 // functions
-import useFieldsPopulated from '@hooks/UseFieldPopulated';
+import { useFieldsPopulated } from 'react-amazing-hooks';
 import { calculateCartTotal } from '@functions/calculateCartTotal';
 import useCheckDeliveryEligibility from '@hooks/useCheckDeliveryEligibility';
 
@@ -27,7 +27,7 @@ const CartUserProfile = ({ modalId, setisLoading }) => {
   const { userCartInfo, setUserCartInfo, setOrderNumber, creditCardInfo } = useContext(AppContext);
   const areCCFieldsPopulated = useFieldsPopulated(creditCardInfo);
   const areUserFieldsPopulated = useFieldsPopulated(userCartInfo);
-  const isNotDesktopView = useMediaQuery({ query: "(max-width: 992px)" });
+  const isNotDesktopView = useMediaQuery({max: 992});
   const isEligibleForDelivery = useCheckDeliveryEligibility(cart);
   const navigate = useNavigate();
 

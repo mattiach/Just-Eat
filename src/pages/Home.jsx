@@ -1,5 +1,5 @@
 import { lazy, Suspense, useEffect, useState } from 'react';
-import { useMediaQuery } from 'react-responsive';
+import { useMediaQuery } from 'react-amazing-hooks';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 
@@ -20,8 +20,8 @@ const Footer = lazy(() => import('@components/footer/Footer'));
 const Home = () => {
   const { t } = useTranslation();
 
-  const isDesktop = useMediaQuery({ query: '(min-width: 992px)' });
-  const isMobile = useMediaQuery({ query: '(max-width: 600px)' });
+  const isDesktop = useMediaQuery({ min: 992 });
+  const isMobile = useMediaQuery({ max: 600 });
   const [bgSRC] = useState(Math.random() < 0.5 ? headerImage1 : headerImage2);
   const [showImages, setShowImages] = useState(false);
 

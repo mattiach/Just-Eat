@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef, useMemo, useCallback, useContext, Suspense, lazy } from 'react';
 import { TbSearch } from 'react-icons/tb';
-import { useMediaQuery } from 'react-responsive';
+import { useMediaQuery } from 'react-amazing-hooks';
 import { MdArrowForwardIos, MdArrowBackIos } from "react-icons/md";
 import { useTranslation } from 'react-i18next';
 
@@ -39,9 +39,9 @@ const Ordini = () => {
   const cuisineImages = useSelector((state) => state.cuisine);
 
   // media queries
-  const isAtLeastTablet = useMediaQuery({ query: '(min-width: 768px)' });
-  const isCarouselMediaQuery = useMediaQuery({ query: '(max-width: 1200px)' });
-  const isPaginationVisible = useMediaQuery({ query: '(min-width: 990px)' });
+  const isAtLeastTablet = useMediaQuery({ min: 768});
+  const isCarouselMediaQuery = useMediaQuery({ max: 1200 });
+  const isPaginationVisible = useMediaQuery({ min: 990 });
 
   // earch filter based on the selected cuisine
   const localiFiltrati = useMemo(() => {

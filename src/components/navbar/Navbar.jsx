@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useSelector } from 'react-redux';
 import { useTranslation } from 'react-i18next';
-import { useMediaQuery } from 'react-responsive';
+import { useMediaQuery } from 'react-amazing-hooks';
 
 // routing
 import { Link, useNavigate } from 'react-router-dom';
@@ -20,7 +20,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
   const navigate = useNavigate();
   const { t } = useTranslation();
-  const isLessThan640 = useMediaQuery({ query: "(max-width: 640px)" });
+  const isLessThan640 = useMediaQuery({ max: 640});
 
   const navigateFunction = (value) => {
     navigate(value);

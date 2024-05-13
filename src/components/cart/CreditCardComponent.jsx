@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { AppContext } from "@context/AppContext";
-import useFieldsPopulated from "@hooks//UseFieldPopulated";
+import { useFieldsPopulated } from 'react-amazing-hooks';
 import { useTranslation } from "react-i18next";
 
 const CreditCardComponent = () => {
