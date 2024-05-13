@@ -19,7 +19,7 @@ const ModalRider = ({ children, idModal, className }) => {
     <>
       <div className={className}>
         <dialog id={idModal} className="modal">
-          <div className="modal-box">
+          <div className="modal-box bg-white">
             <form method="dialog">
               <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 text-gray-800">
                 <IoMdClose aria-label={t('common.close')} />

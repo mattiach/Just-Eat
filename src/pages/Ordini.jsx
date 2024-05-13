@@ -61,7 +61,7 @@ const Ordini = () => {
   const focusInputFunction = useCallback(() => {
     if (!isAtLeastTablet) return;  // blocks the focus on mobile devices for better UX
     inputRef.current.focus()
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // get the restaurants currently displayed on the page
@@ -145,7 +145,7 @@ const Ordini = () => {
                 <input
                   ref={inputRef}
                   type="text"
-                  className="p-2 my-2 placeholder-gray-400 border-transparent outline-none"
+                  className="p-2 my-2 placeholder-gray-400 border-transparent outline-none bg-white"
                   placeholder={t('pages.orders.searchForRestaurant')}
                   onChange={(e) => setSearchText(e.target.value)}
                 />
