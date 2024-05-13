@@ -1,4 +1,5 @@
 # Just Eat - Clone
+[![Netlify Status](https://api.netlify.com/api/v1/badges/fa6c2f05-1189-43a3-bc35-cc090897d0f8/deploy-status)](https://app.netlify.com/sites/just-eat-clone/deploys)
 
 ## Description
 
