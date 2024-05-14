@@ -30,7 +30,7 @@ Connect to [http://localhost:3000/](http://localhost:3000) to view the applicati
 - Tailwind CSS, DaisyUI
 - Redux Toolkit
 - eslint
-- i18next, formik, uuid, react-router-dom and many other JS libraries..
+- i18next, formik, react-router-dom and many other JS libraries.. 
 
 ## Author and rights
 

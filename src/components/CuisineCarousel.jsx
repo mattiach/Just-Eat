@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
-import { v4 as uuid } from 'uuid';
+import { useUUID } from 'react-amazing-hooks';
 
-// functions
+// functions  
 import { getResponsiveSettings } from '@functions/getResponsiveSettings';
 
 // carousel react-slick
@@ -20,12 +20,14 @@ const CuisineCarousel = ({ setSelectedCuisine, images }) => {
 
   const [sliderKEY, setSliderKEY] = useState('cuisine-carousel__d9f5d550-827e-69b5-f2ee-d4457ceaeefc')
 
+  const randomUUID = useUUID();
+
   useEffect(() => {
     // generate a new UUID every time the window width changes
     const handleResize = () => {
-      const randomUUID = uuid();
       setSliderKEY(randomUUID);
     };
+    console.log('randomUUID ➡️', randomUUID)
 
     // add the event listener on component mount
     window.addEventListener('resize', handleResize);
@@ -34,7 +36,7 @@ const CuisineCarousel = ({ setSelectedCuisine, images }) => {
     return () => {
       window.removeEventListener('resize', handleResize);
     };
-  }, []);
+  }, [randomUUID]);
 
   return (
     <Slider

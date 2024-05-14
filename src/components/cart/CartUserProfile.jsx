@@ -4,7 +4,7 @@ import { Formik, Form, Field } from 'formik';
 import { useMediaQuery } from 'react-amazing-hooks';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { v4 as uuid } from 'uuid';
+import { useUUID } from 'react-amazing-hooks';
 
 // redux
 import { useDispatch, useSelector } from 'react-redux';
@@ -37,13 +37,14 @@ const CartUserProfile = ({ modalId, setisLoading }) => {
 
   const parsedTotalCart = parseFloat(calculateCartTotal(cart).replace(/[^\d.-]/g, ''));
 
+  const randomUUID = useUUID();
+
   const handleSubmit = (values, { setSubmitting }) => {
     setUserCartInfo(values);
     if (!areCCFieldsPopulated || !areUserFieldsPopulated) return;
 
     if ((cart.length > 0) && isEligibleForDelivery && areCCFieldsPopulated && areUserFieldsPopulated) {
       setisLoading(true);
-      const randomUUID = uuid();
 
       setTimeout(() => {
         setOrderNumber(randomUUID);
