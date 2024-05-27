@@ -37,9 +37,10 @@ const Ordini = () => {
   // redux
   const cuisineDataMap = useSelector((state) => state.ristoranti);
   const cuisineImages = useSelector((state) => state.cuisine);
+  console.log('cuisineImages ➡️', cuisineImages)
 
   // media queries
-  const isAtLeastTablet = useMediaQuery({ min: 768});
+  const isAtLeastTablet = useMediaQuery({ min: 768 });
   const isCarouselMediaQuery = useMediaQuery({ max: 1200 });
   const isPaginationVisible = useMediaQuery({ min: 990 });
 

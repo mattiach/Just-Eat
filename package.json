@@ -20,12 +20,12 @@
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.5",
     "formik": "^2.4.6",
-    "i18next": "^23.11.4",
+    "i18next": "^23.11.5",
     "notistack": "^3.0.1",
     "react": "^18.3.1",
     "react-amazing-hooks": "^3.1.2",
     "react-dom": "^18.3.1",
-    "react-i18next": "^14.1.1",
+    "react-i18next": "^14.1.2",
     "react-icons": "^5.2.1",
     "react-paginate": "^8.2.0",
     "react-redux": "^9.1.2",
@@ -34,21 +34,21 @@
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
-    "@types/react": "^18.3.2",
+    "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
-    "@vitejs/plugin-react-swc": "^3.6.0",
+    "@vitejs/plugin-react-swc": "^3.7.0",
     "autoprefixer": "^10.4.19",
     "daisyui": "^4.11.1",
     "eslint": "^8.56.0",
     "eslint-plugin-react": "^7.34.1",
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.6",
-    "lightningcss": "^1.25.0",
+    "lightningcss": "^1.25.1",
     "postcss": "^8.4.38",
     "sharp": "^0.33.4",
     "svgo": "^3.3.2",
     "tailwindcss": "^3.4.3",
     "vite": "^5.2.11",
-    "vite-plugin-image-optimizer": "^1.1.7"
+    "vite-plugin-image-optimizer": "^1.1.8"
   }
 }
