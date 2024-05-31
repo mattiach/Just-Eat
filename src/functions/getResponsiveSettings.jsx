@@ -39,9 +39,9 @@ export const getResponsiveSettings = (settings) => {
       breakpoint: 479,
       settings: {
         ...settings,
-        slidesToShow: 3,
+        slidesToShow: 4,
         slidesToScroll: 2,
-        dots: false,
+        dots: true,
         infinite: false,
       },
     },

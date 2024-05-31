@@ -136,23 +136,28 @@ const Ordini = () => {
               </>
           }
         </div>
-        <div className="mt-10 lg:mt-5">
+        <div className="mt-5">
           <div className='max-w-[987px] mx-auto'>
-            <div className='container px-3 mx-auto sm:px-2 md:px-2 lg:px-0'>
-              <div className="flex items-center w-full px-4 mx-auto mb-5 border-2 rounded-full border-slate-200 hover:border-slate-300">
-                <div className="mr-3">
-                  <TbSearch size={22} className='text-primary' />
+            {
+              isAtLeastTablet &&
+              <>
+                <div className='container px-3 mx-auto sm:px-2 md:px-2 lg:px-0'>
+                  <div className="flex items-center w-full px-4 mx-auto mb-5 border-2 rounded-full border-slate-200 hover:border-slate-300">
+                    <div className="mr-3">
+                      <TbSearch size={22} className='text-primary' />
+                    </div>
+                    <input
+                      ref={inputRef}
+                      type="text"
+                      className="p-2 my-2 placeholder-gray-400 border-transparent outline-none bg-white"
+                      placeholder={t('pages.orders.searchForRestaurant')}
+                      onChange={(e) => setSearchText(e.target.value)}
+                    />
+                  </div>
                 </div>
-                <input
-                  ref={inputRef}
-                  type="text"
-                  className="p-2 my-2 placeholder-gray-400 border-transparent outline-none bg-white"
-                  placeholder={t('pages.orders.searchForRestaurant')}
-                  onChange={(e) => setSearchText(e.target.value)}
-                />
-              </div>
-            </div>
-            <div className={`flex flex-wrap ${searchText.length === 0 ? 'justify-center' : 'justify-start'} gap-2 mt-8`} key={`restaurant_container_search_${searchText}`}>
+              </>
+            }
+            <div className={`flex flex-wrap ${searchText.length === 0 ? 'justify-center' : 'justify-start'} gap-2 ${isAtLeastTablet && 'mt-8'}`} key={`restaurant_container_search_${searchText}`}>
               {/* restaurant cards */}
               {renderRestaurantCards()}
             </div>

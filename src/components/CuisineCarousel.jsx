@@ -27,7 +27,6 @@ const CuisineCarousel = ({ setSelectedCuisine, images }) => {
     const handleResize = () => {
       setSliderKEY(randomUUID);
     };
-    console.log('randomUUID ➡️', randomUUID)
 
     // add the event listener on component mount
     window.addEventListener('resize', handleResize);
