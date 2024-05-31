@@ -31,18 +31,14 @@ export const getResponsiveSettings = (settings) => {
         ...settings,
         slidesToShow: 4,
         slidesToScroll: 2,
-        dots: false,
-        infinite: false,
       },
     },
     {
       breakpoint: 479,
       settings: {
         ...settings,
-        slidesToShow: 4,
+        slidesToShow: 3,
         slidesToScroll: 2,
-        dots: true,
-        infinite: false,
       },
     },
   ];

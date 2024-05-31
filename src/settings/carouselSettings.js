@@ -1,5 +1,5 @@
 export const carouselSettings = {
-  dots: false,
+  dots: true,
   infinite: true,
   centerMode: false,
   centerPadding: "20px",
