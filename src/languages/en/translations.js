@@ -27,7 +27,7 @@ export const en = {
         descrApplication: 'Attach your updated resume here containing information such as name, surname, and telephone number to be contacted. JustEat\'s team is the ideal place where everyone can write their professional story by contributing, with commitment and determination, to write the country\'s history. We\'re waiting for you!',
         uploadedFile: 'Uploaded file:',
         dragHereYourFileOr: 'Drag your file here or',
-        sendApplication: 'Invia domanda di lavoro'
+        sendApplication: 'Send application'
       },
       orderCompleted: {
         paragraph: 'You will soon receive an email with the summary of your order!'
