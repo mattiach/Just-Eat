@@ -5,7 +5,7 @@ export const getResponsiveSettings = (settings) => {
       breakpoint: 1200,
       settings: {
         ...settings,
-        slidesToShow: 8,
+        slidesToShow: 7,
         slidesToScroll: 4,
       },
     },

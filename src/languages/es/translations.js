@@ -76,9 +76,9 @@ export const es = {
       }
     },
     common: {
-      hide: 'Nascondi',
-      show: 'Mostra',
-      showAll: 'Mostra tutti',
+      hide: 'Ocultar',
+      show: 'Mostrar',
+      showAll: 'Mostrar todos',
       freeDelivery: 'Entrega gratuita',
       minOrder: 'pedido mínimo',
       delivery: 'entrega',
