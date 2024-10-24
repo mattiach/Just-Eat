@@ -1,0 +1,1359 @@
+[
+  {
+    "id": "33517412811",
+    "category": "Hamburger",
+    "name": "American Graffiti",
+    "address": {
+      "street": "Via Marco Decumio 14",
+      "postalCode": "00174",
+      "city": "Roma"
+    },
+    "image": "American Graffiti.jpg",
+    "rating": 4.50,
+    "shipping": {
+      "freeShipping": false,
+      "shippingCost": 2.50,
+      "minOrder": 12
+    },
+    "menu": {
+      "category1": {
+        "categoryTitle": "Menù Combo",
+        "dishes": [
+          {
+            "name": "Hamburger Menù",
+            "price": 8.00
+          },
+          {
+            "name": "Cheeseburger Menù",
+            "price": 9.50
+          },
+          {
+            "name": "Bacon Cheeseburger Menù",
+            "price": 10.50
+          },
+          {
+            "name": "Doppio Cheeseburger Menù",
+            "price": 12.50
+          },
+          {
+            "name": "Doppio Bacon Cheeseburger Menù",
+            "price": 13.50
+          },
+          {
+            "name": "Smoke Burger Menù",
+            "price": 14.50
+          }
+        ]
+      },
+      "category2": {
+        "categoryTitle": "Hot Dog",
+        "dishes": [
+          {
+            "name": "Hot Dog Plain",
+            "price": 8.00
+          },
+          {
+            "name": "Chorizo Hot Dog",
+            "price": 9.00
+          },
+          {
+            "name": "Hot Dog Messicano",
+            "price": 11.50
+          },
+          {
+            "name": "Super Hot Dog",
+            "price": 12.00
+          }
+        ]
+      },
+      "category3": {
+        "categoryTitle": "Fritti",
+        "dishes": [
+          {
+            "name": "Patatine Dipper",
+            "price": 6.50
+          },
+          {
+            "name": "Patatine Fritte Speziate",
+            "price": 6.00
+          },
+          {
+            "name": "Patatine a Fette con Buccia",
+            "price": 6.50
+          },
+          {
+            "name": "Patatine con Bacon, Barbecue e Uovo",
+            "price": 9.00
+          },
+          {
+            "name": "Wrustel Chips",
+            "price": 9.50
+          },
+          {
+            "name": "Anelli di Peperoni Pastellati",
+            "price": 7.50
+          }
+        ]
+      },
+      "category4": {
+        "categoryTitle": "Bevande e Alcolici",
+        "dishes": [
+          {
+            "name": "Bibita in Lattina",
+            "price": 2.50
+          },
+          {
+            "name": "Bibita 1,5L",
+            "price": 4.00
+          },
+          {
+            "name": "Birra 33cl",
+            "price": 4.00
+          },
+          {
+            "name": "Bibita 66cl",
+            "price": 5.00
+          }
+        ]
+      },
+      "category5": {
+        "categoryTitle": "Dolci",
+        "dishes": [
+          {
+            "name": "Churros Dulce De Leche",
+            "price": 8.50
+          },
+          {
+            "name": "Churros Cioccolato Bianco",
+            "price": 8.50
+          },
+          {
+            "name": "Churros Nutella",
+            "price": 8.50
+          },
+          {
+            "name": "Tiramisù alla Nutella",
+            "price": 8.50
+          },
+          {
+            "name": "Tiramisù Classico",
+            "price": 7.00
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "335345517412800",
+    "category": "Hamburger",
+    "name": "Burger King",
+    "address": {
+      "street": "Via Tuscolana 1530",
+      "postalCode": "00173",
+      "city": "Roma"
+    },
+    "image": "Burger King.jpg",
+    "rating": 5.00,
+    "shipping": {
+      "freeShipping": false,
+      "shippingCost": 2.00,
+      "minOrder": 10
+    },
+    "menu": {
+      "category1": {
+        "categoryTitle": "Menù",
+        "dishes": [
+          {
+            "name": "Menù American XXL",
+            "price": 13.20
+          },
+          {
+            "name": "Menù Plant Based Nugget",
+            "price": 9.80
+          },
+          {
+            "name": "Menù Crazy Cheese Chicken BBQ",
+            "price": 13.20
+          },
+          {
+            "name": "Menù Parmigiano Reggiano Burger",
+            "price": 14.60
+          },
+          {
+            "name": "Menù Bacon King",
+            "price": 12.80
+          },
+          {
+            "name": "Menù Bacon King 3.0",
+            "price": 14.70
+          },
+          {
+            "name": "Menù Double Whopper",
+            "price": 12.80
+          },
+          {
+            "name": "Menù Steakhouse King",
+            "price": 13.50
+          }
+        ]
+      },
+      "category2": {
+        "categoryTitle": "Snack",
+        "dishes": [
+          {
+            "name": "King Nuggets x6",
+            "price": 5.40
+          },
+          {
+            "name": "King Nuggets x9",
+            "price": 6.50
+          },
+          {
+            "name": "King Nuggets x20",
+            "price": 11.60
+          },
+          {
+            "name": "Onion Rings x12",
+            "price": 3.80
+          },
+          {
+            "name": "Onion Rings x16",
+            "price": 4.10
+          }
+        ]
+      },
+      "category3": {
+        "categoryTitle": "Fries",
+        "dishes": [
+          {
+            "name": "King Fries",
+            "price": 3.80
+          },
+          {
+            "name": "Bacon King Fries",
+            "price": 4.50
+          }
+        ]
+      },
+      "category4": {
+        "categoryTitle": "Drinks",
+        "dishes": [
+          {
+            "name": "Acqua Naturale",
+            "price": 1.20
+          },
+          {
+            "name": "Acqua Gasata",
+            "price": 1.20
+          },
+          {
+            "name": "Small Coca Cola",
+            "price": 1.90
+          },
+          {
+            "name": "Large Coca Cola",
+            "price": 2.90
+          },
+          {
+            "name": "Small Fanta",
+            "price": 1.90
+          },
+          {
+            "name": "Large Fanta",
+            "price": 2.90
+          },
+          {
+            "name": "Small Sprite",
+            "price": 1.90
+          },
+          {
+            "name": "Large Sprite",
+            "price": 2.90
+          }
+        ]
+      },
+      "category5": {
+        "categoryTitle": "Dessert",
+        "dishes": [
+          {
+            "name": "King Furion Nutela",
+            "price": 3.30
+          },
+          {
+            "name": "Crown Caramel Soufflè",
+            "price": 3.40
+          },
+          {
+            "name": "King Fusion M&M's",
+            "price": 3.40
+          },
+          {
+            "name": "Nocciolata Cheesecake",
+            "price": 3.40
+          },
+          {
+            "name": "Nocciolata Rigoni di Asiago",
+            "price": 3.40
+          },
+          {
+            "name": "Ben & Jerry's Choco Fudge Brownie 100ml",
+            "price": 3.40
+          },
+          {
+            "name": "Ben & Jerry's Choco Fudge Brownie 460ml",
+            "price": 7.40
+          },
+          {
+            "name": "Ben & Jerry's Cookie Dough 100ml",
+            "price": 3.40
+          },
+          {
+            "name": "Ben & Jerry's Cookie Dough 460ml ",
+            "price": 7.40
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "3441417749",
+    "category": "Hamburger",
+    "name": "Burgerito",
+    "address": {
+      "street": "Via dei Castani 236a",
+      "postalCode": "00171",
+      "city": "Roma"
+    },
+    "image": "Burgerito.jpg",
+    "rating": 4.90,
+    "shipping": {
+      "freeShipping": true,
+      "shippingCost": 0.00,
+      "minOrder": 10
+    },
+    "menu": {
+      "category1": {
+        "categoryTitle": "Menù",
+        "dishes": [
+          {
+            "name": "Menù Cucchi Baby",
+            "price": 8.90
+          },
+          {
+            "name": "Menù Classic Burger",
+            "price": 9.80
+          },
+          {
+            "name": "Menù burger Gourmet",
+            "price": 9.50
+          },
+          {
+            "name": "Menù Burger Romolo e Remo",
+            "price": 8.60
+          },
+          {
+            "name": "Menù Burger Servio Tullio",
+            "price": 8.70
+          },
+          {
+            "name": "Burger al Piatto",
+            "price": 10.90
+          }
+        ]
+      },
+      "category2": {
+        "categoryTitle": "Insalate",
+        "dishes": [
+          {
+            "name": "Caesar Salad",
+            "price": 7.70
+          },
+          {
+            "name": "Insalata Vegetariana",
+            "price": 8.00
+          },
+          {
+            "name": "Insalata con Pollo",
+            "price": 8.90
+          }
+        ]
+      },
+      "category3": {
+        "categoryTitle": "Fries",
+        "dishes": [
+          {
+            "name": "Patatine Fritte",
+            "price": 4.00
+          },
+          {
+            "name": "Pepite Pulled Pork",
+            "price": 6.60
+          },
+          {
+            "name": "Nuggets di Cheddar e Jalapenos",
+            "price": 5.60
+          },
+          {
+            "name": "Alette di Pollo",
+            "price": 4.80
+          },
+          {
+            "name": "Nuggets di Pollo",
+            "price": 4.80
+          }
+        ]
+      },
+      "category4": {
+        "categoryTitle": "Bevande",
+        "dishes": [
+          {
+            "name": "Acqua Naturale",
+            "price": 2.00
+          },
+          {
+            "name": "Acqua Gasata",
+            "price": 2.00
+          },
+          {
+            "name": "Bibita 33cl",
+            "price": 3.00
+          },
+          {
+            "name": "Montante Doppelbock",
+            "price": 7.00
+          },
+          {
+            "name": "Cucchi IPA in Lattina",
+            "price": 5.00
+          },
+          {
+            "name": "Rye 3 American",
+            "price": 7.00
+          },
+          {
+            "name": "Lisa Lager",
+            "price": 6.00
+          }
+        ]
+      },
+      "category5": {
+        "categoryTitle": "Dessert",
+        "dishes": [
+          {
+            "name": "Nutella Bun",
+            "price": 3.90
+          },
+          {
+            "name": "Cocco Bun",
+            "price": 3.90
+          },
+          {
+            "name": "Pistacchio Bun",
+            "price": 4.20
+          },
+          {
+            "name": "Vaniglia Bun",
+            "price": 3.90
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "56782345001",
+    "category": "Hamburger",
+    "name": "Il Re del Burger",
+    "address": {
+      "street": "Corso Vittorio Emanuele II 115",
+      "postalCode": "00186",
+      "city": "Roma"
+    },
+    "image": "Il Re del Burger.webp",
+    "rating": 4.70,
+    "shipping": {
+      "freeShipping": false,
+      "shippingCost": 3.00,
+      "minOrder": 15
+    },
+    "menu": {
+      "category1": {
+        "categoryTitle": "Hamburger Classici",
+        "dishes": [
+          {
+            "name": "Hamburger Classico",
+            "price": 8.50
+          },
+          {
+            "name": "Cheeseburger",
+            "price": 9.00
+          },
+          {
+            "name": "Bacon Burger",
+            "price": 10.00
+          },
+          {
+            "name": "Burger con Cipolla Caramellata",
+            "price": 10.50
+          }
+        ]
+      },
+      "category2": {
+        "categoryTitle": "Hamburger Speciali",
+        "dishes": [
+          {
+            "name": "Burger Gourmet con Tartufo",
+            "price": 13.50
+          },
+          {
+            "name": "Burger al Salmone",
+            "price": 12.00
+          },
+          {
+            "name": "Burger Vegetariano",
+            "price": 11.00
+          }
+        ]
+      },
+      "category3": {
+        "categoryTitle": "Contorni",
+        "dishes": [
+          {
+            "name": "Patatine Fritte",
+            "price": 3.50
+          },
+          {
+            "name": "Insalata Mista",
+            "price": 4.00
+          },
+          {
+            "name": "Anelli di Cipolla",
+            "price": 5.00
+          }
+        ]
+      },
+      "category4": {
+        "categoryTitle": "Dolci",
+        "dishes": [
+          {
+            "name": "Cheesecake",
+            "price": 6.00
+          },
+          {
+            "name": "Brownie al Cioccolato",
+            "price": 5.50
+          }
+        ]
+      },
+      "category5": {
+        "categoryTitle": "Bevande",
+        "dishes": [
+          {
+            "name": "Acqua Naturale",
+            "price": 1.50
+          },
+          {
+            "name": "Bibita in Lattina",
+            "price": 2.50
+          },
+          {
+            "name": "Birra Artigianale",
+            "price": 4.00
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "84321567890",
+    "category": "Hamburger",
+    "name": "Burger Creativo",
+    "address": {
+      "street": "Piazza Navona 49",
+      "postalCode": "00186",
+      "city": "Roma"
+    },
+    "image": "Burger Creativo.webp",
+    "rating": 4.60,
+    "shipping": {
+      "freeShipping": true,
+      "shippingCost": 0.00,
+      "minOrder": 20
+    },
+    "menu": {
+      "category1": {
+        "categoryTitle": "Hamburger Innovativi",
+        "dishes": [
+          {
+            "name": "Burger di Cinghiale",
+            "price": 12.00
+          },
+          {
+            "name": "Burger di Salmone Affumicato",
+            "price": 13.50
+          },
+          {
+            "name": "Burger di Anatra con Salsa di Mirtilli",
+            "price": 14.00
+          },
+          {
+            "name": "Burger Vegetariano Gourmet",
+            "price": 11.00
+          }
+        ]
+      },
+      "category2": {
+        "categoryTitle": "Panini Esotici",
+        "dishes": [
+          {
+            "name": "Panino con Pollo al Curry",
+            "price": 10.00
+          },
+          {
+            "name": "Panino Tandoori",
+            "price": 10.50
+          },
+          {
+            "name": "Panino Mediterraneo",
+            "price": 9.50
+          }
+        ]
+      },
+      "category3": {
+        "categoryTitle": "Insalate",
+        "dishes": [
+          {
+            "name": "Insalata Caesar",
+            "price": 7.00
+          },
+          {
+            "name": "Insalata Greca",
+            "price": 7.50
+          },
+          {
+            "name": "Insalata di Quinoa",
+            "price": 8.00
+          }
+        ]
+      },
+      "category4": {
+        "categoryTitle": "Dolci Fusion",
+        "dishes": [
+          {
+            "name": "Cheesecake al Tè Verde",
+            "price": 6.50
+          },
+          {
+            "name": "Mousse al Cioccolato e Peperoncino",
+            "price": 6.00
+          }
+        ]
+      },
+      "category5": {
+        "categoryTitle": "Bevande Speciali",
+        "dishes": [
+          {
+            "name": "Smoothie Tropicale",
+            "price": 5.00
+          },
+          {
+            "name": "Tè Freddo Artigianale",
+            "price": 4.50
+          },
+          {
+            "name": "Limonata alla Menta",
+            "price": 3.50
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "95847632102",
+    "category": "Hamburger",
+    "name": "Panini Gourmet",
+    "address": {
+      "street": "Via del Corso 321",
+      "postalCode": "00186",
+      "city": "Roma"
+    },
+    "image": "Panini Gourmet.webp",
+    "rating": 4.60,
+    "shipping": {
+      "freeShipping": false,
+      "shippingCost": 2.50,
+      "minOrder": 15
+    },
+    "menu": {
+      "category1": {
+        "categoryTitle": "Hamburger Gourmet",
+        "dishes": [
+          {
+            "name": "Burger al Tartufo",
+            "price": 13.00
+          },
+          {
+            "name": "Burger con Guacamole",
+            "price": 12.50
+          },
+          {
+            "name": "Burger con Caprino e Miele",
+            "price": 12.00
+          },
+          {
+            "name": "Burger con Pecorino e Pere",
+            "price": 11.50
+          }
+        ]
+      },
+      "category2": {
+        "categoryTitle": "Panini Artigianali",
+        "dishes": [
+          {
+            "name": "Panino con Bresaola e Rucola",
+            "price": 10.00
+          },
+          {
+            "name": "Panino con Prosciutto Crudo e Mozzarella",
+            "price": 10.50
+          },
+          {
+            "name": "Panino Mediterraneo con Tonno",
+            "price": 9.50
+          }
+        ]
+      },
+      "category3": {
+        "categoryTitle": "Contorni",
+        "dishes": [
+          {
+            "name": "Patatine Fritte al Rosmarino",
+            "price": 4.00
+          },
+          {
+            "name": "Insalata Mista",
+            "price": 3.50
+          },
+          {
+            "name": "Verdure Grigliate",
+            "price": 5.00
+          }
+        ]
+      },
+      "category4": {
+        "categoryTitle": "Dolci della Casa",
+        "dishes": [
+          {
+            "name": "Tiramisù",
+            "price": 6.00
+          },
+          {
+            "name": "Panna Cotta",
+            "price": 5.50
+          }
+        ]
+      },
+      "category5": {
+        "categoryTitle": "Bevande Selezionate",
+        "dishes": [
+          {
+            "name": "Acqua Naturale",
+            "price": 1.50
+          },
+          {
+            "name": "Bibita Artigianale",
+            "price": 3.00
+          },
+          {
+            "name": "Birra Locale",
+            "price": 4.50
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "77564438721",
+    "category": "Hamburger",
+    "name": "Spicy Delight",
+    "address": {
+      "street": "Via dei Serpenti 89",
+      "postalCode": "00184",
+      "city": "Roma"
+    },
+    "image": "Spicy Delight.webp",
+    "rating": 4.75,
+    "shipping": {
+      "freeShipping": true,
+      "shippingCost": 0.00,
+      "minOrder": 20
+    },
+    "menu": {
+      "category1": {
+        "categoryTitle": "Panini Piccanti",
+        "dishes": [
+          {
+            "name": "Panino Jalapeño e Manzo",
+            "price": 11.50
+          },
+          {
+            "name": "Panino Habanero Pollo",
+            "price": 11.00
+          },
+          {
+            "name": "Panino Chipotle Vegano",
+            "price": 10.50
+          },
+          {
+            "name": "Panino Chorizo e Salsa Piccante",
+            "price": 12.00
+          }
+        ]
+      },
+      "category2": {
+        "categoryTitle": "Contorni",
+        "dishes": [
+          {
+            "name": "Patatine Fritte Piccanti",
+            "price": 4.50
+          },
+          {
+            "name": "Insalata Coleslaw",
+            "price": 4.00
+          }
+        ]
+      },
+      "category3": {
+        "categoryTitle": "Dolci",
+        "dishes": [
+          {
+            "name": "Cheesecake al Cioccolato",
+            "price": 6.00
+          },
+          {
+            "name": "Brownie al Peperoncino",
+            "price": 6.50
+          }
+        ]
+      },
+      "category4": {
+        "categoryTitle": "Bevande",
+        "dishes": [
+          {
+            "name": "Limonata Fresca",
+            "price": 3.00
+          },
+          {
+            "name": "Birra Artigianale",
+            "price": 5.00
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "88906754312",
+    "category": "Hamburger",
+    "name": "Monster Burger",
+    "address": {
+      "street": "Piazza di Spagna 47",
+      "postalCode": "00187",
+      "city": "Roma"
+    },
+    "image": "Monster Burger.webp",
+    "rating": 4.85,
+    "shipping": {
+      "freeShipping": false,
+      "shippingCost": 3.00,
+      "minOrder": 18
+    },
+    "menu": {
+      "category1": {
+        "categoryTitle": "Hamburger Giganti",
+        "dishes": [
+          {
+            "name": "Gigante Classico",
+            "price": 15.00
+          },
+          {
+            "name": "Gigante con Doppio Bacon",
+            "price": 16.50
+          },
+          {
+            "name": "Gigante Vegano",
+            "price": 14.00
+          },
+          {
+            "name": "Gigante Cheese Lovers",
+            "price": 17.00
+          }
+        ]
+      },
+      "category2": {
+        "categoryTitle": "Contorni Grandi",
+        "dishes": [
+          {
+            "name": "Maxi Patatine Fritte",
+            "price": 5.00
+          },
+          {
+            "name": "Insalatona Gigante",
+            "price": 5.50
+          }
+        ]
+      },
+      "category3": {
+        "categoryTitle": "Dolci Enormi",
+        "dishes": [
+          {
+            "name": "Maxi Cheesecake",
+            "price": 7.00
+          },
+          {
+            "name": "Gigante Sundae Gelato",
+            "price": 7.50
+          }
+        ]
+      },
+      "category4": {
+        "categoryTitle": "Bevande Grandi",
+        "dishes": [
+          {
+            "name": "Mega Bibita",
+            "price": 4.00
+          },
+          {
+            "name": "Shake Gigante",
+            "price": 5.50
+          },
+          {
+            "name": "Birra in Bottiglia Grande",
+            "price": 6.00
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "45376891234",
+    "category": "Hamburger",
+    "name": "Irish Burger Tavern",
+    "address": {
+      "street": "Via Nazionale 256",
+      "postalCode": "00184",
+      "city": "Roma"
+    },
+    "image": "Irish Burger Tavern.webp",
+    "rating": 4.65,
+    "shipping": {
+      "freeShipping": false,
+      "shippingCost": 2.50,
+      "minOrder": 15
+    },
+    "menu": {
+      "category1": {
+        "categoryTitle": "Hamburger Irlandesi",
+        "dishes": [
+          {
+            "name": "Burger al Whiskey Irlandese",
+            "price": 12.00
+          },
+          {
+            "name": "Burger con Stout e Cipolle Caramellate",
+            "price": 12.50
+          },
+          {
+            "name": "Burger di Agnello con Erbe Aromatiche",
+            "price": 13.00
+          },
+          {
+            "name": "Burger con Cheddar Irlandese",
+            "price": 11.50
+          }
+        ]
+      },
+      "category2": {
+        "categoryTitle": "Contorni Tipici",
+        "dishes": [
+          {
+            "name": "Patatine al Sale e Aceto",
+            "price": 4.50
+          },
+          {
+            "name": "Insalata di Cavolo",
+            "price": 3.50
+          },
+          {
+            "name": "Boxty (pancake di patate)",
+            "price": 5.00
+          }
+        ]
+      },
+      "category3": {
+        "categoryTitle": "Dolci Irlandesi",
+        "dishes": [
+          {
+            "name": "Apple Crumble",
+            "price": 6.00
+          },
+          {
+            "name": "Baileys Cheesecake",
+            "price": 6.50
+          }
+        ]
+      },
+      "category4": {
+        "categoryTitle": "Bevande Irlandesi",
+        "dishes": [
+          {
+            "name": "Birra Stout Irlandese",
+            "price": 5.00
+          },
+          {
+            "name": "Whiskey Irlandese",
+            "price": 7.00
+          },
+          {
+            "name": "Cider Irlandese",
+            "price": 4.50
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "98765432109",
+    "category": "Hamburger",
+    "name": "Mc Donald's",
+    "address": {
+      "street": "Via del Tritone 100",
+      "postalCode": "00187",
+      "city": "Roma"
+    },
+    "image": "McDonalds.webp",
+    "rating": 4.40,
+    "shipping": {
+      "freeShipping": true,
+      "shippingCost": 0.00,
+      "minOrder": 10
+    },
+    "menu": {
+      "category1": {
+        "categoryTitle": "Panini",
+        "dishes": [
+          {
+            "name": "Big Mac",
+            "price": 4.50
+          },
+          {
+            "name": "McChicken",
+            "price": 4.00
+          },
+          {
+            "name": "Filet-O-Fish",
+            "price": 4.00
+          },
+          {
+            "name": "McVeggie",
+            "price": 4.00
+          }
+        ]
+      },
+      "category2": {
+        "categoryTitle": "Snack",
+        "dishes": [
+          {
+            "name": "Chicken McNuggets (6 pezzi)",
+            "price": 3.00
+          },
+          {
+            "name": "Patatine Fritte (media)",
+            "price": 2.50
+          }
+        ]
+      },
+      "category3": {
+        "categoryTitle": "Insalate",
+        "dishes": [
+          {
+            "name": "Insalata Mediterranea",
+            "price": 3.50
+          },
+          {
+            "name": "Insalata con Pollo Crispy",
+            "price": 4.50
+          }
+        ]
+      },
+      "category4": {
+        "categoryTitle": "Dolci",
+        "dishes": [
+          {
+            "name": "Sundae",
+            "price": 2.00
+          },
+          {
+            "name": "Apple Pie",
+            "price": 2.00
+          }
+        ]
+      },
+      "category5": {
+        "categoryTitle": "Bevande",
+        "dishes": [
+          {
+            "name": "Acqua",
+            "price": 1.50
+          },
+          {
+            "name": "Coca Cola",
+            "price": 2.00
+          },
+          {
+            "name": "Sprite",
+            "price": 2.00
+          },
+          {
+            "name": "Fanta",
+            "price": 2.00
+          },
+          {
+            "name": "Tè Freddo",
+            "price": 2.00
+          },
+          {
+            "name": "Succhi di Frutta",
+            "price": 2.50
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "23547685901",
+    "category": "Hamburger",
+    "name": "Bogs",
+    "address": {
+      "street": "Via Merulana 256",
+      "postalCode": "00185",
+      "city": "Roma"
+    },
+    "image": "Bogs.webp",
+    "rating": 4.55,
+    "shipping": {
+      "freeShipping": false,
+      "shippingCost": 2.50,
+      "minOrder": 12
+    },
+    "menu": {
+      "category1": {
+        "categoryTitle": "Hamburger",
+        "dishes": [
+          {
+            "name": "Classic Burger",
+            "price": 8.00
+          },
+          {
+            "name": "Cheeseburger",
+            "price": 9.00
+          },
+          {
+            "name": "Bacon Burger",
+            "price": 10.00
+          },
+          {
+            "name": "Veggie Burger",
+            "price": 8.50
+          }
+        ]
+      },
+      "category2": {
+        "categoryTitle": "Hot Dogs",
+        "dishes": [
+          {
+            "name": "Classic Hot Dog",
+            "price": 7.00
+          },
+          {
+            "name": "Chili Cheese Dog",
+            "price": 8.50
+          },
+          {
+            "name": "German Bratwurst Dog",
+            "price": 9.00
+          },
+          {
+            "name": "Veggie Dog",
+            "price": 7.50
+          }
+        ]
+      },
+      "category3": {
+        "categoryTitle": "Contorni",
+        "dishes": [
+          {
+            "name": "Patatine Fritte",
+            "price": 3.50
+          },
+          {
+            "name": "Coleslaw",
+            "price": 4.00
+          }
+        ]
+      },
+      "category4": {
+        "categoryTitle": "Dolci",
+        "dishes": [
+          {
+            "name": "Brownie",
+            "price": 5.00
+          },
+          {
+            "name": "Cheesecake",
+            "price": 5.50
+          }
+        ]
+      },
+      "category5": {
+        "categoryTitle": "Bevande",
+        "dishes": [
+          {
+            "name": "Soda",
+            "price": 2.50
+          },
+          {
+            "name": "Acqua Naturale",
+            "price": 1.50
+          },
+          {
+            "name": "Birra Artigianale",
+            "price": 4.00
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "45678912300",
+    "category": "Hamburger",
+    "name": "Le Streghe",
+    "address": {
+      "street": "Via delle Murene 35",
+      "postalCode": "00100",
+      "city": "Roma"
+    },
+    "image": "Le Streghe.webp",
+    "rating": 4.9,
+    "shipping": {
+      "freeShipping": false,
+      "shippingCost": 3.00,
+      "minOrder": 18
+    },
+    "menu": {
+      "category1": {
+        "categoryTitle": "Hamburger",
+        "dishes": [
+          {
+            "name": "Hamburger Streghe",
+            "price": 10.00
+          },
+          {
+            "name": "Cheeseburger Speciale",
+            "price": 11.00
+          },
+          {
+            "name": "Hamburger Gourmet",
+            "price": 12.00
+          },
+          {
+            "name": "Hamburger Vegano",
+            "price": 10.50
+          }
+        ]
+      },
+      "category2": {
+        "categoryTitle": "Piadine",
+        "dishes": [
+          {
+            "name": "Piadina Romagnola",
+            "price": 8.00
+          },
+          {
+            "name": "Piadina con Prosciutto Crudo",
+            "price": 9.00
+          },
+          {
+            "name": "Piadina Vegetariana",
+            "price": 8.50
+          },
+          {
+            "name": "Piadina al Salmone",
+            "price": 9.50
+          }
+        ]
+      },
+      "category3": {
+        "categoryTitle": "Cocktails",
+        "dishes": [
+          {
+            "name": "Mojito",
+            "price": 7.00
+          },
+          {
+            "name": "Negroni",
+            "price": 8.00
+          },
+          {
+            "name": "Spritz",
+            "price": 6.00
+          },
+          {
+            "name": "Cosmopolitan",
+            "price": 7.50
+          }
+        ]
+      },
+      "category4": {
+        "categoryTitle": "Birre",
+        "dishes": [
+          {
+            "name": "Birra Artigianale Locale",
+            "price": 5.00
+          },
+          {
+            "name": "Birra Lager",
+            "price": 4.50
+          },
+          {
+            "name": "Birra Weiss",
+            "price": 5.50
+          },
+          {
+            "name": "Birra IPA",
+            "price": 6.00
+          }
+        ]
+      },
+      "category5": {
+        "categoryTitle": "Dolci",
+        "dishes": [
+          {
+            "name": "Cheesecake alla Liquirizia",
+            "price": 6.50
+          },
+          {
+            "name": "Torrone Gelato",
+            "price": 5.00
+          },
+          {
+            "name": "Tiramisù al Torrone",
+            "price": 6.00
+          },
+          {
+            "name": "Mousse di Liquirizia",
+            "price": 5.50
+          }
+        ]
+      }
+    }
+  }
+]

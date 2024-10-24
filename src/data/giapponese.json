@@ -1,0 +1,1062 @@
+[
+  {
+    "id": "44852623902",
+    "category": "Giapponese",
+    "name": "Tokyo Delights",
+    "address": {
+      "street": "Via Ludovico di Savoia 29",
+      "postalCode": "00185",
+      "city": "Roma"
+    },
+    "image": "Tokyo Delights.webp",
+    "rating": 4.70,
+    "shipping": {
+      "freeShipping": true,
+      "shippingCost": 0,
+      "minOrder": 15
+    },
+    "menu": {
+      "category1": {
+        "categoryTitle": "Sushi e Sashimi",
+        "dishes": [
+          {
+            "name": "Nigiri Sushi",
+            "price": 12.00
+          },
+          {
+            "name": "Sashimi Misto",
+            "price": 14.00
+          },
+          {
+            "name": "Uramaki California",
+            "price": 13.50
+          },
+          {
+            "name": "Temaki Salmone",
+            "price": 10.00
+          }
+        ]
+      },
+      "category2": {
+        "categoryTitle": "Ramen e Udon",
+        "dishes": [
+          {
+            "name": "Ramen di Pollo",
+            "price": 13.00
+          },
+          {
+            "name": "Udon con Gamberi",
+            "price": 14.50
+          },
+          {
+            "name": "Ramen Vegetariano",
+            "price": 12.50
+          }
+        ]
+      },
+      "category3": {
+        "categoryTitle": "Piatti Caldi",
+        "dishes": [
+          {
+            "name": "Tempura Mista",
+            "price": 15.00
+          },
+          {
+            "name": "Teriyaki di Manzo",
+            "price": 16.50
+          },
+          {
+            "name": "Gyoza",
+            "price": 11.00
+          }
+        ]
+      },
+      "category4": {
+        "categoryTitle": "Bevande e Sake",
+        "dishes": [
+          {
+            "name": "Tè Verde",
+            "price": 3.00
+          },
+          {
+            "name": "Sake",
+            "price": 6.00
+          },
+          {
+            "name": "Bibita in Lattina",
+            "price": 2.50
+          }
+        ]
+      },
+      "category5": {
+        "categoryTitle": "Dolci",
+        "dishes": [
+          {
+            "name": "Mochi",
+            "price": 7.00
+          },
+          {
+            "name": "Dorayaki",
+            "price": 7.50
+          },
+          {
+            "name": "Cheesecake Giapponese",
+            "price": 8.50
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "55968374123",
+    "category": "Giapponese",
+    "name": "Sakura Sushi",
+    "address": {
+      "street": "Via Pompeo Magno 10",
+      "postalCode": "00192",
+      "city": "Roma"
+    },
+    "image": "Sakura Sushi.webp",
+    "rating": 4.60,
+    "shipping": {
+      "freeShipping": false,
+      "shippingCost": 3.00,
+      "minOrder": 20
+    },
+    "menu": {
+      "category1": {
+        "categoryTitle": "Sushi e Sashimi",
+        "dishes": [
+          {
+            "name": "Sashimi Salmone",
+            "price": 13.00
+          },
+          {
+            "name": "Sushi Misto",
+            "price": 15.50
+          },
+          {
+            "name": "Hosomaki Tonno",
+            "price": 12.00
+          },
+          {
+            "name": "Dragon Roll",
+            "price": 14.00
+          }
+        ]
+      },
+      "category2": {
+        "categoryTitle": "Donburi e Poke",
+        "dishes": [
+          {
+            "name": "Donburi di Pollo",
+            "price": 12.50
+          },
+          {
+            "name": "Poke Bowl Salmone",
+            "price": 14.00
+          },
+          {
+            "name": "Donburi di Manzo",
+            "price": 15.00
+          }
+        ]
+      },
+      "category3": {
+        "categoryTitle": "Antipasti",
+        "dishes": [
+          {
+            "name": "Edamame",
+            "price": 5.00
+          },
+          {
+            "name": "Insalata di Alghe",
+            "price": 6.50
+          },
+          {
+            "name": "Takoyaki",
+            "price": 7.00
+          }
+        ]
+      },
+      "category4": {
+        "categoryTitle": "Bevande e Tè",
+        "dishes": [
+          {
+            "name": "Tè Verde in Bottiglia",
+            "price": 3.50
+          },
+          {
+            "name": "Acqua Minerale",
+            "price": 2.00
+          },
+          {
+            "name": "Succo di Frutta",
+            "price": 3.00
+          }
+        ]
+      },
+      "category5": {
+        "categoryTitle": "Dolci Giapponesi",
+        "dishes": [
+          {
+            "name": "Matcha Ice Cream",
+            "price": 6.00
+          },
+          {
+            "name": "Daifuku",
+            "price": 5.50
+          },
+          {
+            "name": "Castella",
+            "price": 7.00
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "66789123456",
+    "category": "Giapponese",
+    "name": "Kaiseki Zen",
+    "address": {
+      "street": "Via Flaminia 21",
+      "postalCode": "00196",
+      "city": "Roma"
+    },
+    "image": "Kaiseki Zen.webp",
+    "rating": 4.80,
+    "shipping": {
+      "freeShipping": true,
+      "shippingCost": 0,
+      "minOrder": 30
+    },
+    "menu": {
+      "category1": {
+        "categoryTitle": "Sushi Esclusivo",
+        "dishes": [
+          {
+            "name": "Nigiri Toro",
+            "price": 16.00
+          },
+          {
+            "name": "Uni Sushi",
+            "price": 18.00
+          },
+          {
+            "name": "Ikura Gunkan",
+            "price": 15.00
+          },
+          {
+            "name": "Ebi Nigiri",
+            "price": 14.00
+          },
+          {
+            "name": "Tamago Nigiri",
+            "price": 12.00
+          }
+        ]
+      },
+      "category2": {
+        "categoryTitle": "Ramen e Zuppe",
+        "dishes": [
+          {
+            "name": "Tonkotsu Ramen",
+            "price": 14.00
+          },
+          {
+            "name": "Shoyu Ramen",
+            "price": 13.50
+          },
+          {
+            "name": "Miso Ramen",
+            "price": 13.50
+          },
+          {
+            "name": "Ramen Vegetariano",
+            "price": 12.00
+          },
+          {
+            "name": "Udon con Brodo di Pollo",
+            "price": 14.50
+          }
+        ]
+      },
+      "category3": {
+        "categoryTitle": "Tempura e Yakitori",
+        "dishes": [
+          {
+            "name": "Tempura di Gamberi",
+            "price": 15.50
+          },
+          {
+            "name": "Tempura di Verdure",
+            "price": 13.00
+          },
+          {
+            "name": "Yakitori di Pollo",
+            "price": 12.00
+          },
+          {
+            "name": "Yakitori di Manzo",
+            "price": 14.00
+          },
+          {
+            "name": "Tempura di Calamari",
+            "price": 15.00
+          }
+        ]
+      },
+      "category4": {
+        "categoryTitle": "Bevande Tradizionali",
+        "dishes": [
+          {
+            "name": "Sake Junmai",
+            "price": 7.00
+          },
+          {
+            "name": "Tè Verde Sencha",
+            "price": 3.50
+          },
+          {
+            "name": "Birra Giapponese",
+            "price": 5.00
+          },
+          {
+            "name": "Tè Freddo Matcha",
+            "price": 4.00
+          },
+          {
+            "name": "Sake Nigori",
+            "price": 8.00
+          }
+        ]
+      },
+      "category5": {
+        "categoryTitle": "Dessert Raffinati",
+        "dishes": [
+          {
+            "name": "Cheesecake al Matcha",
+            "price": 9.00
+          },
+          {
+            "name": "Mochi Assortiti",
+            "price": 8.50
+          },
+          {
+            "name": "Torta di Castagne",
+            "price": 9.50
+          },
+          {
+            "name": "Gelato al Tè Verde",
+            "price": 7.00
+          },
+          {
+            "name": "Sesame Black Goma Pudding",
+            "price": 8.00
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "77890234567",
+    "category": "Giapponese",
+    "name": "Hanami Blossom",
+    "address": {
+      "street": "Viale Regina Margherita 33",
+      "postalCode": "00198",
+      "city": "Roma"
+    },
+    "image": "Hanami Blossom.jpg",
+    "rating": 4.75,
+    "shipping": {
+      "freeShipping": false,
+      "shippingCost": 2.00,
+      "minOrder": 25
+    },
+    "menu": {
+      "category1": {
+        "categoryTitle": "Sushi Fiorito",
+        "dishes": [
+          {
+            "name": "Nigiri Sakura",
+            "price": 15.00,
+            "description": "Nigiri con salmone e petali di ciliegio marinati"
+          },
+          {
+            "name": "Uramaki Azalea",
+            "price": 16.00,
+            "description": "Riso avvolto in foglie di azalea con ripieno di tonno e avocado"
+          },
+          {
+            "name": "Chrysanthemum Roll",
+            "price": 17.00,
+            "description": "Roll di gamberi con foglie di crisantemo e salsa speciale"
+          },
+          {
+            "name": "Iris Sashimi",
+            "price": 18.00,
+            "description": "Sashimi assortito su un letto di foglie di iris"
+          },
+          {
+            "name": "Lotus Maki",
+            "price": 14.50,
+            "description": "Maki con ripieno di verdure e foglie di loto"
+          }
+        ]
+      },
+      "category2": {
+        "categoryTitle": "Zuppe e Ramen",
+        "dishes": [
+          {
+            "name": "Ramen Orchidea",
+            "price": 14.00,
+            "description": "Brodo di miso con noodles, gamberi e petali di orchidea"
+          },
+          {
+            "name": "Zuppa di Peonia",
+            "price": 13.00,
+            "description": "Zuppa cremosa con tofu e petali di peonia"
+          },
+          {
+            "name": "Udon Magnolia",
+            "price": 15.00,
+            "description": "Udon in brodo con funghi shiitake e foglie di magnolia"
+          },
+          {
+            "name": "Ramen Camellia",
+            "price": 14.50,
+            "description": "Ramen piccante con pollo e foglie di camelia"
+          },
+          {
+            "name": "Zuppa di Loto",
+            "price": 12.00,
+            "description": "Zuppa leggera con semi di loto e verdure"
+          }
+        ]
+      },
+      "category3": {
+        "categoryTitle": "Antipasti Floreali",
+        "dishes": [
+          {
+            "name": "Tempura di Fiori",
+            "price": 13.00,
+            "description": "Assortimento di fiori in tempura"
+          },
+          {
+            "name": "Carpaccio di Fiori",
+            "price": 14.00,
+            "description": "Carpaccio di pesce con condimento ai fiori"
+          },
+          {
+            "name": "Edamame al Gelsomino",
+            "price": 11.00,
+            "description": "Edamame saltato con olio al gelsomino"
+          },
+          {
+            "name": "Salad Blossom",
+            "price": 12.50,
+            "description": "Insalata mista con petali di fiori commestibili"
+          },
+          {
+            "name": "Tofu Fiorito",
+            "price": 10.00,
+            "description": "Tofu marinato con essenze floreali"
+          }
+        ]
+      },
+      "category4": {
+        "categoryTitle": "Bevande e Tè Floreali",
+        "dishes": [
+          {
+            "name": "Tè Verde al Gelsomino",
+            "price": 4.00,
+            "description": "Tè verde aromatico con gelsomino"
+          },
+          {
+            "name": "Sakura Cocktail",
+            "price": 7.00,
+            "description": "Cocktail alcolico con essenza di ciliegio"
+          },
+          {
+            "name": "Infuso di Ibisco",
+            "price": 3.50,
+            "description": "Infuso fresco di ibisco e miele"
+          },
+          {
+            "name": "Limonata alla Rosa",
+            "price": 4.50,
+            "description": "Limonata fatta in casa con sciroppo di rose"
+          },
+          {
+            "name": "Latte di Matcha e Lavanda",
+            "price": 5.00,
+            "description": "Latte di matcha con un tocco di lavanda"
+          }
+        ]
+      },
+      "category5": {
+        "categoryTitle": "Dessert Floreali",
+        "dishes": [
+          {
+            "name": "Gelato alla Viola",
+            "price": 6.50,
+            "description": "Gelato artigianale al gusto di viola"
+          },
+          {
+            "name": "Cheesecake al Gelsomino",
+            "price": 7.50,
+            "description": "Cheesecake con crema al gelsomino"
+          },
+          {
+            "name": "Mousse alla Camelia",
+            "price": 8.00,
+            "description": "Mousse leggera con aroma di camelia"
+          },
+          {
+            "name": "Dolce di Riso e Fiori di Ciliegio",
+            "price": 7.00,
+            "description": "Dolce di riso avvolto in foglie di ciliegio"
+          },
+          {
+            "name": "Tiramisù alla Lavanda",
+            "price": 8.50,
+            "description": "Tiramisù con crema aromatizzata alla lavanda"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "88901345678",
+    "category": "Giapponese",
+    "name": "Mare di Giappone",
+    "address": {
+      "street": "Via di Ripetta 145",
+      "postalCode": "00186",
+      "city": "Roma"
+    },
+    "image": "Mare di Giappone.webp",
+    "rating": 4.65,
+    "shipping": {
+      "freeShipping": true,
+      "shippingCost": 0,
+      "minOrder": 20
+    },
+    "menu": {
+      "category1": {
+        "categoryTitle": "Sushi e Sashimi di Mare",
+        "dishes": [
+          {
+            "name": "Sashimi di Tonno",
+            "price": 17.00
+          },
+          {
+            "name": "Nigiri di Branzino",
+            "price": 15.00
+          },
+          {
+            "name": "Futomaki di Salmone",
+            "price": 16.00
+          },
+          {
+            "name": "Ebi Tempura Roll",
+            "price": 14.50
+          },
+          {
+            "name": "Uramaki di Anguilla",
+            "price": 15.50
+          }
+        ]
+      },
+      "category2": {
+        "categoryTitle": "Antipasti di Verdure",
+        "dishes": [
+          {
+            "name": "Edamame al Sesamo",
+            "price": 6.00
+          },
+          {
+            "name": "Insalata di Alghe Wakame",
+            "price": 7.00
+          },
+          {
+            "name": "Tempura di Verdure Miste",
+            "price": 9.00
+          },
+          {
+            "name": "Verdure alla Griglia",
+            "price": 8.50
+          },
+          {
+            "name": "Gyoza Vegetariano",
+            "price": 7.50
+          }
+        ]
+      },
+      "category3": {
+        "categoryTitle": "Piatti di Pesce",
+        "dishes": [
+          {
+            "name": "Teriyaki di Salmone",
+            "price": 18.00
+          },
+          {
+            "name": "Tataki di Tonno",
+            "price": 19.00
+          },
+          {
+            "name": "Branzino alla Griglia",
+            "price": 17.50
+          },
+          {
+            "name": "Anguilla in Salsa Unagi",
+            "price": 20.00
+          },
+          {
+            "name": "Carpaccio di Pesce",
+            "price": 16.00
+          }
+        ]
+      },
+      "category4": {
+        "categoryTitle": "Bevande",
+        "dishes": [
+          {
+            "name": "Tè Verde",
+            "price": 3.00
+          },
+          {
+            "name": "Sake",
+            "price": 7.00
+          },
+          {
+            "name": "Birra Giapponese",
+            "price": 5.00
+          },
+          {
+            "name": "Soda Yuzu",
+            "price": 4.00
+          },
+          {
+            "name": "Acqua Minerale",
+            "price": 2.00
+          }
+        ]
+      },
+      "category5": {
+        "categoryTitle": "Dolci Giapponesi",
+        "dishes": [
+          {
+            "name": "Mochi",
+            "price": 7.50
+          },
+          {
+            "name": "Dorayaki",
+            "price": 6.00
+          },
+          {
+            "name": "Torta di Riso",
+            "price": 8.00
+          },
+          {
+            "name": "Cheesecake al Matcha",
+            "price": 7.00
+          },
+          {
+            "name": "Gelato al Tè Verde",
+            "price": 5.50
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "99102456789",
+    "category": "Giapponese",
+    "name": "Dragone e Samurai",
+    "address": {
+      "street": "Via del Corso 200",
+      "postalCode": "00187",
+      "city": "Roma"
+    },
+    "image": "Dragone e Samurai.webp",
+    "rating": 4.55,
+    "shipping": {
+      "freeShipping": false,
+      "shippingCost": 3.00,
+      "minOrder": 25
+    },
+    "menu": {
+      "category1": {
+        "categoryTitle": "Sushi e Dim Sum",
+        "dishes": [
+          {
+            "name": "Nigiri Misto",
+            "price": 16.00
+          },
+          {
+            "name": "Ravioli di Gamberi al Vapore",
+            "price": 12.00
+          },
+          {
+            "name": "Dragon Roll",
+            "price": 15.00
+          },
+          {
+            "name": "Baozi al Maiale",
+            "price": 10.50
+          },
+          {
+            "name": "Tempura Udon con Ravioli",
+            "price": 17.00
+          }
+        ]
+      },
+      "category2": {
+        "categoryTitle": "Verdure Stile Orientale",
+        "dishes": [
+          {
+            "name": "Insalata di Alghe e Edamame",
+            "price": 9.00
+          },
+          {
+            "name": "Pak Choi al Vapore",
+            "price": 8.00
+          },
+          {
+            "name": "Tempura di Verdure",
+            "price": 11.00
+          },
+          {
+            "name": "Verdure Saltate in Stile Sichuan",
+            "price": 10.00
+          },
+          {
+            "name": "Zuppa di Miso con Verdure",
+            "price": 7.50
+          }
+        ]
+      },
+      "category3": {
+        "categoryTitle": "Piatti Principali",
+        "dishes": [
+          {
+            "name": "Anatra Laccata alla Pechinese",
+            "price": 20.00
+          },
+          {
+            "name": "Salmone Teriyaki",
+            "price": 18.00
+          },
+          {
+            "name": "Manzo con Bambù e Funghi",
+            "price": 19.00
+          },
+          {
+            "name": "Pollo Kung Pao",
+            "price": 17.00
+          },
+          {
+            "name": "Tonno in Salsa di Ostrica",
+            "price": 21.00
+          }
+        ]
+      },
+      "category4": {
+        "categoryTitle": "Bevande Orientali",
+        "dishes": [
+          {
+            "name": "Tè Verde Cinese",
+            "price": 3.50
+          },
+          {
+            "name": "Sake Giapponese",
+            "price": 6.00
+          },
+          {
+            "name": "Birra Tsingtao",
+            "price": 4.00
+          },
+          {
+            "name": "Liquore di Prugna",
+            "price": 5.00
+          },
+          {
+            "name": "Tè Oolong",
+            "price": 3.50
+          }
+        ]
+      },
+      "category5": {
+        "categoryTitle": "Dolci Fusion",
+        "dishes": [
+          {
+            "name": "Mochi al Sesamo",
+            "price": 8.00
+          },
+          {
+            "name": "Gelato al Tè Verde con Jiaozi Dolci",
+            "price": 7.50
+          },
+          {
+            "name": "Cheesecake al Matcha e Lychee",
+            "price": 9.00
+          },
+          {
+            "name": "Torta di Fagioli Rossi",
+            "price": 6.50
+          },
+          {
+            "name": "Dorayaki con Ananas",
+            "price": 7.00
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "10213564789",
+    "category": "Giapponese",
+    "name": "Loto Nipponico",
+    "address": {
+      "street": "Via Appia Nuova 123",
+      "postalCode": "00183",
+      "city": "Roma"
+    },
+    "image": "Loto Nipponico.webp",
+    "rating": 4.7,
+    "shipping": {
+      "freeShipping": true,
+      "shippingCost": 0,
+      "minOrder": 30
+    },
+    "menu": {
+      "category1": {
+        "categoryTitle": "Sushi Fiori di Loto",
+        "dishes": [
+          {
+            "name": "Nigiri di Loto",
+            "price": 15.00,
+            "description": "Nigiri con riso avvolto in petali di loto e salmone"
+          },
+          {
+            "name": "Maki di Loto",
+            "price": 14.00,
+            "description": "Maki con ripieno di tonno, cetriolo e petali di loto"
+          },
+          {
+            "name": "Sashimi Fiori di Loto",
+            "price": 18.00,
+            "description": "Sashimi assortito servito su un letto di petali di loto"
+          },
+          {
+            "name": "Uramaki Loto e Avocado",
+            "price": 16.50,
+            "description": "Uramaki con ripieno di gamberi e foglie di loto"
+          }
+        ]
+      },
+      "category2": {
+        "categoryTitle": "Piatti con Fiori di Loto",
+        "dishes": [
+          {
+            "name": "Tempura di Fiori di Loto",
+            "price": 14.00,
+            "description": "Fiori di loto in tempura con salsa dip"
+          },
+          {
+            "name": "Insalata di Loto",
+            "price": 12.00,
+            "description": "Insalata fresca con petali di loto e dressing al sesamo"
+          },
+          {
+            "name": "Zuppa di Miso con Loto",
+            "price": 10.00,
+            "description": "Zuppa di miso con tofu, alga wakame e petali di loto"
+          },
+          {
+            "name": "Riso al Vapore con Loto",
+            "price": 9.00,
+            "description": "Riso al vapore aromatizzato con foglie di loto"
+          }
+        ]
+      },
+      "category3": {
+        "categoryTitle": "Bevande",
+        "dishes": [
+          {
+            "name": "Tè di Fiori di Loto",
+            "price": 4.00,
+            "description": "Tè delicato infuso con fiori di loto essiccati"
+          },
+          {
+            "name": "Sake al Loto",
+            "price": 7.00,
+            "description": "Sake aromatizzato con essenza di fiori di loto"
+          },
+          {
+            "name": "Cocktail di Loto",
+            "price": 8.00,
+            "description": "Cocktail esotico con vodka, succo di loto e lime"
+          },
+          {
+            "name": "Acqua Aromatizzata al Loto",
+            "price": 3.50,
+            "description": "Acqua fresca aromatizzata con estratto di loto"
+          }
+        ]
+      },
+      "category4": {
+        "categoryTitle": "Dolci",
+        "dishes": [
+          {
+            "name": "Gelato al Loto",
+            "price": 6.00,
+            "description": "Gelato cremoso con estratto di fiori di loto"
+          },
+          {
+            "name": "Cheesecake al Loto",
+            "price": 7.00,
+            "description": "Cheesecake al gusto di fiori di loto con base di biscotto"
+          },
+          {
+            "name": "Mochi al Loto",
+            "price": 5.50,
+            "description": "Mochi tradizionale con ripieno di crema di loto"
+          },
+          {
+            "name": "Panna Cotta al Loto",
+            "price": 6.50,
+            "description": "Panna cotta delicata con sciroppo di fiori di loto"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "11223344556",
+    "category": "Giapponese",
+    "name": "Tokyo Express",
+    "address": {
+      "street": "Via degli Angeli 182",
+      "postalCode": "00100",
+      "city": "Roma"
+    },
+    "image": "Tokyo Express.webp",
+    "rating": 3.2,
+    "shipping": {
+      "freeShipping": true,
+      "shippingCost": 0,
+      "minOrder": 10
+    },
+    "menu": {
+      "category1": {
+        "categoryTitle": "Sushi Economico",
+        "dishes": [
+          {
+            "name": "Maki Semplice",
+            "price": 5.00
+          },
+          {
+            "name": "Nigiri Tonno",
+            "price": 6.00
+          },
+          {
+            "name": "California Roll",
+            "price": 7.00
+          },
+          {
+            "name": "Sashimi Misto",
+            "price": 8.00
+          }
+        ]
+      },
+      "category2": {
+        "categoryTitle": "Piatti Caldi",
+        "dishes": [
+          {
+            "name": "Ramen di Soia",
+            "price": 7.50
+          },
+          {
+            "name": "Tempura Mista",
+            "price": 9.00
+          },
+          {
+            "name": "Udon con Verdure",
+            "price": 6.50
+          },
+          {
+            "name": "Pollo Teriyaki",
+            "price": 8.00
+          }
+        ]
+      },
+      "category3": {
+        "categoryTitle": "Antipasti",
+        "dishes": [
+          {
+            "name": "Edamame",
+            "price": 4.00
+          },
+          {
+            "name": "Gyoza",
+            "price": 5.00
+          },
+          {
+            "name": "Insalata di Alghe",
+            "price": 4.50
+          },
+          {
+            "name": "Zuppa Miso",
+            "price": 3.50
+          }
+        ]
+      },
+      "category4": {
+        "categoryTitle": "Bevande",
+        "dishes": [
+          {
+            "name": "Tè Verde",
+            "price": 2.00
+          },
+          {
+            "name": "Acqua Minerale",
+            "price": 1.50
+          },
+          {
+            "name": "Soda",
+            "price": 2.50
+          },
+          {
+            "name": "Birra Giapponese",
+            "price": 3.00
+          }
+        ]
+      },
+      "category5": {
+        "categoryTitle": "Dolci",
+        "dishes": [
+          {
+            "name": "Mochi",
+            "price": 3.00
+          },
+          {
+            "name": "Gelato al Tè Verde",
+            "price": 4.00
+          },
+          {
+            "name": "Torta di Fagioli Rossi",
+            "price": 3.50
+          },
+          {
+            "name": "Dorayaki",
+            "price": 3.00
+          }
+        ]
+      }
+    }
+  }
+]

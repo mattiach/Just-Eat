@@ -1,0 +1,1498 @@
+[
+  {
+    "id": "33445566778",
+    "category": "Fritti",
+    "name": "Frittomania",
+    "address": {
+      "street": "Via Merulana 256",
+      "postalCode": "00185",
+      "city": "Roma"
+    },
+    "image": "Frittomania.webp",
+    "rating": 4.3,
+    "shipping": {
+      "freeShipping": false,
+      "shippingCost": 2.50,
+      "minOrder": 10
+    },
+    "menu": {
+      "category1": {
+        "categoryTitle": "Fritti Classici",
+        "dishes": [
+          {
+            "name": "Patatine Fritte",
+            "price": 3.00
+          },
+          {
+            "name": "Anelli di Cipolla",
+            "price": 3.50
+          },
+          {
+            "name": "Mozzarelline Fritte",
+            "price": 4.00
+          },
+          {
+            "name": "Pollo Fritto",
+            "price": 5.00
+          }
+        ]
+      },
+      "category2": {
+        "categoryTitle": "Street Food Fritto",
+        "dishes": [
+          {
+            "name": "Arancini",
+            "price": 3.50
+          },
+          {
+            "name": "Supplì",
+            "price": 3.00
+          },
+          {
+            "name": "Olive Ascolane",
+            "price": 4.00
+          },
+          {
+            "name": "Calamari Fritti",
+            "price": 5.50
+          }
+        ]
+      },
+      "category3": {
+        "categoryTitle": "Specialità del Chef",
+        "dishes": [
+          {
+            "name": "Tempura di Verdure",
+            "price": 5.00
+          },
+          {
+            "name": "Gamberi in Pastella",
+            "price": 6.00
+          },
+          {
+            "name": "Filetto di Pesce Fritto",
+            "price": 6.50
+          },
+          {
+            "name": "Crocchette di Pollo",
+            "price": 4.50
+          }
+        ]
+      },
+      "category4": {
+        "categoryTitle": "Bevande",
+        "dishes": [
+          {
+            "name": "Bibita in Lattina",
+            "price": 2.00
+          },
+          {
+            "name": "Acqua Minerale",
+            "price": 1.50
+          },
+          {
+            "name": "Birra Artigianale",
+            "price": 3.50
+          },
+          {
+            "name": "Succo di Frutta",
+            "price": 2.50
+          }
+        ]
+      },
+      "category5": {
+        "categoryTitle": "Dolci Fritti",
+        "dishes": [
+          {
+            "name": "Ciambelle Fritte",
+            "price": 3.00
+          },
+          {
+            "name": "Frittelle di Mele",
+            "price": 3.50
+          },
+          {
+            "name": "Churros",
+            "price": 4.00
+          },
+          {
+            "name": "Zeppole",
+            "price": 4.00
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "55667788990",
+    "category": "Fritti",
+    "name": "KFC",
+    "address": {
+      "street": "Via Tiburtina 100",
+      "postalCode": "00157",
+      "city": "Roma"
+    },
+    "image": "KFC.webp",
+    "rating": 4.5,
+    "shipping": {
+      "freeShipping": false,
+      "shippingCost": 2.50,
+      "minOrder": 20
+    },
+    "menu": {
+      "category1": {
+        "categoryTitle": "Pollo Fritto",
+        "dishes": [
+          {
+            "name": "Original Recipe Chicken",
+            "price": 8.50,
+            "description": "Pollo fritto con la ricetta originale del colonnello"
+          },
+          {
+            "name": "Extra Crispy Chicken",
+            "price": 9.00,
+            "description": "Pollo extra croccante"
+          },
+          {
+            "name": "Kentucky Grilled Chicken",
+            "price": 8.00,
+            "description": "Pollo grigliato alla Kentucky"
+          },
+          {
+            "name": "Hot Wings",
+            "price": 7.00,
+            "description": "Ali di pollo piccanti"
+          }
+        ]
+      },
+      "category2": {
+        "categoryTitle": "Sandwich e Wrap",
+        "dishes": [
+          {
+            "name": "Crispy Colonel Sandwich",
+            "price": 6.50,
+            "description": "Sandwich con pollo croccante e salse"
+          },
+          {
+            "name": "Chicken Little",
+            "price": 5.00,
+            "description": "Mini sandwich con pollo"
+          },
+          {
+            "name": "Kentucky Flatbread Sandwich",
+            "price": 6.00,
+            "description": "Sandwich su flatbread con pollo e insalata"
+          }
+        ]
+      },
+      "category3": {
+        "categoryTitle": "Contorni",
+        "dishes": [
+          {
+            "name": "Cole Slaw",
+            "price": 2.50
+          },
+          {
+            "name": "Mac and Cheese",
+            "price": 3.00
+          },
+          {
+            "name": "Mashed Potatoes with Gravy",
+            "price": 2.50
+          },
+          {
+            "name": "Biscuits",
+            "price": 1.50
+          }
+        ]
+      },
+      "category4": {
+        "categoryTitle": "Bevande",
+        "dishes": [
+          {
+            "name": "Lemonade",
+            "price": 2.00
+          },
+          {
+            "name": "Sweet Tea",
+            "price": 1.50
+          },
+          {
+            "name": "Pepsi",
+            "price": 2.00
+          },
+          {
+            "name": "Mountain Dew",
+            "price": 2.00
+          }
+        ]
+      },
+      "category5": {
+        "categoryTitle": "Dolci",
+        "dishes": [
+          {
+            "name": "Chocolate Chip Cake",
+            "price": 3.50
+          },
+          {
+            "name": "Cookies",
+            "price": 2.00
+          },
+          {
+            "name": "Apple Pie",
+            "price": 2.50
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "44667788990",
+    "category": "Fritti",
+    "name": "Crispy Corner",
+    "address": {
+      "street": "Via Ostiense 180",
+      "postalCode": "00154",
+      "city": "Roma"
+    },
+    "image": "Crispy Corner.webp",
+    "rating": 4.4,
+    "shipping": {
+      "freeShipping": false,
+      "shippingCost": 3.00,
+      "minOrder": 12
+    },
+    "menu": {
+      "category1": {
+        "categoryTitle": "Fritti Tradizionali",
+        "dishes": [
+          {
+            "name": "Patatine Fritte Classiche",
+            "price": 3.50
+          },
+          {
+            "name": "Crochette di Patate",
+            "price": 4.00
+          },
+          {
+            "name": "Fiori di Zucca Fritti",
+            "price": 4.50
+          },
+          {
+            "name": "Filetti di Baccalà Fritti",
+            "price": 5.50
+          }
+        ]
+      },
+      "category2": {
+        "categoryTitle": "Antipasti Fritti",
+        "dishes": [
+          {
+            "name": "Carciofi alla Giudia",
+            "price": 5.00
+          },
+          {
+            "name": "Olive Ascolane Fritte",
+            "price": 4.00
+          },
+          {
+            "name": "Crocchette di Melanzane",
+            "price": 4.50
+          },
+          {
+            "name": "Frittelle di Ricotta",
+            "price": 4.50
+          }
+        ]
+      },
+      "category3": {
+        "categoryTitle": "Specialità Internazionali",
+        "dishes": [
+          {
+            "name": "Tempura Giapponese",
+            "price": 6.00
+          },
+          {
+            "name": "Falafel",
+            "price": 5.00
+          },
+          {
+            "name": "Fried Chicken Americana",
+            "price": 6.50
+          },
+          {
+            "name": "Samosa Vegetariani",
+            "price": 5.00
+          }
+        ]
+      },
+      "category4": {
+        "categoryTitle": "Bevande",
+        "dishes": [
+          {
+            "name": "Limonata Fresca",
+            "price": 2.50
+          },
+          {
+            "name": "Birra Lager",
+            "price": 3.00
+          },
+          {
+            "name": "Iced Tea",
+            "price": 2.00
+          },
+          {
+            "name": "Acqua Frizzante",
+            "price": 1.50
+          }
+        ]
+      },
+      "category5": {
+        "categoryTitle": "Dolci Fritti",
+        "dishes": [
+          {
+            "name": "Bomboloni alla Crema",
+            "price": 3.00
+          },
+          {
+            "name": "Frittelle di Mele",
+            "price": 3.50
+          },
+          {
+            "name": "Castagnole",
+            "price": 3.00
+          },
+          {
+            "name": "Cannoli Siciliani",
+            "price": 4.00
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "55889900112",
+    "category": "Fritti",
+    "name": "Cat's Crispy Bites",
+    "address": {
+      "street": "Via Margutta 53",
+      "postalCode": "00187",
+      "city": "Roma"
+    },
+    "image": "Cats Crispy Bites.webp",
+    "rating": 4.6,
+    "shipping": {
+      "freeShipping": false,
+      "shippingCost": 2.50,
+      "minOrder": 15
+    },
+    "menu": {
+      "category1": {
+        "categoryTitle": "Fritti Felini",
+        "dishes": [
+          {
+            "name": "Patatine 'Zampe di Gatto'",
+            "price": 3.50
+          },
+          {
+            "name": "Polpettine 'Palline di Lana'",
+            "price": 4.50
+          },
+          {
+            "name": "Crocchette 'Miao Mix'",
+            "price": 5.00
+          },
+          {
+            "name": "Gamberi 'Coda di Gatto'",
+            "price": 6.00
+          }
+        ]
+      },
+      "category2": {
+        "categoryTitle": "Antipasti Gattosi",
+        "dishes": [
+          {
+            "name": "Bruschette 'Fusa Felici'",
+            "price": 4.00
+          },
+          {
+            "name": "Frittelle 'Morbidini'",
+            "price": 4.50
+          },
+          {
+            "name": "Bastoncini di Verdure 'Artiglietti'",
+            "price": 3.50
+          },
+          {
+            "name": "Fiori di Zucca 'Gattini'",
+            "price": 5.00
+          }
+        ]
+      },
+      "category3": {
+        "categoryTitle": "Piatti Principali Miaow",
+        "dishes": [
+          {
+            "name": "Tempura di Pesce 'Pescegatto'",
+            "price": 7.00
+          },
+          {
+            "name": "Cotolette 'Baffetti Crispy'",
+            "price": 6.50
+          },
+          {
+            "name": "Ali di Pollo 'Volo Felino'",
+            "price": 6.00
+          },
+          {
+            "name": "Risotto Croccante 'Ronron'",
+            "price": 5.50
+          }
+        ]
+      },
+      "category4": {
+        "categoryTitle": "Bevande Purr-fette",
+        "dishes": [
+          {
+            "name": "Smoothie 'Whiskers'",
+            "price": 3.00
+          },
+          {
+            "name": "Latte di Mandorla 'Gatto Latte'",
+            "price": 3.50
+          },
+          {
+            "name": "Tè Freddo 'Sguardo Felino'",
+            "price": 2.50
+          },
+          {
+            "name": "Acqua Fresca 'Gocce di Rugiada'",
+            "price": 2.00
+          }
+        ]
+      },
+      "category5": {
+        "categoryTitle": "Dolci Gattini",
+        "dishes": [
+          {
+            "name": "Ciambelline 'Zampette Dolci'",
+            "price": 3.50
+          },
+          {
+            "name": "Tiramisù 'Sogno di Gatto'",
+            "price": 4.50
+          },
+          {
+            "name": "Gelato 'Artiglio di Velluto'",
+            "price": 3.00
+          },
+          {
+            "name": "Cheesecake 'Morbidezza Felina'",
+            "price": 4.00
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "66998877445",
+    "category": "Fritti",
+    "name": "Fried Chicken Palace",
+    "address": {
+      "street": "Viale Trastevere 150",
+      "postalCode": "00153",
+      "city": "Roma"
+    },
+    "image": "Fried Chicken Palace.webp",
+    "rating": 4.2,
+    "shipping": {
+      "freeShipping": false,
+      "shippingCost": 3.00,
+      "minOrder": 20
+    },
+    "menu": {
+      "category1": {
+        "categoryTitle": "Buckets di Pollo",
+        "dishes": [
+          {
+            "name": "Bucket Classico",
+            "price": 15.00,
+            "description": "10 pezzi di pollo fritto in stile tradizionale"
+          },
+          {
+            "name": "Bucket Spicy",
+            "price": 16.00,
+            "description": "10 pezzi di pollo fritto con spezie piccanti"
+          },
+          {
+            "name": "Bucket Mix",
+            "price": 17.00,
+            "description": "Misto di ali, cosce e petto di pollo fritto"
+          }
+        ]
+      },
+      "category2": {
+        "categoryTitle": "Sandwich e Wraps",
+        "dishes": [
+          {
+            "name": "Chicken Burger",
+            "price": 7.00,
+            "description": "Burger di pollo fritto con insalata e salsa"
+          },
+          {
+            "name": "Spicy Chicken Wrap",
+            "price": 6.50,
+            "description": "Wrap di pollo piccante con verdure e salsa"
+          },
+          {
+            "name": "Classic Chicken Sandwich",
+            "price": 7.50,
+            "description": "Sandwich con pollo fritto, pomodoro, insalata e maionese"
+          }
+        ]
+      },
+      "category3": {
+        "categoryTitle": "Contorni",
+        "dishes": [
+          {
+            "name": "Patatine Fritte",
+            "price": 3.00
+          },
+          {
+            "name": "Insalata Fresca",
+            "price": 3.50
+          },
+          {
+            "name": "Coleslaw",
+            "price": 2.50
+          },
+          {
+            "name": "Mais al Vapore",
+            "price": 2.50
+          }
+        ]
+      },
+      "category4": {
+        "categoryTitle": "Bevande",
+        "dishes": [
+          {
+            "name": "Coca Cola",
+            "price": 2.00
+          },
+          {
+            "name": "Sprite",
+            "price": 2.00
+          },
+          {
+            "name": "Acqua Naturale",
+            "price": 1.50
+          },
+          {
+            "name": "Birra",
+            "price": 3.00
+          }
+        ]
+      },
+      "category5": {
+        "categoryTitle": "Dolci",
+        "dishes": [
+          {
+            "name": "Torta di Mele",
+            "price": 4.00
+          },
+          {
+            "name": "Cheesecake",
+            "price": 4.50
+          },
+          {
+            "name": "Brownie al Cioccolato",
+            "price": 3.50
+          },
+          {
+            "name": "Gelato",
+            "price": 3.00
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "77889900556",
+    "category": "Fritti",
+    "name": "Ocean Fry",
+    "address": {
+      "street": "Via del Porto 45",
+      "postalCode": "00121",
+      "city": "Roma"
+    },
+    "image": "Ocean Fry.webp",
+    "rating": 4.5,
+    "shipping": {
+      "freeShipping": false,
+      "shippingCost": 3.50,
+      "minOrder": 18
+    },
+    "menu": {
+      "category1": {
+        "categoryTitle": "Frutti di Mare Fritti",
+        "dishes": [
+          {
+            "name": "Calamari Fritti",
+            "price": 10.00
+          },
+          {
+            "name": "Gamberi in Pastella",
+            "price": 12.00
+          },
+          {
+            "name": "Frittura di Paranza",
+            "price": 15.00
+          },
+          {
+            "name": "Frittura Mista Mare",
+            "price": 17.00
+          }
+        ]
+      },
+      "category2": {
+        "categoryTitle": "Antipasti di Mare Fritti",
+        "dishes": [
+          {
+            "name": "Sarde a Beccafico Fritte",
+            "price": 8.00
+          },
+          {
+            "name": "Alici Marinate e Fritte",
+            "price": 7.50
+          },
+          {
+            "name": "Crocchette di Baccalà",
+            "price": 9.00
+          },
+          {
+            "name": "Polpette di Pesce",
+            "price": 8.00
+          }
+        ]
+      },
+      "category3": {
+        "categoryTitle": "Contorni",
+        "dishes": [
+          {
+            "name": "Insalata Fresca",
+            "price": 4.00
+          },
+          {
+            "name": "Patatine Fritte",
+            "price": 3.50
+          },
+          {
+            "name": "Verdure Grigliate",
+            "price": 5.00
+          },
+          {
+            "name": "Pane Fritto",
+            "price": 3.00
+          }
+        ]
+      },
+      "category4": {
+        "categoryTitle": "Bevande",
+        "dishes": [
+          {
+            "name": "Birra Artigianale",
+            "price": 4.00
+          },
+          {
+            "name": "Acqua Frizzante",
+            "price": 2.00
+          },
+          {
+            "name": "Soda",
+            "price": 3.00
+          },
+          {
+            "name": "Vino Bianco",
+            "price": 5.00
+          }
+        ]
+      },
+      "category5": {
+        "categoryTitle": "Dolci",
+        "dishes": [
+          {
+            "name": "Cannolo Siciliano",
+            "price": 4.50
+          },
+          {
+            "name": "Sorbetto al Limone",
+            "price": 3.50
+          },
+          {
+            "name": "Tiramisù",
+            "price": 4.00
+          },
+          {
+            "name": "Panna Cotta",
+            "price": 4.00
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "88990011223",
+    "category": "Fritti",
+    "name": "Marine Crunch",
+    "address": {
+      "street": "Corso Vittorio Emanuele II 118",
+      "postalCode": "00186",
+      "city": "Roma"
+    },
+    "image": "Marine Crunch.webp",
+    "rating": 4.6,
+    "shipping": {
+      "freeShipping": false,
+      "shippingCost": 4.00,
+      "minOrder": 20
+    },
+    "menu": {
+      "category1": {
+        "categoryTitle": "Specialità di Gamberi e Polipo",
+        "dishes": [
+          {
+            "name": "Gamberi Fritti",
+            "price": 12.00,
+            "description": "Gamberi freschi impanati e fritti"
+          },
+          {
+            "name": "Anelli di Polipo Fritti",
+            "price": 14.00,
+            "description": "Anelli di polipo croccanti e dorati"
+          },
+          {
+            "name": "Gamberi e Polipo Mix",
+            "price": 16.00,
+            "description": "Assortimento di gamberi e polipo fritti"
+          },
+          {
+            "name": "Spiedini di Gamberi e Polipo",
+            "price": 15.00,
+            "description": "Spiedini alternati di gamberi e polipo fritti"
+          }
+        ]
+      },
+      "category2": {
+        "categoryTitle": "Fritti del Mare",
+        "dishes": [
+          {
+            "name": "Calamari Fritti",
+            "price": 11.00
+          },
+          {
+            "name": "Frittura di Paranza",
+            "price": 15.00
+          },
+          {
+            "name": "Filetti di Baccalà Fritti",
+            "price": 13.00
+          },
+          {
+            "name": "Sarde Impanate",
+            "price": 10.00
+          }
+        ]
+      },
+      "category3": {
+        "categoryTitle": "Contorni",
+        "dishes": [
+          {
+            "name": "Patatine Fritte",
+            "price": 3.50
+          },
+          {
+            "name": "Insalata Fresca",
+            "price": 4.00
+          },
+          {
+            "name": "Verdure Grigliate",
+            "price": 5.00
+          },
+          {
+            "name": "Pane Fritto",
+            "price": 3.00
+          }
+        ]
+      },
+      "category4": {
+        "categoryTitle": "Bevande",
+        "dishes": [
+          {
+            "name": "Birra Artigianale",
+            "price": 4.00
+          },
+          {
+            "name": "Acqua Frizzante",
+            "price": 2.00
+          },
+          {
+            "name": "Vino Bianco",
+            "price": 5.00
+          },
+          {
+            "name": "Soda",
+            "price": 3.00
+          }
+        ]
+      },
+      "category5": {
+        "categoryTitle": "Dolci",
+        "dishes": [
+          {
+            "name": "Cheesecake",
+            "price": 4.50
+          },
+          {
+            "name": "Gelato Artigianale",
+            "price": 3.50
+          },
+          {
+            "name": "Tiramisù",
+            "price": 4.00
+          },
+          {
+            "name": "Cannolo Siciliano",
+            "price": 4.50
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "991122334455",
+    "category": "Fritti",
+    "name": "Chicken King",
+    "address": {
+      "street": "Via Tuscolana 100",
+      "postalCode": "00182",
+      "city": "Roma"
+    },
+    "image": "Chicken King.webp",
+    "rating": 4.4,
+    "shipping": {
+      "freeShipping": false,
+      "shippingCost": 3.50,
+      "minOrder": 20
+    },
+    "menu": {
+      "category1": {
+        "categoryTitle": "Pollo Fritto",
+        "dishes": [
+          {
+            "name": "Hot Wings",
+            "price": 6.00,
+            "description": "Ali di pollo piccanti e croccanti"
+          },
+          {
+            "name": "Original Recipe Chicken",
+            "price": 8.00,
+            "description": "Pollo fritto con ricetta originale"
+          },
+          {
+            "name": "Crispy Strips",
+            "price": 7.00,
+            "description": "Strisce di petto di pollo impanate e fritte"
+          },
+          {
+            "name": "Popcorn Chicken",
+            "price": 5.00,
+            "description": "Bocconcini di pollo fritti"
+          }
+        ]
+      },
+      "category2": {
+        "categoryTitle": "Box e Menu",
+        "dishes": [
+          {
+            "name": "Chicken Box",
+            "price": 10.00,
+            "description": "Scelta di pollo fritto con contorni"
+          },
+          {
+            "name": "Combo Meal",
+            "price": 9.00,
+            "description": "Pollo fritto con patatine e bibita"
+          },
+          {
+            "name": "Bucket per Famiglie",
+            "price": 20.00,
+            "description": "Secchiello di pollo fritto assortito per la famiglia"
+          }
+        ]
+      },
+      "category3": {
+        "categoryTitle": "Contorni",
+        "dishes": [
+          {
+            "name": "Patatine Fritte",
+            "price": 3.00
+          },
+          {
+            "name": "Coleslaw",
+            "price": 2.50
+          },
+          {
+            "name": "Mais al Burro",
+            "price": 2.50
+          },
+          {
+            "name": "Insalata Verde",
+            "price": 3.00
+          }
+        ]
+      },
+      "category4": {
+        "categoryTitle": "Bevande",
+        "dishes": [
+          {
+            "name": "Coca Cola",
+            "price": 2.00
+          },
+          {
+            "name": "Sprite",
+            "price": 2.00
+          },
+          {
+            "name": "Acqua Naturale",
+            "price": 1.50
+          },
+          {
+            "name": "Birra in Bottiglia",
+            "price": 3.00
+          }
+        ]
+      },
+      "category5": {
+        "categoryTitle": "Dessert",
+        "dishes": [
+          {
+            "name": "Torta al Cioccolato",
+            "price": 3.50
+          },
+          {
+            "name": "Cheesecake",
+            "price": 3.00
+          },
+          {
+            "name": "Gelato",
+            "price": 2.50
+          },
+          {
+            "name": "Cookie",
+            "price": 1.00
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "112233445566",
+    "category": "Fritti",
+    "name": "Fried Chicken Haven",
+    "address": {
+      "street": "Via del Pigneto 123",
+      "postalCode": "00176",
+      "city": "Roma"
+    },
+    "image": "Fried Chicken Haven.webp",
+    "rating": 4.3,
+    "shipping": {
+      "freeShipping": false,
+      "shippingCost": 3.00,
+      "minOrder": 15
+    },
+    "menu": {
+      "category1": {
+        "categoryTitle": "Pollo Fritto",
+        "dishes": [
+          {
+            "name": "Ali Piccanti",
+            "price": 6.50,
+            "description": "Ali di pollo croccanti con spezie piccanti"
+          },
+          {
+            "name": "Bocconcini di Pollo",
+            "price": 5.50,
+            "description": "Piccoli pezzi di pollo impanati e fritti"
+          },
+          {
+            "name": "Pollo Croccante",
+            "price": 8.00,
+            "description": "Pezzi di pollo impanati con ricetta segreta"
+          },
+          {
+            "name": "Strisce di Pollo",
+            "price": 7.00,
+            "description": "Strisce di petto di pollo impanate e fritte"
+          }
+        ]
+      },
+      "category2": {
+        "categoryTitle": "Menu Combinati",
+        "dishes": [
+          {
+            "name": "Menu Pollo e Patatine",
+            "price": 9.00,
+            "description": "Combinazione di pollo fritto e patatine"
+          },
+          {
+            "name": "Bucket Famiglia",
+            "price": 18.00,
+            "description": "Secchiello grande di pollo fritto assortito"
+          },
+          {
+            "name": "Menu Pollo Piccante",
+            "price": 10.00,
+            "description": "Pollo piccante servito con contorni a scelta"
+          }
+        ]
+      },
+      "category3": {
+        "categoryTitle": "Contorni",
+        "dishes": [
+          {
+            "name": "Patatine Fritte",
+            "price": 3.00
+          },
+          {
+            "name": "Insalata Coleslaw",
+            "price": 2.50
+          },
+          {
+            "name": "Pane di Mais",
+            "price": 2.00
+          },
+          {
+            "name": "Pure di Patate",
+            "price": 2.50
+          }
+        ]
+      },
+      "category4": {
+        "categoryTitle": "Bevande",
+        "dishes": [
+          {
+            "name": "Bibita Gassata",
+            "price": 2.50
+          },
+          {
+            "name": "Acqua Minerale",
+            "price": 1.50
+          },
+          {
+            "name": "Succo di Frutta",
+            "price": 2.00
+          },
+          {
+            "name": "Birra",
+            "price": 3.00
+          }
+        ]
+      },
+      "category5": {
+        "categoryTitle": "Dessert",
+        "dishes": [
+          {
+            "name": "Torta di Mele",
+            "price": 3.50
+          },
+          {
+            "name": "Cheesecake",
+            "price": 3.00
+          },
+          {
+            "name": "Gelato",
+            "price": 2.50
+          },
+          {
+            "name": "Brownie",
+            "price": 3.00
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "66887755443",
+    "category": "Fritti",
+    "name": "Sea Delights Fry House",
+    "address": {
+      "street": "Via del Corso 321",
+      "postalCode": "00186",
+      "city": "Roma"
+    },
+    "image": "Sea Delights Fry House.webp",
+    "rating": 4.7,
+    "shipping": {
+      "freeShipping": false,
+      "shippingCost": 4.00,
+      "minOrder": 25
+    },
+    "menu": {
+      "category1": {
+        "categoryTitle": "Antipasti di Mare Fritti",
+        "dishes": [
+          {
+            "name": "Calamari Fritti",
+            "price": 10.00,
+            "description": "Calamari freschi, impanati e fritti"
+          },
+          {
+            "name": "Gamberi in Pastella",
+            "price": 12.00,
+            "description": "Gamberi avvolti in pastella leggera e fritti"
+          },
+          {
+            "name": "Frittelle di Baccalà",
+            "price": 11.00,
+            "description": "Frittelle croccanti di baccalà"
+          },
+          {
+            "name": "Anelli di Polipo Fritti",
+            "price": 13.00,
+            "description": "Anelli di polipo fritti alla perfezione"
+          }
+        ]
+      },
+      "category2": {
+        "categoryTitle": "Piatti di Mare",
+        "dishes": [
+          {
+            "name": "Spaghetti alle Vongole",
+            "price": 14.00,
+            "description": "Spaghetti con vongole fresche in salsa bianca"
+          },
+          {
+            "name": "Zuppa di Cozze",
+            "price": 13.00,
+            "description": "Cozze in brodo saporito con erbe aromatiche"
+          },
+          {
+            "name": "Grigliata di Astice",
+            "price": 25.00,
+            "description": "Astice grigliato con erbe e condimenti"
+          }
+        ]
+      },
+      "category3": {
+        "categoryTitle": "Contorni",
+        "dishes": [
+          {
+            "name": "Insalata di Mare",
+            "price": 9.00
+          },
+          {
+            "name": "Patate al Rosmarino",
+            "price": 4.00
+          },
+          {
+            "name": "Verdure Grigliate",
+            "price": 5.00
+          },
+          {
+            "name": "Pane all'Aglio",
+            "price": 3.50
+          }
+        ]
+      },
+      "category4": {
+        "categoryTitle": "Bevande",
+        "dishes": [
+          {
+            "name": "Vino Bianco",
+            "price": 6.00
+          },
+          {
+            "name": "Acqua Minerale",
+            "price": 2.00
+          },
+          {
+            "name": "Birra Artigianale",
+            "price": 5.00
+          },
+          {
+            "name": "Soda",
+            "price": 3.00
+          }
+        ]
+      },
+      "category5": {
+        "categoryTitle": "Dolci",
+        "dishes": [
+          {
+            "name": "Tiramisù",
+            "price": 6.00
+          },
+          {
+            "name": "Panna Cotta",
+            "price": 5.00
+          },
+          {
+            "name": "Cheesecake",
+            "price": 6.00
+          },
+          {
+            "name": "Gelato al Limone",
+            "price": 4.50
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "99887766554",
+    "category": "Fritti",
+    "name": "Fritto Misto Creativo",
+    "address": {
+      "street": "Via della Scrofa 100",
+      "postalCode": "00186",
+      "city": "Roma"
+    },
+    "image": "Fritto Misto Creativo.webp",
+    "rating": 4.8,
+    "shipping": {
+      "freeShipping": false,
+      "shippingCost": 3.50,
+      "minOrder": 20
+    },
+    "menu": {
+      "category1": {
+        "categoryTitle": "Fritti Innovativi",
+        "dishes": [
+          {
+            "name": "Carciofi Fritti in Pastella di Zafferano",
+            "price": 8.00,
+            "description": "Carciofi immersi in una pastella leggera allo zafferano e fritti"
+          },
+          {
+            "name": "Fiori di Zucca Ripieni di Mare",
+            "price": 10.00,
+            "description": "Fiori di zucca ripieni di frutti di mare, impanati e fritti"
+          },
+          {
+            "name": "Crocchette di Quinoa e Verdure",
+            "price": 7.00,
+            "description": "Crocchette vegetariane di quinoa con mix di verdure"
+          },
+          {
+            "name": "Tempura di Frutta Esotica",
+            "price": 9.00,
+            "description": "Selezione di frutta esotica in pastella tempura leggera"
+          }
+        ]
+      },
+      "category2": {
+        "categoryTitle": "Classici Reinventati",
+        "dishes": [
+          {
+            "name": "Pollo Fritto con Miele e Limone",
+            "price": 12.00,
+            "description": "Pollo fritto servito con una glassa di miele e limone"
+          },
+          {
+            "name": "Anelli di Cipolla al Cioccolato",
+            "price": 6.00,
+            "description": "Anelli di cipolla fritti con una copertura di cioccolato fondente"
+          },
+          {
+            "name": "Patatine Fritte alle Erbe e Parmigiano",
+            "price": 5.00,
+            "description": "Patatine fritte con un tocco di erbe aromatiche e scaglie di parmigiano"
+          }
+        ]
+      },
+      "category3": {
+        "categoryTitle": "Contorni",
+        "dishes": [
+          {
+            "name": "Insalata Mista",
+            "price": 4.00
+          },
+          {
+            "name": "Patate al Forno Speziate",
+            "price": 4.50
+          },
+          {
+            "name": "Mix di Verdure alla Griglia",
+            "price": 5.00
+          }
+        ]
+      },
+      "category4": {
+        "categoryTitle": "Bevande",
+        "dishes": [
+          {
+            "name": "Cocktail Artigianali",
+            "price": 6.00
+          },
+          {
+            "name": "Succo di Frutta Fresca",
+            "price": 4.00
+          },
+          {
+            "name": "Acqua Minerale",
+            "price": 2.00
+          },
+          {
+            "name": "Vino Selezionato",
+            "price": 5.00
+          }
+        ]
+      },
+      "category5": {
+        "categoryTitle": "Dolci",
+        "dishes": [
+          {
+            "name": "Cheesecake Fritta",
+            "price": 6.50
+          },
+          {
+            "name": "Bignè Fritti con Crema",
+            "price": 5.00
+          },
+          {
+            "name": "Churros con Salsa al Cioccolato",
+            "price": 4.50
+          },
+          {
+            "name": "Gelato Artigianale",
+            "price": 3.50
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "557788990011",
+    "category": "Fritti",
+    "name": "Frittura Artistica",
+    "address": {
+      "street": "Piazza Navona 48",
+      "postalCode": "00186",
+      "city": "Roma"
+    },
+    "image": "Frittura Artistica.webp",
+    "rating": 4.9,
+    "shipping": {
+      "freeShipping": false,
+      "shippingCost": 3.00,
+      "minOrder": 20
+    },
+    "menu": {
+      "category1": {
+        "categoryTitle": "Fritti d'Autore",
+        "dishes": [
+          {
+            "name": "Avocado Fritto con Salsa Tartara",
+            "price": 8.50,
+            "description": "Metà avocado impanato e fritto, servito con salsa tartara"
+          },
+          {
+            "name": "Ravioli Dolci Fritti",
+            "price": 7.00,
+            "description": "Ravioli ripieni di crema di cioccolato, fritti e spolverati di zucchero a velo"
+          },
+          {
+            "name": "Bocconcini di Brie Fritti con Marmellata",
+            "price": 9.00,
+            "description": "Cubetti di brie fritti accompagnati da marmellata di frutti di bosco"
+          },
+          {
+            "name": "Fiori di Carciofo Fritti",
+            "price": 10.00,
+            "description": "Fiori di carciofo fritti in pastella leggera"
+          }
+        ]
+      },
+      "category2": {
+        "categoryTitle": "Classici Reinventati",
+        "dishes": [
+          {
+            "name": "Pollo Fritto con Glassa all'Aceto Balsamico",
+            "price": 12.00,
+            "description": "Pollo croccante con una glassa dolce di aceto balsamico"
+          },
+          {
+            "name": "Patatine Fritte alla Paprika Affumicata",
+            "price": 6.00,
+            "description": "Patatine fritte condite con paprika affumicata e un pizzico di sale marino"
+          },
+          {
+            "name": "Anelli di Cipolla Fritti al Curry",
+            "price": 5.50,
+            "description": "Anelli di cipolla in pastella al curry e impanati"
+          }
+        ]
+      },
+      "category3": {
+        "categoryTitle": "Contorni Esotici",
+        "dishes": [
+          {
+            "name": "Insalata di Mango e Papaya",
+            "price": 7.00
+          },
+          {
+            "name": "Riso Basmati Soffiato",
+            "price": 4.50
+          },
+          {
+            "name": "Verdure Saltate al Wok",
+            "price": 5.00
+          }
+        ]
+      },
+      "category4": {
+        "categoryTitle": "Bevande Gourmet",
+        "dishes": [
+          {
+            "name": "Cocktail di Frutta Esotica",
+            "price": 7.00
+          },
+          {
+            "name": "Tè Verde Freddo Infuso con Fiori di Gelsomino",
+            "price": 4.00
+          },
+          {
+            "name": "Limonata Fresca Fatta in Casa",
+            "price": 3.50
+          },
+          {
+            "name": "Birra Artigianale Locale",
+            "price": 5.00
+          }
+        ]
+      },
+      "category5": {
+        "categoryTitle": "Dolci Sorprendenti",
+        "dishes": [
+          {
+            "name": "Gelato Fritto",
+            "price": 6.50
+          },
+          {
+            "name": "Banana Fritta con Caramello Salato",
+            "price": 5.50
+          },
+          {
+            "name": "Churros al Cioccolato Piccante",
+            "price": 4.50
+          },
+          {
+            "name": "Beignets di Mele",
+            "price": 5.00
+          }
+        ]
+      }
+    }
+  }
+]

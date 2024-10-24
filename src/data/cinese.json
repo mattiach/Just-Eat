@@ -1,0 +1,486 @@
+[
+  {
+    "id": "12345678901",
+    "category": "Cinese",
+    "name": "Il Dragone Orientale",
+    "address": {
+      "street": "Via Casilina 42",
+      "postalCode": "00176",
+      "city": "Roma"
+    },
+    "image": "Il Dragone Orientale.webp",
+    "rating": 4.2,
+    "shipping": {
+      "freeShipping": false,
+      "shippingCost": 2.50,
+      "minOrder": 15
+    },
+    "menu": {
+      "category1": {
+        "categoryTitle": "Ravioli Cinesi",
+        "dishes": [
+          {
+            "name": "Ravioli di Maiale al Vapore",
+            "price": 6.00,
+            "description": "Ravioli ripieni di maiale e verdure, cotti al vapore"
+          },
+          {
+            "name": "Ravioli di Gamberi",
+            "price": 7.00,
+            "description": "Ravioli ripieni di gamberi freschi, serviti con salsa di soia"
+          },
+          {
+            "name": "Ravioli Vegetariani",
+            "price": 5.50,
+            "description": "Ravioli ripieni di verdure assortite, leggeri e saporiti"
+          }
+        ]
+      },
+      "category2": {
+        "categoryTitle": "Riso",
+        "dishes": [
+          {
+            "name": "Riso Cantonese",
+            "price": 8.00,
+            "description": "Riso saltato con uova, piselli e prosciutto"
+          },
+          {
+            "name": "Riso con Pollo e Verdure",
+            "price": 8.50,
+            "description": "Riso saltato con pollo, verdure miste e salsa di soia"
+          },
+          {
+            "name": "Riso Nero con Frutti di Mare",
+            "price": 9.50,
+            "description": "Riso nero saltato con un mix di frutti di mare"
+          }
+        ]
+      },
+      "category3": {
+        "categoryTitle": "Ramen",
+        "dishes": [
+          {
+            "name": "Ramen di Maiale Piccante",
+            "price": 10.00,
+            "description": "Brodo piccante con noodles, fette di maiale, uovo e verdure"
+          },
+          {
+            "name": "Ramen di Miso con Tofu",
+            "price": 9.00,
+            "description": "Brodo di miso con noodles, tofu morbido e verdure"
+          },
+          {
+            "name": "Ramen di Soia con Manzo",
+            "price": 11.00,
+            "description": "Brodo di soia con noodles, fette di manzo, bambù e cipollotti"
+          }
+        ]
+      },
+      "category4": {
+        "categoryTitle": "Bevande",
+        "dishes": [
+          {
+            "name": "Tè Verde",
+            "price": 2.00
+          },
+          {
+            "name": "Birra Cinese",
+            "price": 3.00
+          },
+          {
+            "name": "Succo di Litchi",
+            "price": 2.50
+          },
+          {
+            "name": "Acqua Minerale",
+            "price": 1.50
+          }
+        ]
+      },
+      "category5": {
+        "categoryTitle": "Dolci",
+        "dishes": [
+          {
+            "name": "Torta di Fagioli Rossi",
+            "price": 4.00
+          },
+          {
+            "name": "Mochi",
+            "price": 3.50
+          },
+          {
+            "name": "Gelato al Tè Verde",
+            "price": 3.00
+          },
+          {
+            "name": "Palline di Sesamo",
+            "price": 4.50
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "23456789012",
+    "category": "Cinese",
+    "name": "La Lanterna di Giada",
+    "address": {
+      "street": "Via Prenestina 230",
+      "postalCode": "00176",
+      "city": "Roma"
+    },
+    "image": "La Lanterna di Giada.webp",
+    "rating": 4.3,
+    "shipping": {
+      "freeShipping": false,
+      "shippingCost": 2.50,
+      "minOrder": 15
+    },
+    "menu": {
+      "category1": {
+        "categoryTitle": "Ravioli Cinesi",
+        "dishes": [
+          {
+            "name": "Ravioli di Verdure al Vapore",
+            "price": 6.50,
+            "description": "Delicati ravioli di verdure al vapore, leggeri e saporiti"
+          },
+          {
+            "name": "Ravioli di Manzo Piccanti",
+            "price": 7.50,
+            "description": "Ravioli ripieni di manzo con un tocco piccante, serviti con salsa speciale"
+          },
+          {
+            "name": "Ravioli di Gamberetti",
+            "price": 8.00,
+            "description": "Ravioli ripieni di gamberetti freschi, cotti al vapore e serviti con salsa di soia"
+          }
+        ]
+      },
+      "category2": {
+        "categoryTitle": "Piatti di Riso",
+        "dishes": [
+          {
+            "name": "Riso Fritto con Verdure",
+            "price": 7.00,
+            "description": "Riso saltato con un mix di verdure fresche"
+          },
+          {
+            "name": "Riso con Pollo al Curry",
+            "price": 8.00,
+            "description": "Riso saltato con pollo e un ricco curry cinese"
+          },
+          {
+            "name": "Riso con Anatra Laccata",
+            "price": 9.00,
+            "description": "Riso saltato con pezzi di anatra laccata e verdure croccanti"
+          }
+        ]
+      },
+      "category3": {
+        "categoryTitle": "Ramen Cinese",
+        "dishes": [
+          {
+            "name": "Ramen al Brodo di Pollo",
+            "price": 9.50,
+            "description": "Ramen in brodo di pollo chiaro con verdure e fette di pollo"
+          },
+          {
+            "name": "Ramen di Verdure",
+            "price": 8.50,
+            "description": "Ramen in brodo vegetale con assortimento di verdure fresche"
+          },
+          {
+            "name": "Ramen di Manzo Speziato",
+            "price": 10.00,
+            "description": "Ramen con brodo speziato e fette teneri di manzo"
+          }
+        ]
+      },
+      "category4": {
+        "categoryTitle": "Bevande",
+        "dishes": [
+          {
+            "name": "Tè Oolong",
+            "price": 2.00
+          },
+          {
+            "name": "Succo di Mango",
+            "price": 2.50
+          },
+          {
+            "name": "Acqua Frizzante",
+            "price": 1.50
+          },
+          {
+            "name": "Birra Cinese",
+            "price": 3.00
+          }
+        ]
+      },
+      "category5": {
+        "categoryTitle": "Dolci",
+        "dishes": [
+          {
+            "name": "Lychee al Naturale",
+            "price": 4.00
+          },
+          {
+            "name": "Budino di Riso al Mango",
+            "price": 4.50
+          },
+          {
+            "name": "Gelato al Sesamo Nero",
+            "price": 3.50
+          },
+          {
+            "name": "Frittelle di Ananas",
+            "price": 4.00
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "34567890123",
+    "category": "Cinese",
+    "name": "Shiba Inu Chinese Bistro",
+    "address": {
+      "street": "Viale dei Quattro Venti 123",
+      "postalCode": "00152",
+      "city": "Roma"
+    },
+    "image": "Shiba Inu Chinese Bistro.webp",
+    "rating": 4.5,
+    "shipping": {
+      "freeShipping": false,
+      "shippingCost": 3.00,
+      "minOrder": 20
+    },
+    "menu": {
+      "category1": {
+        "categoryTitle": "Specialità a Tema Shibainu",
+        "dishes": [
+          {
+            "name": "Ravioli 'Zampa di Shiba'",
+            "price": 7.00,
+            "description": "Ravioli a forma di zampa di cane ripieni di carne e verdure"
+          },
+          {
+            "name": "Riso 'Faccia di Shiba'",
+            "price": 8.00,
+            "description": "Riso saltato con verdure presentato con un sorriso di Shiba Inu"
+          },
+          {
+            "name": "Biscotti di Fortuna 'Shiba'",
+            "price": 4.00,
+            "description": "Biscotti della fortuna a forma di Shiba Inu"
+          }
+        ]
+      },
+      "category2": {
+        "categoryTitle": "Classici Cinesi",
+        "dishes": [
+          {
+            "name": "Anatra Laccata alla Pechinese",
+            "price": 15.00,
+            "description": "Anatra croccante servita con pancake e salsa Hoisin"
+          },
+          {
+            "name": "Maiale in Salsa Agrodolce",
+            "price": 12.00,
+            "description": "Maiale saltato con peperoni e ananas in salsa agrodolce"
+          },
+          {
+            "name": "Manzo con Bambù e Funghi",
+            "price": 13.00,
+            "description": "Manzo saltato con germogli di bambù e funghi"
+          }
+        ]
+      },
+      "category3": {
+        "categoryTitle": "Dim Sum",
+        "dishes": [
+          {
+            "name": "Shumai",
+            "price": 6.00,
+            "description": "Fagottini al vapore ripieni di maiale e gamberi"
+          },
+          {
+            "name": "Har Gow",
+            "price": 6.50,
+            "description": "Ravioli al vapore ripieni di gamberi"
+          },
+          {
+            "name": "Baozi",
+            "price": 7.00,
+            "description": "Panini morbidi al vapore con ripieno di carne"
+          }
+        ]
+      },
+      "category4": {
+        "categoryTitle": "Bevande",
+        "dishes": [
+          {
+            "name": "Tè Oolong",
+            "price": 2.50
+          },
+          {
+            "name": "Succo di Litchi",
+            "price": 3.00
+          },
+          {
+            "name": "Soda al Gelsomino",
+            "price": 3.00
+          },
+          {
+            "name": "Acqua Minerale",
+            "price": 2.00
+          }
+        ]
+      },
+      "category5": {
+        "categoryTitle": "Dessert",
+        "dishes": [
+          {
+            "name": "Gelato al Tè Verde",
+            "price": 4.00
+          },
+          {
+            "name": "Torta di Fagioli Rossi",
+            "price": 4.50
+          },
+          {
+            "name": "Mousse al Litchi",
+            "price": 4.00
+          },
+          {
+            "name": "Ravioli Dolci di Riso",
+            "price": 3.50
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "45678901234",
+    "category": "Cinese",
+    "name": "Drago Imperiale",
+    "address": {
+      "street": "Via del Tritone 200",
+      "postalCode": "00187",
+      "city": "Roma"
+    },
+    "image": "Drago Imperiale.webp",
+    "rating": 4.6,
+    "shipping": {
+      "freeShipping": false,
+      "shippingCost": 3.00,
+      "minOrder": 20
+    },
+    "menu": {
+      "category1": {
+        "categoryTitle": "Delizie del Drago",
+        "dishes": [
+          {
+            "name": "Pollo del Drago Fiammeggiante",
+            "price": 10.00,
+            "description": "Pollo speziato saltato con peperoncino e aromi"
+          },
+          {
+            "name": "Gamberi del Drago Mistico",
+            "price": 12.00,
+            "description": "Gamberi saltati con una salsa speciale e verdure croccanti"
+          },
+          {
+            "name": "Zuppa di Nido di Drago",
+            "price": 15.00,
+            "description": "Zuppa raffinata con nido di rondine e sfumature di sapori orientali"
+          }
+        ]
+      },
+      "category2": {
+        "categoryTitle": "Classici Cinesi",
+        "dishes": [
+          {
+            "name": "Anatra Laccata alla Pechinese",
+            "price": 16.00,
+            "description": "Anatra croccante servita con pancake e salsa Hoisin"
+          },
+          {
+            "name": "Manzo di Sichuan",
+            "price": 13.00,
+            "description": "Manzo saltato con peperoncino e verdure in salsa di Sichuan"
+          },
+          {
+            "name": "Riso Fritto dell'Imperatore",
+            "price": 8.50,
+            "description": "Riso fritto con uova, piselli, carote e gamberi"
+          }
+        ]
+      },
+      "category3": {
+        "categoryTitle": "Dim Sum",
+        "dishes": [
+          {
+            "name": "Ravioli al Vapore",
+            "price": 7.00,
+            "description": "Ravioli al vapore ripieni di maiale e verdure"
+          },
+          {
+            "name": "Baozi",
+            "price": 6.50,
+            "description": "Panini al vapore ripieni di carne"
+          },
+          {
+            "name": "Ravioli Fritti di Gamberi",
+            "price": 8.00,
+            "description": "Ravioli croccanti ripieni di gamberi e verdure"
+          }
+        ]
+      },
+      "category4": {
+        "categoryTitle": "Bevande",
+        "dishes": [
+          {
+            "name": "Tè al Gelsomino",
+            "price": 3.00
+          },
+          {
+            "name": "Succo di Mango",
+            "price": 3.50
+          },
+          {
+            "name": "Birra Cinese",
+            "price": 4.00
+          },
+          {
+            "name": "Acqua Frizzante",
+            "price": 2.00
+          }
+        ]
+      },
+      "category5": {
+        "categoryTitle": "Dessert",
+        "dishes": [
+          {
+            "name": "Gelato al Tè Verde",
+            "price": 4.00
+          },
+          {
+            "name": "Frittelle di Banana",
+            "price": 4.50
+          },
+          {
+            "name": "Pasticcini di Riso",
+            "price": 3.50
+          },
+          {
+            "name": "Torta di Loto",
+            "price": 5.00
+          }
+        ]
+      }
+    }
+  }
+]
