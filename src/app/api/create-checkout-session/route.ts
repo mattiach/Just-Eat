@@ -10,7 +10,7 @@ export async function POST(request: NextRequest) {
     // parsing the request body
     const { amount, language } = await request.json();
 
-    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+    const baseUrl = process.env.BASE_URL;
 
     // ensure the amount is in cents and is a valid number
     if (typeof amount !== 'number' || amount <= 0) {
