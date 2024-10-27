@@ -9,7 +9,7 @@
 
 body {
   font-family: JETSansDigital !important;
-  overflow-x: hidden;
+  overflow-x: scroll;
 }
 
 html {
