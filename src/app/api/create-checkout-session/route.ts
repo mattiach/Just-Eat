@@ -7,15 +7,20 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY ?? '', {
 
 export async function POST(request: NextRequest) {
   try {
-    // parsing the request body
     const { amount, language } = await request.json();
 
-    // ensure the amount is in cents and is a valid number
     if (typeof amount !== 'number' || amount <= 0) {
       throw new Error('Invalid amount');
     }
 
-    // create the checkout session
+    const baseUrl = process.env.BASE_URL;
+    const successUrl = `${baseUrl}/${language}/order-completed/{CHECKOUT_SESSION_ID}`;
+    const cancelUrl = `${baseUrl}/${language}/order-cancelled`;
+
+    console.log('baseUrl ➡️', baseUrl)
+    console.log('Success URL ➡️', successUrl);
+    console.log('Cancel URL ➡️', cancelUrl);
+
     const session = await stripe.checkout.sessions.create({
       payment_method_types: ['card'],
       line_items: [
@@ -31,8 +36,8 @@ export async function POST(request: NextRequest) {
         },
       ],
       mode: 'payment',
-      success_url: `${process.env.BASE_URL}/${language}/order-completed/{CHECKOUT_SESSION_ID}`,
-      cancel_url: `${process.env.BASE_URL}/${language}/order-cancelled`,
+      success_url: successUrl,
+      cancel_url: cancelUrl,
     });
 
     return NextResponse.json({ sessionId: session.id });
