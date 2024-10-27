@@ -36,8 +36,8 @@ export async function POST(request: NextRequest) {
         },
       ],
       mode: 'payment',
-      success_url: "https://just-eat-iota.vercel.app/en/order-completed/12345test",
-      cancel_url: "https://just-eat-iota.vercel.app/en/order-cancelled",
+      // success_url: "https://just-eat-iota.vercel.app/en/order-completed/12345test",
+      // cancel_url: "https://just-eat-iota.vercel.app/en/order-cancelled",
     });
 
     return NextResponse.json({ sessionId: session.id });
