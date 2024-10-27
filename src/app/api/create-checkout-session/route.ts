@@ -10,8 +10,6 @@ export async function POST(request: NextRequest) {
     // parsing the request body
     const { amount, language } = await request.json();
 
-    const baseUrl = process.env.BASE_URL;
-
     // ensure the amount is in cents and is a valid number
     if (typeof amount !== 'number' || amount <= 0) {
       throw new Error('Invalid amount');
@@ -33,8 +31,8 @@ export async function POST(request: NextRequest) {
         },
       ],
       mode: 'payment',
-      success_url: `${baseUrl}/${language}/order-completed/{CHECKOUT_SESSION_ID}`,
-      cancel_url: `${baseUrl}/${language}/order-cancelled`,
+      success_url: `${process.env.BASE_URL}/${language}/order-completed/{CHECKOUT_SESSION_ID}`,
+      cancel_url: `${process.env.BASE_URL}/${language}/order-cancelled`,
     });
 
     return NextResponse.json({ sessionId: session.id });
