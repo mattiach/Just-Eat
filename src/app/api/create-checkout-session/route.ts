@@ -9,6 +9,7 @@ export async function POST(request: NextRequest) {
   try {
     const { amount, language } = await request.json();
 
+    // ensure the amount is in cents and is a valid number
     if (typeof amount !== 'number' || amount <= 0) {
       throw new Error('Invalid amount');
     }
