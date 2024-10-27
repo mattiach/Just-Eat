@@ -1,7 +1,7 @@
 "use client";
 
 import { useLocale, useTranslations } from "next-intl";
-import { useFieldsPopulated, useUUID } from "react-amazing-hooks";
+import { useFieldsPopulated } from "react-amazing-hooks";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "@/redux/store";
 import { Field, FieldProps, Form, Formik } from 'formik';
@@ -13,6 +13,7 @@ import { removeAllFromCart } from "@/redux/slices/cartSlice";
 import { updateUserInfo } from "@/redux/slices/userSlice";
 import { FieldsState } from "react-amazing-hooks/dist/interfaces/const";
 import { UserFormProfile } from "@/interfaces/const";
+import { loadStripe } from '@stripe/stripe-js';
 import useCheckDeliveryEligibility from "@/hooks/useCheckDeliveryEligibility";
 
 const CartUserProfile = () => {
@@ -21,7 +22,6 @@ const CartUserProfile = () => {
   const router = useRouter();
   const cart = useSelector((state: RootState) => state.cart);
   const userInfo = useSelector((state: RootState) => state.user);
-  const randomUUID = useUUID();
   const parsedTotalCart = calculateCartTotalRaw(cart);
   const language = useLocale();
 
@@ -30,18 +30,37 @@ const CartUserProfile = () => {
   const eligibleForDelivery = cart ? isEligibleForDelivery : false;
   const areUserFieldsPopulated = useFieldsPopulated(userInfo as unknown as FieldsState);
 
+  const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLIC_KEY!);
+
   // submit handler
-  const handleSubmit = (values: UserFormProfile, { setSubmitting }: { setSubmitting: (isSubmitting: boolean) => void }) => {
+  const handleSubmit = async (values: UserFormProfile, { setSubmitting }: { setSubmitting: (isSubmitting: boolean) => void }) => {
     if (!areUserFieldsPopulated) {
       return;
     }
 
     if (cart.length > 0 && eligibleForDelivery) {
-      setTimeout(() => {
-        dispatch(removeAllFromCart());
-        console.log('Total order: ', parsedTotalCart)
-        router.push(`/${language}/order-completed/${randomUUID}`);
-      }, 3000);
+      const amount = parsedTotalCart * 100; // convert to cents
+
+      try {
+        const response = await fetch('/api/create-checkout-session', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ amount, language }),
+        });
+
+        dispatch(removeAllFromCart()); // remove all items from the cart
+
+        const data = await response.json();
+        const stripe = await stripePromise;
+
+        if (stripe && data.sessionId) {
+          await stripe.redirectToCheckout({ sessionId: data.sessionId });
+        }
+      } catch (error) {
+        router.push('/order-cancelled');
+      }
     }
   };
 
