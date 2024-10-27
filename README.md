@@ -3,6 +3,7 @@
 ## Description
 This project is a clone of the well-known food delivery app, developed using React.js, Next.js, TypeScript, Tailwind CSS, Redux Toolkit, and much more!
 
+![Project Preview](./public/preview.png)
 
 ## Dependencies Installation and Node Modules
 
@@ -29,7 +30,7 @@ Connect to [http://localhost:3000/](http://localhost:3000) to view the applicati
 - Tailwind CSS, DaisyUI
 - Redux Toolkit
 - eslint
-- [react-amazing-hooks](https://github.com/mattiach/react-amazing-hooks) 👈🏻 made with love by myself! 😄
+- [react-amazing-hooks](https://github.com/mattiach/react-amazing-hooks) 👈🏻 made with love by me! 😄
 - next-intl, formik, slick-carousel, tailwind-merge and many other JS libraries..
 
 ## Author and rights
