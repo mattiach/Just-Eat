@@ -46,7 +46,7 @@ const Page = ({ params }: PageProps) => {
             loading='eager'
             width={320}
             height={320}
-            className='w-80 xs:w-96 md:w-[34rem] mx-auto'
+            className='w-80 xs:w-96 md:w-[34rem] mx-auto relative bottom-5'
           />
         </div>
         <div className='relative bottom-8 md:bottom-12'>
