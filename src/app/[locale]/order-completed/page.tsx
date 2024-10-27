@@ -6,19 +6,8 @@ import LayoutContainer from "@/components/LayoutContainer";
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
 
-interface PageProps {
-  params: {
-    id: string;
-  };
-}
-
-const Page = ({ params }: PageProps) => {
+const Page = () => {
   const t = useTranslations();
-  const { id } = params;
-
-  if (!id) {
-    return null;
-  }
 
   return (
     <LayoutContainer>
@@ -27,16 +16,6 @@ const Page = ({ params }: PageProps) => {
         <div>
           <p className="text-2xl md:text-3xl font-bold tracking-tight relative top-2">
             {t('common.orderCompleted')}!
-          </p>
-          <p className='text-xs italic leading-9 opacity-90'>
-            {t('common.orderNumber')}:
-            <span
-              className='pl-1 underline cursor-pointer underline-offset-4'
-              title={t('common.clickToCopy')}
-              onClick={() => navigator.clipboard.writeText(params.id)}
-            >
-              #{id}
-            </span>
           </p>
         </div>
         <div className="flex justify-center">

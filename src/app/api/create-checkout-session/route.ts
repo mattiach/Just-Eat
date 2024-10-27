@@ -14,12 +14,6 @@ export async function POST(request: NextRequest) {
     }
 
     const baseUrl = process.env.BASE_URL;
-    const successUrl = `${baseUrl}/${language}/order-completed/{CHECKOUT_SESSION_ID}`;
-    const cancelUrl = `${baseUrl}/${language}/order-cancelled`;
-
-    console.log('baseUrl ➡️', baseUrl)
-    console.log('Success URL ➡️', successUrl);
-    console.log('Cancel URL ➡️', cancelUrl);
 
     const session = await stripe.checkout.sessions.create({
       payment_method_types: ['card'],
@@ -36,8 +30,8 @@ export async function POST(request: NextRequest) {
         },
       ],
       mode: 'payment',
-      // success_url: "https://just-eat-iota.vercel.app/en/order-completed/12345test",
-      // cancel_url: "https://just-eat-iota.vercel.app/en/order-cancelled",
+      success_url: `${baseUrl}/${language}/order-completed`,
+      cancel_url: `${baseUrl}/${language}/order-cancelled`,
     });
 
     return NextResponse.json({ sessionId: session.id });
