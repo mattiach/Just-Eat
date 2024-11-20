@@ -1,0 +1,13 @@
+{
+  "title_website": "Just Eat",
+  "localhost": "http://localhost:3000/en/",
+  "storageStatePath": "./tests/session/storageState.json",
+  "workers": 3,
+  "retries": 3,
+  "fullyParallel": false,
+  "headless": {
+    "chrome": true,
+    "firefox": true,
+    "safari": true
+  }
+}

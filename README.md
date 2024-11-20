@@ -33,12 +33,19 @@ Check all transactions [here](https://dashboard.stripe.com/test/payments)
 After installing all the necessary dependencies, you can now proceed with launching the application using the command:
 
 ```sh
-  npm start
+  npm dev
 ```
 
 Connect to [http://localhost:3000/](http://localhost:3000) to view the application
 
 
+## Automation testing with [Playwright]((https://playwright.dev/docs/intro)) in your project. 
+Before running Playwright tests, make sure your application is running.
+Run all tests in your project with a single command:
+
+```sh
+  npm run test
+```
 
 ## Technologies used
 
@@ -49,6 +56,7 @@ Connect to [http://localhost:3000/](http://localhost:3000) to view the applicati
 - eslint
 - [react-amazing-hooks](https://github.com/mattiach/react-amazing-hooks) 👈🏻 made with love by me! 😄
 - next-intl, formik, slick-carousel, tailwind-merge and many other JS libraries..
+- Playwright
 
 ## Author and rights
 
