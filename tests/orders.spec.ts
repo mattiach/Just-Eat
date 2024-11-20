@@ -77,7 +77,7 @@ test('Translations', async ({ page }) => {
 });
 
 test('Restaurant page: Add to cart - using saved session', async ({ browser }) => {
-  // reads the session state from the specified 'storageStatePath'
+  // Read session state from the specified 'storageStatePath'
   const context = await getSessionFunction(browser);
 
   const page = await context.newPage();
@@ -86,6 +86,8 @@ test('Restaurant page: Add to cart - using saved session', async ({ browser }) =
   await page.getByText('Pizza Marinata5,00 €').click();
   await page.getByRole('button').nth(1).click();
   await page.getByRole('button', { name: 'Close' }).click();
-  await expect(page.locator('span').filter({ hasText: '3' }).first()).toHaveText('3');
+  const locator = page.locator('span').filter({ hasText: '3' }).first();
+  await locator.waitFor({ state: 'visible', timeout: 20000 });
+  await expect(locator).toHaveText('3');
   await page.context().storageState({ path: storageStatePath });
 });
