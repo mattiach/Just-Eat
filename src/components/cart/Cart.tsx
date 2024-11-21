@@ -1,7 +1,7 @@
 "use client"
 
 import { lazy, Suspense, useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import { calculateCartTotal } from "@/functions/common";
 import { useTranslations } from "next-intl";
 import { RootState } from "@/redux/store";
@@ -10,7 +10,6 @@ const CartItem = lazy(() => import("@/components/cart/CartItem"));
 
 const Cart = () => {
   const t = useTranslations();
-  const dispatch = useDispatch();
   const cart = useSelector((state: RootState) => state.cart);
   const [isModalOpen, setisModalOpen] = useState<boolean>(false);
   const [isMounted, setIsMounted] = useState(false);
@@ -50,7 +49,7 @@ const Cart = () => {
               />
             </Suspense>
           </div>
-          <div className="absolute bottom-0 left-0 w-full p-4 mx-auto bg-white border-t-2 rounded-b-md">
+          <div className="absolute bottom-0 left-0 w-full p-4 mx-auto bg-white border-t-4 rounded-b-md">
             <h4 className="flex justify-between mx-auto text-base md:max-w-96">
               {t('common.totalOrder')}: <span>{cartTotal}</span>
             </h4>
