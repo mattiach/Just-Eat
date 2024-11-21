@@ -70,7 +70,7 @@ const CartItem: React.FC<CartItemProps> = ({ openArticleModalFunction, isModalOp
                   {/* restaurant title and location */}
                   <div className="divider">
                     <h2
-                      className="font-semibold cursor-pointer text-primary hover:text-secondary"
+                      className="font-semibold cursor-pointer text-primary hover:text-secondary md:pl-8 lg:pl-3"
                       onClick={() => router.push(`/restaurant/${restaurant.id}`)}
                     >
                       &quot;{restaurant.name}&quot;
@@ -118,7 +118,7 @@ const CartItem: React.FC<CartItemProps> = ({ openArticleModalFunction, isModalOp
                   </ul>
 
                   {/* restaurant location */}
-                  <div className="w-full mx-auto mt-4 mb-16 text-xs italic leading-tighter md:max-w-96">
+                  <div className="w-full pb-4 mx-auto mt-4 mb-16 text-xs italic border-b-4 border-gray-200 leading-tighter md:max-w-96">
                     <p>{t('common.minOrder').charAt(0).toUpperCase() + t('common.minOrder').slice(1)}: {restaurant.shippingCost.minOrder !== 0 ? formatCurrency(restaurant.shippingCost.minOrder) : null}</p>
                     <p>{t('components.cartItem.paragraph')} {restaurant.address.street}, {restaurant.address.postalCode} - {restaurant.address.city}</p>
                   </div>
@@ -132,7 +132,7 @@ const CartItem: React.FC<CartItemProps> = ({ openArticleModalFunction, isModalOp
                       setSelectedProduct(initialProduct)
                     }}>
                       <DialogContent title={t("common.close")}>
-                        <div className="flex justify-between items-center w-full mt-5">
+                        <div className="flex items-center justify-between w-full mt-5">
                           <DialogTitle className="text-lg font-semibold">
                             {selectedArticle.name}
                           </DialogTitle>
@@ -149,7 +149,7 @@ const CartItem: React.FC<CartItemProps> = ({ openArticleModalFunction, isModalOp
                             >
                               <IoRemoveCircleOutline size={24} />
                             </button>
-                            <span className="w-8 text-center text-lg select-none">
+                            <span className="w-8 text-lg text-center select-none">
                               {quantityInCart(
                                 selectedArticle.name,
                                 restaurantSelected.id
