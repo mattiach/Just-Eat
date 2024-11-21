@@ -9,16 +9,12 @@
 
 body {
   font-family: JETSansDigital !important;
-  overflow-x: scroll;
-}
-
-html {
-  scrollbar-gutter: stable;
+  scrollbar-gutter: stable both-edges;
 }
 
 /* custom scrollbar */
 ::-webkit-scrollbar {
-  width: 20px;
+  width: 1em;
 }
 
 ::-webkit-scrollbar-track {
