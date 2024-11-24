@@ -9,7 +9,7 @@
 
 body {
   font-family: JETSansDigital !important;
-  scrollbar-gutter: stable;
+  scrollbar-gutter: stable both-edges;
 }
 
 html body[data-scroll-locked] {
