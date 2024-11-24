@@ -9,7 +9,8 @@
 
 body {
   font-family: JETSansDigital !important;
-  scrollbar-gutter: stable;
+  overflow-y: auto
+    /* scrollbar-gutter: stable; */
 }
 
 html body[data-scroll-locked] {
@@ -20,6 +21,10 @@ html body[data-scroll-locked] {
 /* custom scrollbar */
 ::-webkit-scrollbar {
   width: 1em;
+}
+
+body::-webkit-scrollbar {
+  width: 0px !important;
 }
 
 ::-webkit-scrollbar-track {
