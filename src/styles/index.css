@@ -12,6 +12,10 @@ body {
   scrollbar-gutter: stable both-edges;
 }
 
+body[data-scroll-locked] {
+  margin-right: 0 !important;
+}
+
 /* custom scrollbar */
 ::-webkit-scrollbar {
   width: 1em;
