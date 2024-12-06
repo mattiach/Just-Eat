@@ -10,8 +10,8 @@ export const routing = defineRouting({
       'en': '/en',
       'it': '/it',
       'es': '/es',
-      'de': 'de',
-      'fr': 'fr'
+      'de': '/de',
+      'fr': '/fr'
     }
   },
   pathnames: {
