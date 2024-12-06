@@ -32,7 +32,8 @@ export async function POST(request: NextRequest) {
       ],
       mode: 'payment',
       success_url: `${baseUrl}/${language}/order-completed`,
-      cancel_url: `${baseUrl}/${language}/order-cancelled`,
+      cancel_url: `${baseUrl}`,
+      // cancel_url: `${baseUrl}/${language}/order-cancelled`,
     });
 
     return NextResponse.json({ sessionId: session.id });
