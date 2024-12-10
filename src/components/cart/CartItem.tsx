@@ -1,15 +1,15 @@
 import { Fragment, Dispatch as ReactDispatch, SetStateAction, useState } from "react";
-import { useRouter } from "next/navigation";
 import { useDispatch, useSelector } from "react-redux";
 import { calculateRestaurantTotal, getProductQuantity } from "@/functions/common";
 import { formatCurrency } from "@/functions/common";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { RootState } from "@/redux/store";
 import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogTitle } from "../ui/dialog";
 import { IoAddCircleOutline, IoRemoveCircleOutline } from "react-icons/io5";
 import { RestaurantDetails, RestaurantOrder, SelectedDish } from "@/interfaces/const";
 import { addToCart, removeFromCart } from "@/redux/slices/cartSlice";
 import { initialRestaurant, initialProduct } from "@/lib/const";
+import Link from "next/link";
 
 interface CartItemProps {
   openArticleModalFunction: (productFound: SelectedDish) => void,
@@ -22,7 +22,7 @@ const CartItem: React.FC<CartItemProps> = ({ openArticleModalFunction, isModalOp
   const t = useTranslations();
   const dispatch = useDispatch();
   const cart = useSelector((state: RootState) => state.cart);
-  const router = useRouter();
+  const language = useLocale();
   const [selectedProduct, setSelectedProduct] = useState<SelectedDish>(initialProduct);
   const [restaurantSelected, setRestaurantSelected] = useState<RestaurantDetails>(initialRestaurant);
 
@@ -71,9 +71,10 @@ const CartItem: React.FC<CartItemProps> = ({ openArticleModalFunction, isModalOp
                   <div className="divider">
                     <h2
                       className="font-semibold cursor-pointer text-primary hover:text-secondary md:pl-8 lg:pl-3"
-                      onClick={() => router.push(`/restaurant/${restaurant.id}`)}
                     >
-                      &quot;{restaurant.name}&quot;
+                      <Link href={`/${language ? `${language}/` : ""}restaurant/${restaurant.id}`}>
+                        &quot;{restaurant.name}&quot;
+                      </Link>
                     </h2>
                   </div>
 
