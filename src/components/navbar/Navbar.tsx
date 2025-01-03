@@ -58,8 +58,8 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="bg-white dark:bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded select-none">
-        <div className="container flex flex-wrap items-center justify-between mx-auto">
+      <nav className="bg-white dark:bg-white border-gray-200 sm:px-4 py-2.5 rounded select-none">
+        <div className="flex flex-wrap items-center justify-between mx-auto px-4">
           <div
             className="flex items-center cursor-pointer"
             onClick={() => navigateFunction("/")}
