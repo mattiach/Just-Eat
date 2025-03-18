@@ -18,7 +18,7 @@ const BannerRestaurant = ({ id }: BannerRestaurantProps) => {
   return (
     <div className="flex justify-center py-20 mx-auto bg-primary">
       {selectedRestaurant ? (
-        <div className="w-full max-w-screen-lg text-white text-center">
+        <div className="w-full max-w-(--breakpoint-lg) text-white text-center">
           <div className="mb-1">
             <h2
               className={`${

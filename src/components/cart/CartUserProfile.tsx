@@ -65,7 +65,7 @@ const CartUserProfile = () => {
   };
 
   return (
-    <div className="p-6 bg-white rounded-md shadow lg:shadow-md xl:col-span-3">
+    <div className="p-6 bg-white rounded-md shadow-sm lg:shadow-md xl:col-span-3">
       <h2 className="text-2xl">{t('components.cartUserProfile.title')}</h2>
       <Formik
         initialValues={userInfo}

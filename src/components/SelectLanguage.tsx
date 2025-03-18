@@ -38,7 +38,7 @@ const SelectLanguage = () => {
           </span>
         </div>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="z-[1] bg-gray-50 p-2 shadow w-44 rounded-md">
+      <DropdownMenuContent className="z-1 bg-gray-50 p-2 shadow-sm w-44 rounded-md">
         <DropdownMenuSeparator />
         {supportedLanguages.map((language) => (
           <DropdownMenuItem

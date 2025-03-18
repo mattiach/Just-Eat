@@ -1,3 +1,5 @@
+@charset 'UTF-8';
+
 .slick-list,
 .slick-slider,
 .slick-track {
@@ -98,10 +100,6 @@
 .slick-arrow.slick-hidden {
   display: none
 }
-
-/*# sourceMappingURL=slick.min.css.map */
-
-@charset 'UTF-8';
 
 .slick-dots,
 .slick-next,
