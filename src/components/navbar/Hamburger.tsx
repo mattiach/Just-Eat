@@ -8,7 +8,7 @@ const Hamburger: React.FC<ButtonProps> = ({ dynamicProps, openFunction }) => {
     <>
       <button
         data-collapse-toggle="navbar-cta"
-        className="inline-flex items-center p-2 text-sm text-gray-600 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+        className="inline-flex items-center p-2 text-sm text-gray-600 rounded-lg md:hidden hover:bg-gray-100 focus:outline-hidden focus:ring-2 focus:ring-gray-200"
         aria-controls="navbar-cta"
         aria-expanded="false"
         onClick={openFunction}

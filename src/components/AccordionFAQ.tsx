@@ -27,7 +27,7 @@ const AccordionFAQ: React.FC<IAccordionFAQ> = ({ id, question, answer }) => {
             <button
               onClick={() => setIsAccordionOpen(!isAccordionOpen)}
               type="button"
-              className={`flex items-center justify-between w-full p-5 font-medium text-left text-gray-800 rounded-sm border-2 border-gray-200 ${isAccordionOpen && "border-b-0"
+              className={`flex items-center justify-between w-full p-5 font-medium text-left text-gray-800 rounded-xs border-2 border-gray-200 ${isAccordionOpen && "border-b-0"
                 }`}
             >
               <span className="flex items-center">

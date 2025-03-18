@@ -54,7 +54,7 @@ export default function HomePage() {
               <Link href={`/${language}/orders`}>
                 <Button
                   className={
-                    "focus:outline-none bg-primary hover:bg-secondary text-white focus:ring-0 font-semibold text-xl rounded-lg py-3 px-4 mr-4 mb-4 min-h-[2.8125em] md:w-72"
+                    "focus:outline-hidden bg-primary hover:bg-secondary text-white focus:ring-0 font-semibold text-xl rounded-lg py-3 px-4 mr-4 mb-4 min-h-[2.8125em] md:w-72"
                   }
                 >
                   {t("pages.home.button")}

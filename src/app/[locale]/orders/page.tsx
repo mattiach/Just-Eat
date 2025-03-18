@@ -199,7 +199,7 @@ const Page = () => {
                     <input
                       ref={inputRef}
                       type="text"
-                      className="p-2 my-2 placeholder-gray-400 bg-white border-transparent outline-none"
+                      className="p-2 my-2 placeholder-gray-400 bg-white border-transparent outline-hidden"
                       placeholder={t("pages.orders.searchForRestaurant")}
                       onChange={(e) => setSearchText(e.target.value)}
                     />
@@ -227,7 +227,7 @@ const Page = () => {
                       type="button"
                       size={"xs"}
                       variant={"ghost"}
-                      className="px-2 text-black rounded-sm bg-slate-200 hover:bg-slate-300 custom-shadow-sm text-base relative top-1"
+                      className="px-2 text-black rounded-xs bg-slate-200 hover:bg-slate-300 custom-shadow-sm text-base relative top-1"
                     >
                       {showAllItems ? t("common.hide") : t("common.showAll")}
                     </Button>

@@ -13,7 +13,7 @@ const headerVariants = cva(
         default: "bg-white",
         opaque: "bg-black bg-opacity-50",
         rider:
-          "bg-cover bg-no-repeat shadow border-b md:border-b-2 border-primary shadow-primary",
+          "bg-cover bg-no-repeat shadow-sm border-b md:border-b-2 border-primary shadow-primary",
       },
     },
     defaultVariants: {

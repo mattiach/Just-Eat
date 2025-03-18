@@ -34,9 +34,9 @@ export default function Sidebar({ show }) {
           // @ts-ignore
           // setter((oldVal) => !oldVal);
         }}
-        className={`flex gap-1 [&>*]:my-auto text-md pl-6 py-3 border-b-[1px] border-b-white/10 ${colorClass}`}
+        className={`flex gap-1 *:my-auto text-md pl-6 py-3 border-b-[1px] border-b-white/10 ${colorClass}`}
       >
-        <div className="text-xl flex [&>*]:mx-auto w-[30px]">{icon}</div>
+        <div className="text-xl flex *:mx-auto w-[30px]">{icon}</div>
         <div>{name}</div>
       </Link>
     );

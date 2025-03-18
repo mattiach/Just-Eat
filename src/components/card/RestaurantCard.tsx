@@ -20,7 +20,7 @@ const RestaurantCard: React.FC<any> = ({ ristorante }) => {
             src={`/assets/img/ristoranti/${ristorante.category}/${ristorante.image}`}
             alt={`${ristorante.name}`}
             title={`${ristorante.name}`}
-            className="aspect-video w-72 xs:w-80 xsm:w-60 rounded-sm hover:opacity-90 border-primary border-2 zoomImgEffect transform transition-all duration-500"
+            className="aspect-video w-72 xs:w-80 xsm:w-60 rounded-xs hover:opacity-90 border-primary border-2 zoomImgEffect transform transition-all duration-500"
             onClick={() => navigateToRestaurantPageFunction()}
             width={100}
             height={100}

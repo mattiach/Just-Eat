@@ -18,7 +18,7 @@ const FloatingButton: React.FC<FloatingButtonProps> = ({
       }`}
     >
       <button
-        className="p-3 font-bold text-white rounded-full bg-primary hover:bg-secondary focus:outline-none focus:shadow-outline fading-in-animation"
+        className="p-3 font-bold text-white rounded-full bg-primary hover:bg-secondary focus:outline-hidden focus:shadow-outline fading-in-animation"
         onClick={scrollToTopFunction}
       >
         <BsArrowUpCircle size={24} />

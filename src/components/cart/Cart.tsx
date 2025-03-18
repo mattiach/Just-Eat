@@ -34,7 +34,7 @@ const Cart = () => {
 
   return (
     <>
-      <div className="bg-white rounded-md shadow lg:shadow-md xl:col-span-2">
+      <div className="bg-white rounded-md shadow-sm lg:shadow-md xl:col-span-2">
         <div className="relative h-full">
           <div className="p-5 py-4 md:max-w-96 md:px-9">
             <h2 className="pt-1 text-2xl sm:mb-2 lg:pl-2 xl:pl-0">{t('common.summary')}</h2>

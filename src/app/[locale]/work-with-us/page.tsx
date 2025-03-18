@@ -58,7 +58,7 @@ const Page = () => {
                     {t("pages.workWithUs.title")}
                   </Title>
                   <Dialog>
-                    <DialogTrigger className="focus:outline-none bg-primary hover:bg-secondary focus:ring-0 font-semibold text-xl py-3 px-4 mr-2 mb-2 w-52 md:w-60 text-white rounded-md">
+                    <DialogTrigger className="focus:outline-hidden bg-primary hover:bg-secondary focus:ring-0 font-semibold text-xl py-3 px-4 mr-2 mb-2 w-52 md:w-60 text-white rounded-md">
                       {t("pages.workWithUs.button")}
                     </DialogTrigger>
                     <DialogContent>

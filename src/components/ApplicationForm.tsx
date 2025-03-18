@@ -58,7 +58,7 @@ const ApplicationForm: React.FC<IApplicationForm> = ({
       >
         <DialogTitle
           className={`relative bg-primary p-5 text-xl font-semibold tracking-wider text-white ${
-            isDragging ? "rounded-none" : "rounded-sm"
+            isDragging ? "rounded-none" : "rounded-xs"
           }`}
         >
           {t("common.application")}
@@ -125,7 +125,7 @@ const ApplicationForm: React.FC<IApplicationForm> = ({
                     selectedFiles[0].name
                   }`
                 : t("pages.workWithUs.dragHereYourFileOr")}
-              <label className="shadow-blue-100 mt-2 block rounded-full border bg-white px-4 py-0.5 font-normal text-blue-500 shadow hover:bg-blue-50">
+              <label className="shadow-blue-100 mt-2 block rounded-full border bg-white px-4 py-0.5 font-normal text-blue-500 shadow-sm hover:bg-blue-50">
                 <input
                   className="hidden"
                   type="file"

@@ -22,7 +22,7 @@
     "embla-carousel-react": "^8.3.0",
     "formik": "^2.4.6",
     "lucide-react": "^0.445.0",
-    "next": "14.2.5",
+    "next": "^14.2.25",
     "next-intl": "^3.15.3",
     "react": "^18.3.1",
     "react-amazing-hooks": "^5.1.5",
@@ -36,13 +36,14 @@
   },
   "devDependencies": {
     "@playwright/test": "^1.48.2",
+    "@tailwindcss/postcss": "^4.0.14",
     "@types/node": "^22.5.0",
     "@types/react": "^18.3.4",
     "@types/react-dom": "^18.3.0",
     "eslint": "^8",
     "eslint-config-next": "14.2.6",
     "postcss": "^8.4.41",
-    "tailwindcss": "^3.4.10",
+    "tailwindcss": "^4.0.14",
     "typescript": "^5.5.4"
   }
 }
