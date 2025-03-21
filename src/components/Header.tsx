@@ -1,8 +1,9 @@
 import { cva } from "class-variance-authority";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 const headerVariants = cva(
-  "p-12 text-center relative overflow-hidden bg-no-repeat bg-center bg-cover",
+  "p-12 text-center relative overflow-hidden",
   {
     variants: {
       bgHeight: {
@@ -13,7 +14,7 @@ const headerVariants = cva(
         default: "bg-white",
         opaque: "bg-black bg-opacity-50",
         rider:
-          "bg-cover bg-no-repeat shadow-sm border-b md:border-b-2 border-primary shadow-primary",
+          "shadow-sm border-b md:border-b-2 border-primary shadow-primary",
       },
     },
     defaultVariants: {
@@ -42,14 +43,20 @@ const Header: React.FC<HeaderProps> = ({
       <div
         {...divProps}
         className={cn(headerVariants({ bgColor, bgHeight }))}
-        style={{
-          backgroundImage: `url(${bgSRC})`,
-          backgroundSize: "cover",
-          backgroundPosition: bgColor === "rider" ? "center 0%" : "center",
-          backgroundRepeat: "no-repeat",
-        }}
       >
-        <div className="absolute right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed">
+        <div className="absolute inset-0 w-full h-full z-0">
+          <Image
+            src={bgSRC}
+            alt="Header background"
+            fill
+            priority
+            className={cn(
+              "object-cover",
+              bgColor === "rider" ? "object-[center_0%]" : "object-center"
+            )}
+          />
+        </div>
+        <div className="absolute right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed z-10">
           {children}
         </div>
       </div>

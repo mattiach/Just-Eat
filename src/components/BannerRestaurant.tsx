@@ -18,14 +18,13 @@ const BannerRestaurant = ({ id }: BannerRestaurantProps) => {
   return (
     <div className="flex justify-center py-20 mx-auto bg-primary">
       {selectedRestaurant ? (
-        <div className="w-full max-w-(--breakpoint-lg) text-white text-center">
+        <div className="w-full max-w-lg text-white text-center">
           <div className="mb-1">
             <h2
-              className={`${
-                selectedRestaurant.name.length > 18
-                  ? "text-3xl md:text-4xl "
-                  : "text-4xl md:text-5xl"
-              } font-semibold`}
+              className={`${selectedRestaurant.name.length > 18
+                ? "text-3xl md:text-4xl "
+                : "text-4xl md:text-5xl"
+                } font-semibold text-balanced`}
             >
               {selectedRestaurant.name}
             </h2>
